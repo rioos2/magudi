@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // Package netsh provides an interface and implementations for running Windows netsh commands.
-package netsh // import "gitlab.com/sankish/magudi/pkg/util/netsh"
+package netsh // import "gitlab.com/rioos/magudi/pkg/util/netsh"

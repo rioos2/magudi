@@ -16,4 +16,4 @@ limitations under the License.
 
 // Package serviceaccount provides a Registry interface and a strategy
 // implementation for storing ServiceAccount API objects.
-package serviceaccount // import "gitlab.com/sankish/magudi/pkg/registry/core/serviceaccount"
+package serviceaccount // import "gitlab.com/rioos/magudi/pkg/registry/core/serviceaccount"

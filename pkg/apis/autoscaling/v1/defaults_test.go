@@ -23,10 +23,10 @@ import (
 	autoscalingv1 "k8s.io/api/autoscaling/v1"
 
 	"k8s.io/apimachinery/pkg/runtime"
-	"gitlab.com/sankish/magudi/pkg/api"
-	_ "gitlab.com/sankish/magudi/pkg/api/install"
-	_ "gitlab.com/sankish/magudi/pkg/apis/autoscaling/install"
-	. "gitlab.com/sankish/magudi/pkg/apis/autoscaling/v1"
+	"gitlab.com/rioos/magudi/pkg/api"
+	_ "gitlab.com/rioos/magudi/pkg/api/install"
+	_ "gitlab.com/rioos/magudi/pkg/apis/autoscaling/install"
+	. "gitlab.com/rioos/magudi/pkg/apis/autoscaling/v1"
 )
 
 func TestSetDefaultHPA(t *testing.T) {

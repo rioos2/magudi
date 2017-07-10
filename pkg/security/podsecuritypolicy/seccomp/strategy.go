@@ -21,7 +21,7 @@ import (
 	"strings"
 
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api"
 )
 
 const (

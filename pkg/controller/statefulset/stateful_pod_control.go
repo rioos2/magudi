@@ -27,10 +27,10 @@ import (
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 	"k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/tools/record"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
-	appslisters "gitlab.com/sankish/magudi/pkg/client/listers/apps/v1beta1"
-	corelisters "gitlab.com/sankish/magudi/pkg/client/listers/core/v1"
-	"gitlab.com/sankish/magudi/pkg/client/retry"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset"
+	appslisters "gitlab.com/rioos/magudi/pkg/client/listers/apps/v1beta1"
+	corelisters "gitlab.com/rioos/magudi/pkg/client/listers/core/v1"
+	"gitlab.com/rioos/magudi/pkg/client/retry"
 )
 
 // StatefulPodControlInterface defines the interface that StatefulSetController uses to create, update, and delete Pods,

@@ -22,8 +22,8 @@ import (
 	"k8s.io/apimachinery/pkg/watch"
 	genericapirequest "k8s.io/apiserver/pkg/endpoints/request"
 	"k8s.io/apiserver/pkg/registry/rest"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/apis/rbac"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/apis/rbac"
 )
 
 // Registry is an interface for things that know how to store RoleBindings.

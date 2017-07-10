@@ -17,7 +17,7 @@ limitations under the License.
 package tolerations
 
 import (
-	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api"
 )
 
 type key struct {

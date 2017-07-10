@@ -58,9 +58,9 @@ type MetricValue struct {
 // for all objects matching the given label selector
 const AllObjects = "*"
 
-// NOTE: ObjectReference is copied from gitlab.com/sankish/magudi/pkg/api/types.go. We
-// cannot depend on gitlab.com/sankish/magudi/pkg/api because that creates cyclic
-// dependency between k8s.io/metrics and gitlab.com/sankish/magudi. We cannot depend on
+// NOTE: ObjectReference is copied from gitlab.com/rioos/magudi/pkg/api/types.go. We
+// cannot depend on gitlab.com/rioos/magudi/pkg/api because that creates cyclic
+// dependency between k8s.io/metrics and gitlab.com/rioos/magudi. We cannot depend on
 // k8s.io/client-go/pkg/api because the package is going to be deprecated soon.
 // There is no need to keep it an exact copy. Each repo can define its own
 // internal objects.

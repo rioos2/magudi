@@ -26,8 +26,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/kubernetes/fake"
 	core "k8s.io/client-go/testing"
-	"gitlab.com/sankish/magudi/pkg/api"
-	bootstrapapi "gitlab.com/sankish/magudi/pkg/bootstrap/api"
+	"gitlab.com/rioos/magudi/pkg/api"
+	bootstrapapi "gitlab.com/rioos/magudi/pkg/bootstrap/api"
 )
 
 func init() {

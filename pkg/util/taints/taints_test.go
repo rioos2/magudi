@@ -21,7 +21,7 @@ import (
 	"strings"
 	"testing"
 
-	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api"
 
 	"github.com/spf13/pflag"
 )

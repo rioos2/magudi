@@ -18,7 +18,7 @@ package qos
 
 import (
 	"k8s.io/api/core/v1"
-	v1qos "gitlab.com/sankish/magudi/pkg/api/v1/helper/qos"
+	v1qos "gitlab.com/rioos/magudi/pkg/api/v1/helper/qos"
 )
 
 const (

@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // Package labels provides utilities to work with Kubernetes labels.
-package labels // import "gitlab.com/sankish/magudi/pkg/util/labels"
+package labels // import "gitlab.com/rioos/magudi/pkg/util/labels"

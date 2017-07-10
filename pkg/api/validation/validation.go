@@ -44,14 +44,14 @@ import (
 	"k8s.io/apimachinery/pkg/util/validation"
 	"k8s.io/apimachinery/pkg/util/validation/field"
 	utilfeature "k8s.io/apiserver/pkg/util/feature"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/api/helper"
-	apiservice "gitlab.com/sankish/magudi/pkg/api/service"
-	k8s_api_v1 "gitlab.com/sankish/magudi/pkg/api/v1"
-	v1helper "gitlab.com/sankish/magudi/pkg/api/v1/helper"
-	"gitlab.com/sankish/magudi/pkg/capabilities"
-	"gitlab.com/sankish/magudi/pkg/features"
-	"gitlab.com/sankish/magudi/pkg/security/apparmor"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api/helper"
+	apiservice "gitlab.com/rioos/magudi/pkg/api/service"
+	k8s_api_v1 "gitlab.com/rioos/magudi/pkg/api/v1"
+	v1helper "gitlab.com/rioos/magudi/pkg/api/v1/helper"
+	"gitlab.com/rioos/magudi/pkg/capabilities"
+	"gitlab.com/rioos/magudi/pkg/features"
+	"gitlab.com/rioos/magudi/pkg/security/apparmor"
 )
 
 // TODO: delete this global variable when we enable the validation of common

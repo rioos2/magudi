@@ -21,7 +21,7 @@ import (
 	"sort"
 	"testing"
 
-	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api"
 )
 
 func TestSortableResourceNamesSorting(t *testing.T) {

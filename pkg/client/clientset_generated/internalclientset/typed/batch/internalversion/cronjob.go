@@ -21,8 +21,8 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	batch "gitlab.com/sankish/magudi/pkg/apis/batch"
-	scheme "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/scheme"
+	batch "gitlab.com/rioos/magudi/pkg/apis/batch"
+	scheme "gitlab.com/rioos/magudi/pkg/client/clientset_generated/internalclientset/scheme"
 )
 
 // CronJobsGetter has a method to return a CronJobInterface.

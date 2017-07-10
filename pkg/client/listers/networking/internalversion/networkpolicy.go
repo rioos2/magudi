@@ -22,7 +22,7 @@ import (
 	"k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"
-	networking "gitlab.com/sankish/magudi/pkg/apis/networking"
+	networking "gitlab.com/rioos/magudi/pkg/apis/networking"
 )
 
 // NetworkPolicyLister helps list NetworkPolicies.

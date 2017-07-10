@@ -26,8 +26,8 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/intstr"
-	"gitlab.com/sankish/magudi/pkg/api"
-	k8s_api_v1 "gitlab.com/sankish/magudi/pkg/api/v1"
+	"gitlab.com/rioos/magudi/pkg/api"
+	k8s_api_v1 "gitlab.com/rioos/magudi/pkg/api/v1"
 )
 
 func roundTrip(t *testing.T, obj runtime.Object) runtime.Object {

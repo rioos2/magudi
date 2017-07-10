@@ -23,9 +23,9 @@ import (
 	"k8s.io/apimachinery/pkg/util/intstr"
 	"k8s.io/apimachinery/pkg/util/validation"
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	"gitlab.com/sankish/magudi/pkg/api"
-	apivalidation "gitlab.com/sankish/magudi/pkg/api/validation"
-	"gitlab.com/sankish/magudi/pkg/apis/networking"
+	"gitlab.com/rioos/magudi/pkg/api"
+	apivalidation "gitlab.com/rioos/magudi/pkg/api/validation"
+	"gitlab.com/rioos/magudi/pkg/apis/networking"
 )
 
 // ValidateNetworkPolicyName can be used to check whether the given networkpolicy

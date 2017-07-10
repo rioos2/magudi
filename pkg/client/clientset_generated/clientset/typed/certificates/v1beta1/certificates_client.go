@@ -20,7 +20,7 @@ import (
 	v1beta1 "k8s.io/api/certificates/v1beta1"
 	serializer "k8s.io/apimachinery/pkg/runtime/serializer"
 	rest "k8s.io/client-go/rest"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/scheme"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/scheme"
 )
 
 type CertificatesV1beta1Interface interface {

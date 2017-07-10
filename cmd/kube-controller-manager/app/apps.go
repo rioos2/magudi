@@ -22,7 +22,7 @@ package app
 
 import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"gitlab.com/sankish/magudi/pkg/controller/statefulset"
+	"gitlab.com/rioos/magudi/pkg/controller/statefulset"
 )
 
 func startStatefulSetController(ctx ControllerContext) (bool, error) {

@@ -18,7 +18,7 @@ package internalversion
 
 import (
 	rest "k8s.io/client-go/rest"
-	"gitlab.com/sankish/magudi/federation/client/clientset_generated/federation_internalclientset/scheme"
+	"gitlab.com/rioos/magudi/federation/client/clientset_generated/federation_internalclientset/scheme"
 )
 
 type AutoscalingInterface interface {

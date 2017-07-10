@@ -33,8 +33,8 @@ import (
 	etcdtesting "k8s.io/apiserver/pkg/storage/etcd/testing"
 	"k8s.io/apiserver/pkg/storage/storagebackend"
 	storagetesting "k8s.io/apiserver/pkg/storage/testing"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/api/testapi"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api/testapi"
 )
 
 func NewEtcdStorage(t *testing.T, group string) (*storagebackend.Config, *etcdtesting.EtcdTestServer) {

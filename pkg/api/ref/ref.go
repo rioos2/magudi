@@ -24,7 +24,7 @@ import (
 
 	"k8s.io/apimachinery/pkg/api/meta"
 	"k8s.io/apimachinery/pkg/runtime"
-	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api"
 )
 
 var (

@@ -27,8 +27,8 @@ import (
 
 	"k8s.io/api/core/v1"
 	utilfeature "k8s.io/apiserver/pkg/util/feature"
-	"gitlab.com/sankish/magudi/pkg/features"
-	"gitlab.com/sankish/magudi/pkg/util"
+	"gitlab.com/rioos/magudi/pkg/features"
+	"gitlab.com/rioos/magudi/pkg/util"
 )
 
 // Whether AppArmor should be disabled by default.

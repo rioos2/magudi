@@ -22,7 +22,7 @@ import (
 	"strings"
 	"sync"
 
-	utilexec "gitlab.com/sankish/magudi/pkg/util/exec"
+	utilexec "gitlab.com/rioos/magudi/pkg/util/exec"
 )
 
 const (

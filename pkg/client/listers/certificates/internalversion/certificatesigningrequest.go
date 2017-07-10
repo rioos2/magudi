@@ -23,7 +23,7 @@ import (
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"
-	certificates "gitlab.com/sankish/magudi/pkg/apis/certificates"
+	certificates "gitlab.com/rioos/magudi/pkg/apis/certificates"
 )
 
 // CertificateSigningRequestLister helps list CertificateSigningRequests.

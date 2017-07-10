@@ -23,9 +23,9 @@ import (
 	"k8s.io/apimachinery/pkg/api/meta"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
-	"gitlab.com/sankish/magudi/federation/apis/federation"
-	"gitlab.com/sankish/magudi/federation/apis/federation/v1beta1"
-	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/federation/apis/federation"
+	"gitlab.com/rioos/magudi/federation/apis/federation/v1beta1"
+	"gitlab.com/rioos/magudi/pkg/api"
 )
 
 func TestResourceVersioner(t *testing.T) {

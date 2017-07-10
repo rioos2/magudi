@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-// +k8s:conversion-gen=gitlab.com/sankish/magudi/pkg/apis/admissionregistration
+// +k8s:conversion-gen=gitlab.com/rioos/magudi/pkg/apis/admissionregistration
 // +k8s:conversion-gen-external-types=../../../../vendor/k8s.io/api/admissionregistration/v1alpha1
 // +k8s:defaulter-gen=TypeMeta
 // +k8s:defaulter-gen-input=../../../../vendor/k8s.io/api/admissionregistration/v1alpha1
@@ -24,4 +24,4 @@ limitations under the License.
 // admissionregistrationv1alpha1.InitializerConfiguration and admissionregistrationv1alpha1.ExternalAdmissionHookConfiguration is for the
 // new dynamic admission controller configuration.
 // +groupName=admissionregistration.k8s.io
-package v1alpha1 // import "gitlab.com/sankish/magudi/pkg/apis/admissionregistration/v1alpha1"
+package v1alpha1 // import "gitlab.com/rioos/magudi/pkg/apis/admissionregistration/v1alpha1"

@@ -23,7 +23,7 @@ import (
 
 	"k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/util/validation"
-	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api"
 )
 
 // ParseTaint parses a taint from a string. Taint must be of the format '<key>=<value>:<effect>'.

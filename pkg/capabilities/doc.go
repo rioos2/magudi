@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // package capabilities manages system level capabilities
-package capabilities // import "gitlab.com/sankish/magudi/pkg/capabilities"
+package capabilities // import "gitlab.com/rioos/magudi/pkg/capabilities"

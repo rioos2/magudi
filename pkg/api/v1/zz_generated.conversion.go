@@ -26,7 +26,7 @@ import (
 	conversion "k8s.io/apimachinery/pkg/conversion"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	types "k8s.io/apimachinery/pkg/types"
-	api "gitlab.com/sankish/magudi/pkg/api"
+	api "gitlab.com/rioos/magudi/pkg/api"
 	unsafe "unsafe"
 )
 

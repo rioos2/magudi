@@ -20,19 +20,19 @@ package clientset
 import (
 	"fmt"
 
-	"gitlab.com/sankish/magudi/pkg/api"
-	_ "gitlab.com/sankish/magudi/pkg/api/install"
-	_ "gitlab.com/sankish/magudi/pkg/apis/apps/install"
-	_ "gitlab.com/sankish/magudi/pkg/apis/authentication/install"
-	_ "gitlab.com/sankish/magudi/pkg/apis/authorization/install"
-	_ "gitlab.com/sankish/magudi/pkg/apis/autoscaling/install"
-	_ "gitlab.com/sankish/magudi/pkg/apis/batch/install"
-	_ "gitlab.com/sankish/magudi/pkg/apis/certificates/install"
-	_ "gitlab.com/sankish/magudi/pkg/apis/extensions/install"
-	_ "gitlab.com/sankish/magudi/pkg/apis/policy/install"
-	_ "gitlab.com/sankish/magudi/pkg/apis/rbac/install"
-	_ "gitlab.com/sankish/magudi/pkg/apis/settings/install"
-	_ "gitlab.com/sankish/magudi/pkg/apis/storage/install"
+	"gitlab.com/rioos/magudi/pkg/api"
+	_ "gitlab.com/rioos/magudi/pkg/api/install"
+	_ "gitlab.com/rioos/magudi/pkg/apis/apps/install"
+	_ "gitlab.com/rioos/magudi/pkg/apis/authentication/install"
+	_ "gitlab.com/rioos/magudi/pkg/apis/authorization/install"
+	_ "gitlab.com/rioos/magudi/pkg/apis/autoscaling/install"
+	_ "gitlab.com/rioos/magudi/pkg/apis/batch/install"
+	_ "gitlab.com/rioos/magudi/pkg/apis/certificates/install"
+	_ "gitlab.com/rioos/magudi/pkg/apis/extensions/install"
+	_ "gitlab.com/rioos/magudi/pkg/apis/policy/install"
+	_ "gitlab.com/rioos/magudi/pkg/apis/rbac/install"
+	_ "gitlab.com/rioos/magudi/pkg/apis/settings/install"
+	_ "gitlab.com/rioos/magudi/pkg/apis/storage/install"
 )
 
 func init() {

@@ -16,4 +16,4 @@ limitations under the License.
 
 // Package certificates provides Registry interface and its RESTStorage
 // implementation for storing Role objects.
-package role // import "gitlab.com/sankish/magudi/pkg/registry/rbac/role"
+package role // import "gitlab.com/rioos/magudi/pkg/registry/rbac/role"

@@ -20,9 +20,9 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apiserver/pkg/registry/generic"
 	genericregistry "k8s.io/apiserver/pkg/registry/generic/registry"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/registry/cachesize"
-	"gitlab.com/sankish/magudi/pkg/registry/core/secret"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/registry/cachesize"
+	"gitlab.com/rioos/magudi/pkg/registry/core/secret"
 )
 
 type REST struct {

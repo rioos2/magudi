@@ -32,8 +32,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	testclient "k8s.io/client-go/testing"
-	k8s_certificates_v1beta1 "gitlab.com/sankish/magudi/pkg/apis/certificates/v1beta1"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/fake"
+	k8s_certificates_v1beta1 "gitlab.com/rioos/magudi/pkg/apis/certificates/v1beta1"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/fake"
 )
 
 func TestHasKubeletUsages(t *testing.T) {

@@ -14,10 +14,10 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-// +k8s:conversion-gen=gitlab.com/sankish/magudi/pkg/api
+// +k8s:conversion-gen=gitlab.com/rioos/magudi/pkg/api
 // +k8s:conversion-gen-external-types=../../../vendor/k8s.io/api/core/v1
 // +k8s:defaulter-gen=TypeMeta
 // +k8s:defaulter-gen-input=../../../vendor/k8s.io/api/core/v1
 
 // Package v1 is the v1 version of the API.
-package v1 // import "gitlab.com/sankish/magudi/pkg/api/v1"
+package v1 // import "gitlab.com/rioos/magudi/pkg/api/v1"

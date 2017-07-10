@@ -19,8 +19,8 @@ limitations under the License.
 package settings
 
 import (
-	internalinterfaces "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/internalversion/internalinterfaces"
-	internalversion "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/internalversion/settings/internalversion"
+	internalinterfaces "gitlab.com/rioos/magudi/pkg/client/informers/informers_generated/internalversion/internalinterfaces"
+	internalversion "gitlab.com/rioos/magudi/pkg/client/informers/informers_generated/internalversion/settings/internalversion"
 )
 
 // Interface provides access to each of this group's versions.

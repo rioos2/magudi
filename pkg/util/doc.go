@@ -17,4 +17,4 @@ limitations under the License.
 // Package util implements various utility functions used in both testing and implementation
 // of Kubernetes. Package util may not depend on any other package in the Kubernetes
 // package tree.
-package util // import "gitlab.com/sankish/magudi/pkg/util"
+package util // import "gitlab.com/rioos/magudi/pkg/util"

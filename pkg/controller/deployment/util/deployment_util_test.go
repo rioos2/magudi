@@ -33,10 +33,10 @@ import (
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/apimachinery/pkg/util/intstr"
 	core "k8s.io/client-go/testing"
-	"gitlab.com/sankish/magudi/pkg/api"
-	k8s_api_v1 "gitlab.com/sankish/magudi/pkg/api/v1"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/fake"
-	"gitlab.com/sankish/magudi/pkg/controller"
+	"gitlab.com/rioos/magudi/pkg/api"
+	k8s_api_v1 "gitlab.com/rioos/magudi/pkg/api/v1"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/fake"
+	"gitlab.com/rioos/magudi/pkg/controller"
 )
 
 func addListRSReactor(fakeClient *fake.Clientset, obj runtime.Object) *fake.Clientset {

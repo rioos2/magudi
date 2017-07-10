@@ -24,7 +24,7 @@ import (
 	v1 "k8s.io/api/storage/v1"
 	conversion "k8s.io/apimachinery/pkg/conversion"
 	runtime "k8s.io/apimachinery/pkg/runtime"
-	storage "gitlab.com/sankish/magudi/pkg/apis/storage"
+	storage "gitlab.com/rioos/magudi/pkg/apis/storage"
 	unsafe "unsafe"
 )
 

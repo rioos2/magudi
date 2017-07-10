@@ -20,7 +20,7 @@ import (
 	"strings"
 	"testing"
 
-	"gitlab.com/sankish/magudi/pkg/util/exec"
+	"gitlab.com/rioos/magudi/pkg/util/exec"
 )
 
 func TestEnsureChain(t *testing.T) {

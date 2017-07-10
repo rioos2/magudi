@@ -26,11 +26,11 @@ import (
 	authorization "k8s.io/api/authorization/v1beta1"
 	capi "k8s.io/api/certificates/v1beta1"
 	utilfeature "k8s.io/apiserver/pkg/util/feature"
-	k8s_certificates_v1beta1 "gitlab.com/sankish/magudi/pkg/apis/certificates/v1beta1"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
-	certificatesinformers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/certificates/v1beta1"
-	"gitlab.com/sankish/magudi/pkg/controller/certificates"
-	"gitlab.com/sankish/magudi/pkg/features"
+	k8s_certificates_v1beta1 "gitlab.com/rioos/magudi/pkg/apis/certificates/v1beta1"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset"
+	certificatesinformers "gitlab.com/rioos/magudi/pkg/client/informers/informers_generated/externalversions/certificates/v1beta1"
+	"gitlab.com/rioos/magudi/pkg/controller/certificates"
+	"gitlab.com/rioos/magudi/pkg/features"
 )
 
 type csrRecognizer struct {

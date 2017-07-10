@@ -16,4 +16,4 @@ limitations under the License.
 
 // +k8s:deepcopy-gen=package,register
 // +groupName=networking.k8s.io
-package networking // import "gitlab.com/sankish/magudi/pkg/apis/networking"
+package networking // import "gitlab.com/rioos/magudi/pkg/apis/networking"

@@ -20,7 +20,7 @@ import (
 	apiequality "k8s.io/apimachinery/pkg/api/equality"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	authorizationapi "gitlab.com/sankish/magudi/pkg/apis/authorization"
+	authorizationapi "gitlab.com/rioos/magudi/pkg/apis/authorization"
 )
 
 func ValidateSubjectAccessReviewSpec(spec authorizationapi.SubjectAccessReviewSpec, fldPath *field.Path) field.ErrorList {

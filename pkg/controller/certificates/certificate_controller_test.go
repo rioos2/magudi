@@ -23,9 +23,9 @@ import (
 	certificates "k8s.io/api/certificates/v1beta1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/wait"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/fake"
-	informers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions"
-	"gitlab.com/sankish/magudi/pkg/controller"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/fake"
+	informers "gitlab.com/rioos/magudi/pkg/client/informers/informers_generated/externalversions"
+	"gitlab.com/rioos/magudi/pkg/controller"
 )
 
 // TODO flesh this out to cover things like not being able to find the csr in the cache, not

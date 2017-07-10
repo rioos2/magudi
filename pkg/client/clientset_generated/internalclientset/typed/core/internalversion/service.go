@@ -21,8 +21,8 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	api "gitlab.com/sankish/magudi/pkg/api"
-	scheme "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/scheme"
+	api "gitlab.com/rioos/magudi/pkg/api"
+	scheme "gitlab.com/rioos/magudi/pkg/client/clientset_generated/internalclientset/scheme"
 )
 
 // ServicesGetter has a method to return a ServiceInterface.

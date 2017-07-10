@@ -27,7 +27,7 @@ import (
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/tools/record"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset"
 )
 
 // sjControlInterface is an interface that knows how to update CronJob status

@@ -30,9 +30,9 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/types"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/api/v1/ref"
-	"gitlab.com/sankish/magudi/pkg/controller"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api/v1/ref"
+	"gitlab.com/rioos/magudi/pkg/controller"
 )
 
 // Utilities for dealing with Jobs and CronJobs and time.

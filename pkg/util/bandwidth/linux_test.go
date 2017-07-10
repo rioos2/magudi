@@ -25,7 +25,7 @@ import (
 	"testing"
 
 	"k8s.io/apimachinery/pkg/api/resource"
-	"gitlab.com/sankish/magudi/pkg/util/exec"
+	"gitlab.com/rioos/magudi/pkg/util/exec"
 )
 
 var tcClassOutput = `class htb 1:1 root prio 0 rate 10000bit ceil 10000bit burst 1600b cburst 1600b 

@@ -29,8 +29,8 @@ import (
 	"k8s.io/client-go/tools/record"
 
 	"k8s.io/api/core/v1"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/fake"
-	corelisters "gitlab.com/sankish/magudi/pkg/client/listers/core/v1"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/fake"
+	corelisters "gitlab.com/rioos/magudi/pkg/client/listers/core/v1"
 )
 
 func TestStatefulPodControlCreatesPods(t *testing.T) {

@@ -40,10 +40,10 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/tools/record"
 	utiltesting "k8s.io/client-go/util/testing"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/api/testapi"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
-	"gitlab.com/sankish/magudi/pkg/securitycontext"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api/testapi"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset"
+	"gitlab.com/rioos/magudi/pkg/securitycontext"
 )
 
 // NewFakeControllerExpectationsLookup creates a fake store for PodExpectations.

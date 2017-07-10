@@ -25,7 +25,7 @@ import (
 	"strings"
 
 	"github.com/golang/glog"
-	"gitlab.com/sankish/magudi/pkg/util/exec"
+	"gitlab.com/rioos/magudi/pkg/util/exec"
 )
 
 const (

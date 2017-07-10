@@ -22,7 +22,7 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	scheme "gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/scheme"
+	scheme "gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/scheme"
 )
 
 // PodDisruptionBudgetsGetter has a method to return a PodDisruptionBudgetInterface.

@@ -356,7 +356,7 @@ func Packages(context *generator.Context, arguments *args.GeneratorArgs) generat
 
 		path := pkg.Path
 		// if the source path is within a /vendor/ directory (for example,
-		// gitlab.com/sankish/magudi/vendor/k8s.io/apimachinery/pkg/apis/meta/v1), allow
+		// gitlab.com/rioos/magudi/vendor/k8s.io/apimachinery/pkg/apis/meta/v1), allow
 		// generation to output to the proper relative path (under vendor).
 		// Otherwise, the generator will create the file in the wrong location
 		// in the output directory.

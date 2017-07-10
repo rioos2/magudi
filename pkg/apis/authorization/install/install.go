@@ -23,10 +23,10 @@ import (
 	"k8s.io/apimachinery/pkg/apimachinery/registered"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/apis/authorization"
-	"gitlab.com/sankish/magudi/pkg/apis/authorization/v1"
-	"gitlab.com/sankish/magudi/pkg/apis/authorization/v1beta1"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/apis/authorization"
+	"gitlab.com/rioos/magudi/pkg/apis/authorization/v1"
+	"gitlab.com/rioos/magudi/pkg/apis/authorization/v1beta1"
 )
 
 func init() {

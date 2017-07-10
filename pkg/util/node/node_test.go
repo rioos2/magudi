@@ -21,7 +21,7 @@ import (
 
 	"k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	kubeletapis "gitlab.com/sankish/magudi/pkg/kubelet/apis"
+	kubeletapis "gitlab.com/rioos/magudi/pkg/kubelet/apis"
 )
 
 func TestGetPreferredAddress(t *testing.T) {

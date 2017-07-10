@@ -1,6 +1,6 @@
 package simple
 
-import "gitlab.com/sankish/magudi/third_party/forked/gonum/graph"
+import "gitlab.com/rioos/magudi/third_party/forked/gonum/graph"
 
 // edgeHolder represents a set of edges, with no more than one edge to or from a particular neighbor node
 type edgeHolder interface {

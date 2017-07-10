@@ -22,11 +22,11 @@ import (
 	"k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/api/testing/compat"
-	"gitlab.com/sankish/magudi/pkg/api/validation"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api/testing/compat"
+	"gitlab.com/rioos/magudi/pkg/api/validation"
 
-	_ "gitlab.com/sankish/magudi/pkg/api/install"
+	_ "gitlab.com/rioos/magudi/pkg/api/install"
 )
 
 func TestCompatibility_v1_PodSecurityContext(t *testing.T) {

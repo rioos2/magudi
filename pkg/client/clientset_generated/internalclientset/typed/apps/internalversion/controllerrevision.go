@@ -21,8 +21,8 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	apps "gitlab.com/sankish/magudi/pkg/apis/apps"
-	scheme "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/scheme"
+	apps "gitlab.com/rioos/magudi/pkg/apis/apps"
+	scheme "gitlab.com/rioos/magudi/pkg/client/clientset_generated/internalclientset/scheme"
 )
 
 // ControllerRevisionsGetter has a method to return a ControllerRevisionInterface.

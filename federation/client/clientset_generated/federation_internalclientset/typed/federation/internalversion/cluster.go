@@ -21,8 +21,8 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	federation "gitlab.com/sankish/magudi/federation/apis/federation"
-	scheme "gitlab.com/sankish/magudi/federation/client/clientset_generated/federation_internalclientset/scheme"
+	federation "gitlab.com/rioos/magudi/federation/apis/federation"
+	scheme "gitlab.com/rioos/magudi/federation/client/clientset_generated/federation_internalclientset/scheme"
 )
 
 // ClustersGetter has a method to return a ClusterInterface.

@@ -21,9 +21,9 @@ import (
 	"k8s.io/apiserver/pkg/registry/generic"
 	genericregistry "k8s.io/apiserver/pkg/registry/generic/registry"
 	"k8s.io/apiserver/pkg/registry/rest"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/registry/cachesize"
-	"gitlab.com/sankish/magudi/pkg/registry/core/serviceaccount"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/registry/cachesize"
+	"gitlab.com/rioos/magudi/pkg/registry/core/serviceaccount"
 )
 
 type REST struct {

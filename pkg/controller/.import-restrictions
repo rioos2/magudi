@@ -3,13 +3,13 @@
     {
       "SelectorRegexp": "k8s[.]io/kubernetes/pkg/client/unversioned$",
       "ForbiddenPrefixes": [
-        "gitlab.com/sankish/magudi/pkg/client/unversioned"
+        "gitlab.com/rioos/magudi/pkg/client/unversioned"
       ]
     },
     {
       "SelectorRegexp": "k8s[.]io/kubernetes/pkg/client/unversioned/testclient$",
       "ForbiddenPrefixes": [
-        "gitlab.com/sankish/magudi/pkg/client/unversioned/testclient"
+        "gitlab.com/rioos/magudi/pkg/client/unversioned/testclient"
       ]
     }
 

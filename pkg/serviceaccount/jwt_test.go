@@ -26,10 +26,10 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	apiserverserviceaccount "k8s.io/apiserver/pkg/authentication/serviceaccount"
 	"k8s.io/client-go/util/cert"
-	clientset "gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/fake"
-	serviceaccountcontroller "gitlab.com/sankish/magudi/pkg/controller/serviceaccount"
-	"gitlab.com/sankish/magudi/pkg/serviceaccount"
+	clientset "gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/fake"
+	serviceaccountcontroller "gitlab.com/rioos/magudi/pkg/controller/serviceaccount"
+	"gitlab.com/rioos/magudi/pkg/serviceaccount"
 )
 
 const otherPublicKey = `-----BEGIN PUBLIC KEY-----

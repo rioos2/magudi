@@ -39,18 +39,18 @@ import (
 	clientfake "k8s.io/client-go/kubernetes/fake"
 	restclient "k8s.io/client-go/rest"
 	core "k8s.io/client-go/testing"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/fake"
-	informers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions"
-	"gitlab.com/sankish/magudi/pkg/controller"
-	"gitlab.com/sankish/magudi/pkg/controller/podautoscaler/metrics"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/fake"
+	informers "gitlab.com/rioos/magudi/pkg/client/informers/informers_generated/externalversions"
+	"gitlab.com/rioos/magudi/pkg/controller"
+	"gitlab.com/rioos/magudi/pkg/controller/podautoscaler/metrics"
 
 	heapster "k8s.io/heapster/metrics/api/v1/types"
 	metricsapi "k8s.io/metrics/pkg/apis/metrics/v1alpha1"
 
 	"github.com/stretchr/testify/assert"
 
-	_ "gitlab.com/sankish/magudi/pkg/apis/autoscaling/install"
-	_ "gitlab.com/sankish/magudi/pkg/apis/extensions/install"
+	_ "gitlab.com/rioos/magudi/pkg/apis/autoscaling/install"
+	_ "gitlab.com/rioos/magudi/pkg/apis/extensions/install"
 )
 
 func (w fakeResponseWrapper) DoRaw() ([]byte, error) {

@@ -32,8 +32,8 @@ import (
 	"io/ioutil"
 	"os"
 
-	kubectlcmd "gitlab.com/sankish/magudi/pkg/kubectl/cmd"
-	cmdutil "gitlab.com/sankish/magudi/pkg/kubectl/cmd/util"
+	kubectlcmd "gitlab.com/rioos/magudi/pkg/kubectl/cmd"
+	cmdutil "gitlab.com/rioos/magudi/pkg/kubectl/cmd/util"
 
 	"github.com/spf13/cobra/doc"
 )

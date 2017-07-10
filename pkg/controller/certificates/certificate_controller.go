@@ -31,10 +31,10 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/tools/record"
 	"k8s.io/client-go/util/workqueue"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
-	certificatesinformers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/certificates/v1beta1"
-	certificateslisters "gitlab.com/sankish/magudi/pkg/client/listers/certificates/v1beta1"
-	"gitlab.com/sankish/magudi/pkg/controller"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset"
+	certificatesinformers "gitlab.com/rioos/magudi/pkg/client/informers/informers_generated/externalversions/certificates/v1beta1"
+	certificateslisters "gitlab.com/rioos/magudi/pkg/client/listers/certificates/v1beta1"
+	"gitlab.com/rioos/magudi/pkg/controller"
 
 	"github.com/golang/glog"
 )

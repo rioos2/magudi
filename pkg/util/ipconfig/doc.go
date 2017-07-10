@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // Package ipconfig provides an interface and implementations for running Windows ipconfig commands.
-package ipconfig // import "gitlab.com/sankish/magudi/pkg/util/ipconfig"
+package ipconfig // import "gitlab.com/rioos/magudi/pkg/util/ipconfig"

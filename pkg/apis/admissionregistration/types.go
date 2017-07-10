@@ -183,7 +183,7 @@ type RuleWithOperations struct {
 
 type OperationType string
 
-// The constants should be kept in sync with those defined in gitlab.com/sankish/magudi/pkg/admission/interface.go.
+// The constants should be kept in sync with those defined in gitlab.com/rioos/magudi/pkg/admission/interface.go.
 const (
 	OperationAll OperationType = "*"
 	Create       OperationType = "CREATE"

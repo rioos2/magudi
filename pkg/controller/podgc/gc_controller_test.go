@@ -25,12 +25,12 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/fake"
-	informers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions"
-	coreinformers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/core/v1"
-	"gitlab.com/sankish/magudi/pkg/controller"
-	"gitlab.com/sankish/magudi/pkg/controller/node/testutil"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/fake"
+	informers "gitlab.com/rioos/magudi/pkg/client/informers/informers_generated/externalversions"
+	coreinformers "gitlab.com/rioos/magudi/pkg/client/informers/informers_generated/externalversions/core/v1"
+	"gitlab.com/rioos/magudi/pkg/controller"
+	"gitlab.com/rioos/magudi/pkg/controller/node/testutil"
 )
 
 type FakeController struct{}

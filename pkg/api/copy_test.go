@@ -25,9 +25,9 @@ import (
 	apitesting "k8s.io/apimachinery/pkg/api/testing"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/util/diff"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/api/testapi"
-	kapitesting "gitlab.com/sankish/magudi/pkg/api/testing"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api/testapi"
+	kapitesting "gitlab.com/rioos/magudi/pkg/api/testing"
 
 	"github.com/google/gofuzz"
 )

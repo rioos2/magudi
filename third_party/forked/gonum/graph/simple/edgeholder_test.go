@@ -5,7 +5,7 @@ import (
 	"sort"
 	"testing"
 
-	"gitlab.com/sankish/magudi/third_party/forked/gonum/graph"
+	"gitlab.com/rioos/magudi/third_party/forked/gonum/graph"
 )
 
 func TestEdgeHolder(t *testing.T) {

@@ -20,9 +20,9 @@ import (
 	"fmt"
 
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/apis/extensions"
-	psputil "gitlab.com/sankish/magudi/pkg/security/podsecuritypolicy/util"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/apis/extensions"
+	psputil "gitlab.com/rioos/magudi/pkg/security/podsecuritypolicy/util"
 )
 
 // mustRunAs implements the GroupStrategy interface

@@ -16,4 +16,4 @@ limitations under the License.
 
 // Package route contains code for syncing cloud routing rules with
 // the list of registered nodes.
-package route // import "gitlab.com/sankish/magudi/pkg/controller/route"
+package route // import "gitlab.com/rioos/magudi/pkg/controller/route"

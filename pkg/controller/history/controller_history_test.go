@@ -25,10 +25,10 @@ import (
 
 	apps "k8s.io/api/apps/v1beta1"
 	"k8s.io/api/core/v1"
-	"gitlab.com/sankish/magudi/pkg/api/testapi"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/fake"
-	informers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions"
-	"gitlab.com/sankish/magudi/pkg/controller"
+	"gitlab.com/rioos/magudi/pkg/api/testapi"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/fake"
+	informers "gitlab.com/rioos/magudi/pkg/client/informers/informers_generated/externalversions"
+	"gitlab.com/rioos/magudi/pkg/controller"
 
 	"k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/api/resource"

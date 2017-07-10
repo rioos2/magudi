@@ -23,9 +23,9 @@ import (
 	"github.com/stretchr/testify/assert"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/security/apparmor"
-	"gitlab.com/sankish/magudi/pkg/util/maps"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/security/apparmor"
+	"gitlab.com/rioos/magudi/pkg/util/maps"
 )
 
 const (

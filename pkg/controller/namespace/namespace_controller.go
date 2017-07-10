@@ -28,12 +28,12 @@ import (
 	"k8s.io/client-go/dynamic"
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/util/workqueue"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
-	coreinformers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/core/v1"
-	corelisters "gitlab.com/sankish/magudi/pkg/client/listers/core/v1"
-	"gitlab.com/sankish/magudi/pkg/controller"
-	"gitlab.com/sankish/magudi/pkg/controller/namespace/deletion"
-	"gitlab.com/sankish/magudi/pkg/util/metrics"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset"
+	coreinformers "gitlab.com/rioos/magudi/pkg/client/informers/informers_generated/externalversions/core/v1"
+	corelisters "gitlab.com/rioos/magudi/pkg/client/listers/core/v1"
+	"gitlab.com/rioos/magudi/pkg/controller"
+	"gitlab.com/rioos/magudi/pkg/controller/namespace/deletion"
+	"gitlab.com/rioos/magudi/pkg/util/metrics"
 
 	"github.com/golang/glog"
 )

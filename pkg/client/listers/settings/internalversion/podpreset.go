@@ -22,7 +22,7 @@ import (
 	"k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"
-	settings "gitlab.com/sankish/magudi/pkg/apis/settings"
+	settings "gitlab.com/rioos/magudi/pkg/apis/settings"
 )
 
 // PodPresetLister helps list PodPresets.

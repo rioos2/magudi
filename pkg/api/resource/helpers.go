@@ -22,7 +22,7 @@ import (
 	"strconv"
 
 	"k8s.io/apimachinery/pkg/api/resource"
-	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api"
 )
 
 // PodRequestsAndLimits returns a dictionary of all defined resources summed up for all

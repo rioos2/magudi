@@ -22,8 +22,8 @@ package app
 
 import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"gitlab.com/sankish/magudi/pkg/controller/podautoscaler"
-	"gitlab.com/sankish/magudi/pkg/controller/podautoscaler/metrics"
+	"gitlab.com/rioos/magudi/pkg/controller/podautoscaler"
+	"gitlab.com/rioos/magudi/pkg/controller/podautoscaler/metrics"
 	resourceclient "k8s.io/metrics/pkg/client/clientset_generated/clientset/typed/metrics/v1alpha1"
 	"k8s.io/metrics/pkg/client/custom_metrics"
 )

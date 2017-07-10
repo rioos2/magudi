@@ -19,8 +19,8 @@ package reconciliation
 import (
 	"testing"
 
-	"gitlab.com/sankish/magudi/pkg/api/helper"
-	"gitlab.com/sankish/magudi/pkg/apis/rbac"
+	"gitlab.com/rioos/magudi/pkg/api/helper"
+	"gitlab.com/rioos/magudi/pkg/apis/rbac"
 )
 
 func binding(roleRef rbac.RoleRef, subjects []rbac.Subject) *rbac.ClusterRoleBinding {

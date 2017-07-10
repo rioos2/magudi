@@ -23,7 +23,7 @@ import (
 
 	"k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	corev1client "gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/typed/core/v1"
+	corev1client "gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/typed/core/v1"
 )
 
 // TODO: This is almost a exact replica of Endpoints lock.

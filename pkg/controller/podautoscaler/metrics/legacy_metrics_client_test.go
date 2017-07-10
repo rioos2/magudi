@@ -31,7 +31,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	restclient "k8s.io/client-go/rest"
 	core "k8s.io/client-go/testing"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/fake"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/fake"
 
 	heapster "k8s.io/heapster/metrics/api/v1/types"
 	metricsapi "k8s.io/metrics/pkg/apis/metrics/v1alpha1"

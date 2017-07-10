@@ -29,7 +29,7 @@ import (
 	pkg2_runtime "k8s.io/apimachinery/pkg/runtime"
 	pkg5_types "k8s.io/apimachinery/pkg/types"
 	pkg3_admission "k8s.io/apiserver/pkg/admission"
-	pkg4_authentication "gitlab.com/sankish/magudi/pkg/apis/authentication"
+	pkg4_authentication "gitlab.com/rioos/magudi/pkg/apis/authentication"
 	"reflect"
 	"runtime"
 )

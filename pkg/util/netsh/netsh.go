@@ -25,7 +25,7 @@ import (
 	"time"
 
 	"github.com/golang/glog"
-	utilexec "gitlab.com/sankish/magudi/pkg/util/exec"
+	utilexec "gitlab.com/rioos/magudi/pkg/util/exec"
 )
 
 // Interface is an injectable interface for running netsh commands.  Implementations must be goroutine-safe.

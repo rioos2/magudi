@@ -26,9 +26,9 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/apimachinery/pkg/util/sets"
-	podutil "gitlab.com/sankish/magudi/pkg/api/v1/pod"
-	v1coreclient "gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/typed/core/v1"
-	metricsclient "gitlab.com/sankish/magudi/pkg/controller/podautoscaler/metrics"
+	podutil "gitlab.com/rioos/magudi/pkg/api/v1/pod"
+	v1coreclient "gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/typed/core/v1"
+	metricsclient "gitlab.com/rioos/magudi/pkg/controller/podautoscaler/metrics"
 )
 
 type ReplicaCalculator struct {

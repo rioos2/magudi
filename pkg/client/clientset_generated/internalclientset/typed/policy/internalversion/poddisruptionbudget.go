@@ -21,8 +21,8 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	policy "gitlab.com/sankish/magudi/pkg/apis/policy"
-	scheme "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/scheme"
+	policy "gitlab.com/rioos/magudi/pkg/apis/policy"
+	scheme "gitlab.com/rioos/magudi/pkg/client/clientset_generated/internalclientset/scheme"
 )
 
 // PodDisruptionBudgetsGetter has a method to return a PodDisruptionBudgetInterface.

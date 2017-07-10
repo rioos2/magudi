@@ -16,7 +16,7 @@ limitations under the License.
 
 package internalversion
 
-import "gitlab.com/sankish/magudi/pkg/api"
+import "gitlab.com/rioos/magudi/pkg/api"
 
 // The NamespaceExpansion interface allows manually adding extra methods to the NamespaceInterface.
 type NamespaceExpansion interface {

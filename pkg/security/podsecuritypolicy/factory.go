@@ -20,15 +20,15 @@ import (
 	"fmt"
 
 	"k8s.io/apimachinery/pkg/util/errors"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/apis/extensions"
-	"gitlab.com/sankish/magudi/pkg/security/podsecuritypolicy/apparmor"
-	"gitlab.com/sankish/magudi/pkg/security/podsecuritypolicy/capabilities"
-	"gitlab.com/sankish/magudi/pkg/security/podsecuritypolicy/group"
-	"gitlab.com/sankish/magudi/pkg/security/podsecuritypolicy/seccomp"
-	"gitlab.com/sankish/magudi/pkg/security/podsecuritypolicy/selinux"
-	"gitlab.com/sankish/magudi/pkg/security/podsecuritypolicy/sysctl"
-	"gitlab.com/sankish/magudi/pkg/security/podsecuritypolicy/user"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/apis/extensions"
+	"gitlab.com/rioos/magudi/pkg/security/podsecuritypolicy/apparmor"
+	"gitlab.com/rioos/magudi/pkg/security/podsecuritypolicy/capabilities"
+	"gitlab.com/rioos/magudi/pkg/security/podsecuritypolicy/group"
+	"gitlab.com/rioos/magudi/pkg/security/podsecuritypolicy/seccomp"
+	"gitlab.com/rioos/magudi/pkg/security/podsecuritypolicy/selinux"
+	"gitlab.com/rioos/magudi/pkg/security/podsecuritypolicy/sysctl"
+	"gitlab.com/rioos/magudi/pkg/security/podsecuritypolicy/user"
 )
 
 type simpleStrategyFactory struct{}

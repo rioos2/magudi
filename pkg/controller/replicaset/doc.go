@@ -16,4 +16,4 @@ limitations under the License.
 
 // Package replicaset contains logic for watching and synchronizing
 // ReplicaSets.
-package replicaset // import "gitlab.com/sankish/magudi/pkg/controller/replicaset"
+package replicaset // import "gitlab.com/rioos/magudi/pkg/controller/replicaset"

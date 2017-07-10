@@ -16,4 +16,4 @@ limitations under the License.
 
 // Package podautoscaler contains logic for autoscaling number of
 // pods based on metrics observed.
-package podautoscaler // import "gitlab.com/sankish/magudi/pkg/controller/podautoscaler"
+package podautoscaler // import "gitlab.com/rioos/magudi/pkg/controller/podautoscaler"

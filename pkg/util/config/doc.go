@@ -17,4 +17,4 @@ limitations under the License.
 // Package config provides utility objects for decoupling sources of configuration and the
 // actual configuration state. Consumers must implement the Merger interface to unify
 // the sources of change into an object.
-package config // import "gitlab.com/sankish/magudi/pkg/util/config"
+package config // import "gitlab.com/rioos/magudi/pkg/util/config"

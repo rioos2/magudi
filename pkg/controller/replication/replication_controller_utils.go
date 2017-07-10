@@ -26,8 +26,8 @@ import (
 	"k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
-	podutil "gitlab.com/sankish/magudi/pkg/api/v1/pod"
-	v1core "gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/typed/core/v1"
+	podutil "gitlab.com/rioos/magudi/pkg/api/v1/pod"
+	v1core "gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/typed/core/v1"
 )
 
 // updateReplicationControllerStatus attempts to update the Status.Replicas of the given controller, with a single GET/PUT retry.

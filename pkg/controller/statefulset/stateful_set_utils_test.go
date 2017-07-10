@@ -30,9 +30,9 @@ import (
 
 	apps "k8s.io/api/apps/v1beta1"
 	"k8s.io/api/core/v1"
-	podutil "gitlab.com/sankish/magudi/pkg/api/v1/pod"
-	"gitlab.com/sankish/magudi/pkg/controller"
-	"gitlab.com/sankish/magudi/pkg/controller/history"
+	podutil "gitlab.com/rioos/magudi/pkg/api/v1/pod"
+	"gitlab.com/rioos/magudi/pkg/controller"
+	"gitlab.com/rioos/magudi/pkg/controller/history"
 )
 
 func TestGetParentNameAndOrdinal(t *testing.T) {

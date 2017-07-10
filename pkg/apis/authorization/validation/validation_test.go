@@ -22,7 +22,7 @@ import (
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	authorizationapi "gitlab.com/sankish/magudi/pkg/apis/authorization"
+	authorizationapi "gitlab.com/rioos/magudi/pkg/apis/authorization"
 )
 
 func TestValidateSARSpec(t *testing.T) {

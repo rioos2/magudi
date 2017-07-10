@@ -31,11 +31,11 @@ import (
 	clientgoclientset "k8s.io/client-go/kubernetes"
 	restclient "k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/cache"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
-	v1authentication "gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/typed/authentication/v1"
-	v1core "gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/typed/core/v1"
-	"gitlab.com/sankish/magudi/pkg/serviceaccount"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset"
+	v1authentication "gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/typed/authentication/v1"
+	v1core "gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/typed/core/v1"
+	"gitlab.com/rioos/magudi/pkg/serviceaccount"
 
 	"github.com/golang/glog"
 )

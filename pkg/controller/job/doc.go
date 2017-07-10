@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // Package job contains logic for watching and synchronizing jobs.
-package job // import "gitlab.com/sankish/magudi/pkg/controller/job"
+package job // import "gitlab.com/rioos/magudi/pkg/controller/job"

@@ -22,8 +22,8 @@ import (
 	pathvalidation "k8s.io/apimachinery/pkg/api/validation/path"
 	"k8s.io/apimachinery/pkg/util/sets"
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	apivalidation "gitlab.com/sankish/magudi/pkg/api/validation"
-	"gitlab.com/sankish/magudi/pkg/apis/autoscaling"
+	apivalidation "gitlab.com/rioos/magudi/pkg/api/validation"
+	"gitlab.com/rioos/magudi/pkg/apis/autoscaling"
 )
 
 func ValidateScale(scale *autoscaling.Scale) field.ErrorList {

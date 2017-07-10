@@ -9,7 +9,7 @@ package simple
 import (
 	"math"
 
-	"gitlab.com/sankish/magudi/third_party/forked/gonum/graph"
+	"gitlab.com/rioos/magudi/third_party/forked/gonum/graph"
 )
 
 // Node is a simple graph node.

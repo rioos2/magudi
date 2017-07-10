@@ -19,7 +19,7 @@ import (
 	"fmt"
 	"strings"
 
-	"gitlab.com/sankish/magudi/third_party/forked/etcd237/pkg/fileutil"
+	"gitlab.com/rioos/magudi/third_party/forked/etcd237/pkg/fileutil"
 )
 
 var (

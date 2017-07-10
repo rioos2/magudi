@@ -49,7 +49,7 @@ type GroupMetaFactoryArgs struct {
 	VersionPreferenceOrder []string
 	// ImportPrefix is the base go package of the API-Group
 	//
-	// example: 'gitlab.com/sankish/magudi/pkg/apis/autoscaling'
+	// example: 'gitlab.com/rioos/magudi/pkg/apis/autoscaling'
 	ImportPrefix string
 	// RootScopedKinds are resources that are not namespaced.
 	RootScopedKinds sets.String // nil is allowed

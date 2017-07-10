@@ -16,4 +16,4 @@ limitations under the License.
 
 // Package service contains code for syncing cloud load balancers
 // with the service registry.
-package service // import "gitlab.com/sankish/magudi/pkg/controller/service"
+package service // import "gitlab.com/rioos/magudi/pkg/controller/service"

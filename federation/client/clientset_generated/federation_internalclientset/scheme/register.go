@@ -23,11 +23,11 @@ import (
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	serializer "k8s.io/apimachinery/pkg/runtime/serializer"
-	federation "gitlab.com/sankish/magudi/federation/apis/federation/install"
-	core "gitlab.com/sankish/magudi/pkg/api/install"
-	autoscaling "gitlab.com/sankish/magudi/pkg/apis/autoscaling/install"
-	batch "gitlab.com/sankish/magudi/pkg/apis/batch/install"
-	extensions "gitlab.com/sankish/magudi/pkg/apis/extensions/install"
+	federation "gitlab.com/rioos/magudi/federation/apis/federation/install"
+	core "gitlab.com/rioos/magudi/pkg/api/install"
+	autoscaling "gitlab.com/rioos/magudi/pkg/apis/autoscaling/install"
+	batch "gitlab.com/rioos/magudi/pkg/apis/batch/install"
+	extensions "gitlab.com/rioos/magudi/pkg/apis/extensions/install"
 	os "os"
 )
 

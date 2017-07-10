@@ -28,7 +28,7 @@ import (
 
 	"k8s.io/apimachinery/pkg/api/resource"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"gitlab.com/sankish/magudi/pkg/util/exec"
+	"gitlab.com/rioos/magudi/pkg/util/exec"
 
 	"github.com/golang/glog"
 )

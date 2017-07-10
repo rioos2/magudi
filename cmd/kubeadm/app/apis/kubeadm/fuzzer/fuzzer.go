@@ -20,7 +20,7 @@ import (
 	"github.com/google/gofuzz"
 
 	apitesting "k8s.io/apimachinery/pkg/api/testing"
-	"gitlab.com/sankish/magudi/cmd/kubeadm/app/apis/kubeadm"
+	"gitlab.com/rioos/magudi/cmd/kubeadm/app/apis/kubeadm"
 )
 
 func KubeadmFuzzerFuncs(t apitesting.TestingCommon) []interface{} {

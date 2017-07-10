@@ -21,11 +21,11 @@ import (
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	serializer "k8s.io/apimachinery/pkg/runtime/serializer"
-	federationinternalversion "gitlab.com/sankish/magudi/federation/apis/federation"
-	coreinternalversion "gitlab.com/sankish/magudi/pkg/api"
-	autoscalinginternalversion "gitlab.com/sankish/magudi/pkg/apis/autoscaling"
-	batchinternalversion "gitlab.com/sankish/magudi/pkg/apis/batch"
-	extensionsinternalversion "gitlab.com/sankish/magudi/pkg/apis/extensions"
+	federationinternalversion "gitlab.com/rioos/magudi/federation/apis/federation"
+	coreinternalversion "gitlab.com/rioos/magudi/pkg/api"
+	autoscalinginternalversion "gitlab.com/rioos/magudi/pkg/apis/autoscaling"
+	batchinternalversion "gitlab.com/rioos/magudi/pkg/apis/batch"
+	extensionsinternalversion "gitlab.com/rioos/magudi/pkg/apis/extensions"
 )
 
 var scheme = runtime.NewScheme()

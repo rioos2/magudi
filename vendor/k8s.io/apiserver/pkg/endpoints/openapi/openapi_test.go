@@ -62,7 +62,7 @@ func TestGetDefinitionName(t *testing.T) {
 	testType := TestType{}
 	// in production, the name is stripped of ".*vendor/" prefix before passed
 	// to GetDefinitionName, so here typePkgName does not have the
-	// "gitlab.com/sankish/magudi/vendor" prefix.
+	// "gitlab.com/rioos/magudi/vendor" prefix.
 	typePkgName := "k8s.io/apiserver/pkg/endpoints/openapi.TestType"
 	typeFriendlyName := "io.k8s.apiserver.pkg.endpoints.openapi.TestType"
 	if strings.HasSuffix(reflect.TypeOf(testType).PkgPath(), "go_default_test") {

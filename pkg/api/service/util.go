@@ -21,8 +21,8 @@ import (
 	"strconv"
 	"strings"
 
-	"gitlab.com/sankish/magudi/pkg/api"
-	netsets "gitlab.com/sankish/magudi/pkg/util/net/sets"
+	"gitlab.com/rioos/magudi/pkg/api"
+	netsets "gitlab.com/rioos/magudi/pkg/util/net/sets"
 
 	"github.com/golang/glog"
 )

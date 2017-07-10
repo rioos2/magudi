@@ -19,7 +19,7 @@ package user
 import (
 	"testing"
 
-	"gitlab.com/sankish/magudi/pkg/apis/extensions"
+	"gitlab.com/rioos/magudi/pkg/apis/extensions"
 )
 
 func TestRunAsAnyOptions(t *testing.T) {

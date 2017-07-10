@@ -20,8 +20,8 @@ import (
 	"strings"
 	"testing"
 
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/apis/extensions"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/apis/extensions"
 )
 
 func TestNewMustRunAs(t *testing.T) {

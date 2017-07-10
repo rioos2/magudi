@@ -16,10 +16,10 @@ limitations under the License.
 
 // Package types just provides input types to the set generator. It also
 // contains a "go generate" block.
-// (You must first `go install gitlab.com/sankish/magudi/cmd/libs/go2idl/set-gen`)
+// (You must first `go install gitlab.com/rioos/magudi/cmd/libs/go2idl/set-gen`)
 package types
 
-//go:generate set-gen -i gitlab.com/sankish/magudi/pkg/util/sets/types
+//go:generate set-gen -i gitlab.com/rioos/magudi/pkg/util/sets/types
 
 type ReferenceSetTypes struct {
 	// These types all cause files to be generated.

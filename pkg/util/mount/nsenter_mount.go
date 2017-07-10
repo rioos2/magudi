@@ -24,7 +24,7 @@ import (
 	"strings"
 
 	"github.com/golang/glog"
-	"gitlab.com/sankish/magudi/pkg/util/exec"
+	"gitlab.com/rioos/magudi/pkg/util/exec"
 )
 
 // NsenterMounter is part of experimental support for running the kubelet

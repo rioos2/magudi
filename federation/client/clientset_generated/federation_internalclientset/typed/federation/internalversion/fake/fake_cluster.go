@@ -23,7 +23,7 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	testing "k8s.io/client-go/testing"
-	federation "gitlab.com/sankish/magudi/federation/apis/federation"
+	federation "gitlab.com/rioos/magudi/federation/apis/federation"
 )
 
 // FakeClusters implements ClusterInterface

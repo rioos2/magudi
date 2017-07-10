@@ -21,9 +21,9 @@ import (
 	"reflect"
 
 	"k8s.io/apimachinery/pkg/api/errors"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/apis/rbac"
-	"gitlab.com/sankish/magudi/pkg/registry/rbac/validation"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/apis/rbac"
+	"gitlab.com/rioos/magudi/pkg/registry/rbac/validation"
 )
 
 type ReconcileOperation string

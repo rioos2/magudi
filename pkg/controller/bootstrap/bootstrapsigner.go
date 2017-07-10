@@ -34,9 +34,9 @@ import (
 	"k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/util/workqueue"
-	"gitlab.com/sankish/magudi/pkg/api"
-	bootstrapapi "gitlab.com/sankish/magudi/pkg/bootstrap/api"
-	"gitlab.com/sankish/magudi/pkg/util/metrics"
+	"gitlab.com/rioos/magudi/pkg/api"
+	bootstrapapi "gitlab.com/rioos/magudi/pkg/bootstrap/api"
+	"gitlab.com/rioos/magudi/pkg/util/metrics"
 )
 
 // BootstrapSignerOptions contains options for the BootstrapSigner

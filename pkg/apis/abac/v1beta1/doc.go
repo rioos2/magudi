@@ -15,9 +15,9 @@ limitations under the License.
 */
 
 // +k8s:deepcopy-gen=package,register
-// +k8s:conversion-gen=gitlab.com/sankish/magudi/pkg/apis/abac
+// +k8s:conversion-gen=gitlab.com/rioos/magudi/pkg/apis/abac
 // +k8s:openapi-gen=true
 // +k8s:defaulter-gen=TypeMeta
 
 // +groupName=abac.authorization.kubernetes.io
-package v1beta1 // import "gitlab.com/sankish/magudi/pkg/apis/abac/v1beta1"
+package v1beta1 // import "gitlab.com/rioos/magudi/pkg/apis/abac/v1beta1"

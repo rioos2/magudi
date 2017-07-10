@@ -19,7 +19,7 @@ package tolerations
 import (
 	"testing"
 
-	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api"
 )
 
 func TestVerifyAgainstWhitelist(t *testing.T) {

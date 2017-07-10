@@ -22,7 +22,7 @@ import (
 	"k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"
-	apps "gitlab.com/sankish/magudi/pkg/apis/apps"
+	apps "gitlab.com/rioos/magudi/pkg/apis/apps"
 )
 
 // StatefulSetLister helps list StatefulSets.

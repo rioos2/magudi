@@ -16,4 +16,4 @@ limitations under the License.
 
 // Package limitwriter provides a writer that only allows a certain number of bytes to be
 // written.
-package limitwriter // import "gitlab.com/sankish/magudi/pkg/util/limitwriter"
+package limitwriter // import "gitlab.com/rioos/magudi/pkg/util/limitwriter"

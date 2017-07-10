@@ -19,7 +19,7 @@ package validation
 import (
 	"strings"
 
-	"gitlab.com/sankish/magudi/pkg/apis/rbac"
+	"gitlab.com/rioos/magudi/pkg/apis/rbac"
 )
 
 // Covers determines whether or not the ownerRules cover the servantRules in terms of allowed actions.

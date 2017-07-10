@@ -30,7 +30,7 @@ import (
 	"k8s.io/apimachinery/pkg/apis/meta/v1/unstructured"
 	utilerrors "k8s.io/apimachinery/pkg/util/errors"
 	"k8s.io/apimachinery/pkg/util/yaml"
-	apiutil "gitlab.com/sankish/magudi/pkg/api/util"
+	apiutil "gitlab.com/rioos/magudi/pkg/api/util"
 )
 
 type InvalidTypeError struct {

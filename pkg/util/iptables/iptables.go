@@ -26,9 +26,9 @@ import (
 	godbus "github.com/godbus/dbus"
 	"github.com/golang/glog"
 	"k8s.io/apimachinery/pkg/util/sets"
-	utildbus "gitlab.com/sankish/magudi/pkg/util/dbus"
-	utilexec "gitlab.com/sankish/magudi/pkg/util/exec"
-	utilversion "gitlab.com/sankish/magudi/pkg/util/version"
+	utildbus "gitlab.com/rioos/magudi/pkg/util/dbus"
+	utilexec "gitlab.com/rioos/magudi/pkg/util/exec"
+	utilversion "gitlab.com/rioos/magudi/pkg/util/version"
 )
 
 type RulePosition string

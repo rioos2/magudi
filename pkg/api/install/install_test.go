@@ -25,7 +25,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	internal "gitlab.com/sankish/magudi/pkg/api"
+	internal "gitlab.com/rioos/magudi/pkg/api"
 )
 
 func TestResourceVersioner(t *testing.T) {

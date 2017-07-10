@@ -19,10 +19,10 @@ package reconciliation
 import (
 	apierrors "k8s.io/apimachinery/pkg/api/errors"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/apis/rbac"
-	core "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/typed/core/internalversion"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/typed/rbac/internalversion"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/apis/rbac"
+	core "gitlab.com/rioos/magudi/pkg/client/clientset_generated/internalclientset/typed/core/internalversion"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/internalclientset/typed/rbac/internalversion"
 )
 
 type RoleRuleOwner struct {

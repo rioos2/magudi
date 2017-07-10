@@ -16,7 +16,7 @@ limitations under the License.
 
 package internalversion
 
-import "gitlab.com/sankish/magudi/pkg/apis/certificates"
+import "gitlab.com/rioos/magudi/pkg/apis/certificates"
 
 type CertificateSigningRequestExpansion interface {
 	UpdateApproval(certificateSigningRequest *certificates.CertificateSigningRequest) (result *certificates.CertificateSigningRequest, err error)

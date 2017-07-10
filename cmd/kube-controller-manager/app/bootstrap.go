@@ -16,7 +16,7 @@ limitations under the License.
 
 package app
 
-import "gitlab.com/sankish/magudi/pkg/controller/bootstrap"
+import "gitlab.com/rioos/magudi/pkg/controller/bootstrap"
 
 func startBootstrapSignerController(ctx ControllerContext) (bool, error) {
 	go bootstrap.NewBootstrapSigner(

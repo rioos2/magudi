@@ -24,9 +24,9 @@ import (
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	watch "k8s.io/apimachinery/pkg/watch"
 	cache "k8s.io/client-go/tools/cache"
-	clientset "gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
-	internalinterfaces "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/internalinterfaces"
-	v1beta1 "gitlab.com/sankish/magudi/pkg/client/listers/policy/v1beta1"
+	clientset "gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset"
+	internalinterfaces "gitlab.com/rioos/magudi/pkg/client/informers/informers_generated/externalversions/internalinterfaces"
+	v1beta1 "gitlab.com/rioos/magudi/pkg/client/listers/policy/v1beta1"
 	time "time"
 )
 

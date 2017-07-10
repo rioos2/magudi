@@ -24,7 +24,7 @@ import (
 	extensions "k8s.io/api/extensions/v1beta1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/util/workqueue"
-	"gitlab.com/sankish/magudi/pkg/controller/deployment/util"
+	"gitlab.com/rioos/magudi/pkg/controller/deployment/util"
 )
 
 func newDeploymentStatus(replicas, updatedReplicas, availableReplicas int32) extensions.DeploymentStatus {

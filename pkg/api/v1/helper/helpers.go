@@ -25,8 +25,8 @@ import (
 	"k8s.io/apimachinery/pkg/selection"
 
 	"k8s.io/api/core/v1"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/api/helper"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api/helper"
 )
 
 // IsOpaqueIntResourceName returns true if the resource name has the opaque

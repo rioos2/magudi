@@ -16,4 +16,4 @@ limitations under the License.
 
 // Package certificates provides Registry interface and its RESTStorage
 // implementation for storing ClusterRoleBinding objects.
-package clusterrolebinding // import "gitlab.com/sankish/magudi/pkg/registry/rbac/clusterrolebinding"
+package clusterrolebinding // import "gitlab.com/rioos/magudi/pkg/registry/rbac/clusterrolebinding"

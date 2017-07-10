@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // Package procfs implements utility functions relating to the /proc mount.
-package procfs // import "gitlab.com/sankish/magudi/pkg/util/procfs"
+package procfs // import "gitlab.com/rioos/magudi/pkg/util/procfs"

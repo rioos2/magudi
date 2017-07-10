@@ -21,7 +21,7 @@ import (
 	"runtime"
 	"testing"
 
-	"gitlab.com/sankish/magudi/pkg/util/exec"
+	"gitlab.com/rioos/magudi/pkg/util/exec"
 )
 
 type ErrorMounter struct {

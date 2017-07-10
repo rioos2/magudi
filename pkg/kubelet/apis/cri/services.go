@@ -19,7 +19,7 @@ package cri
 import (
 	"time"
 
-	runtimeapi "gitlab.com/sankish/magudi/pkg/kubelet/apis/cri/v1alpha1/runtime"
+	runtimeapi "gitlab.com/rioos/magudi/pkg/kubelet/apis/cri/v1alpha1/runtime"
 )
 
 // RuntimeVersioner contains methods for runtime name, version and API version.

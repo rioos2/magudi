@@ -29,9 +29,9 @@ import (
 
 	"k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apiserver/pkg/authentication/user"
-	"gitlab.com/sankish/magudi/pkg/api"
-	bootstrapapi "gitlab.com/sankish/magudi/pkg/bootstrap/api"
-	"gitlab.com/sankish/magudi/pkg/client/listers/core/internalversion"
+	"gitlab.com/rioos/magudi/pkg/api"
+	bootstrapapi "gitlab.com/rioos/magudi/pkg/bootstrap/api"
+	"gitlab.com/rioos/magudi/pkg/client/listers/core/internalversion"
 )
 
 // TODO: A few methods in this package is copied from other sources. Either
@@ -135,7 +135,7 @@ func (t *TokenAuthenticator) AuthenticateToken(token string) (user.Info, bool, e
 	}, true, nil
 }
 
-// Copied from gitlab.com/sankish/magudi/pkg/bootstrap/api
+// Copied from gitlab.com/rioos/magudi/pkg/bootstrap/api
 func getSecretString(secret *api.Secret, key string) string {
 	if secret.Data == nil {
 		return ""
@@ -146,7 +146,7 @@ func getSecretString(secret *api.Secret, key string) string {
 	return ""
 }
 
-// Copied from gitlab.com/sankish/magudi/pkg/bootstrap/api
+// Copied from gitlab.com/rioos/magudi/pkg/bootstrap/api
 func isSecretExpired(secret *api.Secret) bool {
 	expiration := getSecretString(secret, bootstrapapi.BootstrapTokenExpirationKey)
 	if len(expiration) > 0 {

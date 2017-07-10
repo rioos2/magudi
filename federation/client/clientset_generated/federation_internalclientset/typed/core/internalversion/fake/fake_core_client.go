@@ -19,7 +19,7 @@ package fake
 import (
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"
-	internalversion "gitlab.com/sankish/magudi/federation/client/clientset_generated/federation_internalclientset/typed/core/internalversion"
+	internalversion "gitlab.com/rioos/magudi/federation/client/clientset_generated/federation_internalclientset/typed/core/internalversion"
 )
 
 type FakeCore struct {

@@ -48,10 +48,10 @@ import (
 	"k8s.io/apimachinery/pkg/util/wait"
 	v1core "k8s.io/client-go/kubernetes/typed/core/v1"
 	"k8s.io/client-go/tools/record"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/api/v1/ref"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
-	"gitlab.com/sankish/magudi/pkg/util/metrics"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api/v1/ref"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset"
+	"gitlab.com/rioos/magudi/pkg/util/metrics"
 )
 
 // Utilities for dealing with Jobs and CronJobs and time.

@@ -21,8 +21,8 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	certificates "gitlab.com/sankish/magudi/pkg/apis/certificates"
-	scheme "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/scheme"
+	certificates "gitlab.com/rioos/magudi/pkg/apis/certificates"
+	scheme "gitlab.com/rioos/magudi/pkg/client/clientset_generated/internalclientset/scheme"
 )
 
 // CertificateSigningRequestsGetter has a method to return a CertificateSigningRequestInterface.

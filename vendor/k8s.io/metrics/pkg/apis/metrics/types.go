@@ -89,9 +89,9 @@ type ContainerMetrics struct {
 }
 
 // NOTE: ResourceName and ResourceList are copied from
-// gitlab.com/sankish/magudi/pkg/api/types.go. We cannot depend on
-// gitlab.com/sankish/magudi/pkg/api because that creates cyclic dependency between
-// k8s.io/metrics and gitlab.com/sankish/magudi. We cannot depend on
+// gitlab.com/rioos/magudi/pkg/api/types.go. We cannot depend on
+// gitlab.com/rioos/magudi/pkg/api because that creates cyclic dependency between
+// k8s.io/metrics and gitlab.com/rioos/magudi. We cannot depend on
 // k8s.io/client-go/pkg/api because the package is going to be deprecated soon.
 // There is no need to keep them exact copies. Each repo can define its own
 // internal objects.

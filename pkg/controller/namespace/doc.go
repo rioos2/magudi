@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // namespace contains a controller that handles namespace lifecycle
-package namespace // import "gitlab.com/sankish/magudi/pkg/controller/namespace"
+package namespace // import "gitlab.com/rioos/magudi/pkg/controller/namespace"

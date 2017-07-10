@@ -23,9 +23,9 @@ import (
 	"k8s.io/apimachinery/pkg/apimachinery/registered"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/apis/admission"
-	"gitlab.com/sankish/magudi/pkg/apis/admission/v1alpha1"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/apis/admission"
+	"gitlab.com/rioos/magudi/pkg/apis/admission/v1alpha1"
 )
 
 func init() {
@@ -38,7 +38,7 @@ func Install(groupFactoryRegistry announced.APIGroupFactoryRegistry, registry *r
 		&announced.GroupMetaFactoryArgs{
 			GroupName:                  admission.GroupName,
 			VersionPreferenceOrder:     []string{v1alpha1.SchemeGroupVersion.Version},
-			ImportPrefix:               "gitlab.com/sankish/magudi/pkg/apis/admission",
+			ImportPrefix:               "gitlab.com/rioos/magudi/pkg/apis/admission",
 			RootScopedKinds:            sets.NewString("AdmissionReview"),
 			AddInternalObjectsToScheme: admission.AddToScheme,
 		},

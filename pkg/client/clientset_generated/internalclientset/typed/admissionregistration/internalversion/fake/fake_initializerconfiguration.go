@@ -23,7 +23,7 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	testing "k8s.io/client-go/testing"
-	admissionregistration "gitlab.com/sankish/magudi/pkg/apis/admissionregistration"
+	admissionregistration "gitlab.com/rioos/magudi/pkg/apis/admissionregistration"
 )
 
 // FakeInitializerConfigurations implements InitializerConfigurationInterface

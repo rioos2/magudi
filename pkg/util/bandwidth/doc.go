@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // Package bandwidth provides utilities for bandwidth shaping
-package bandwidth // import "gitlab.com/sankish/magudi/pkg/util/bandwidth"
+package bandwidth // import "gitlab.com/rioos/magudi/pkg/util/bandwidth"

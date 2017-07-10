@@ -37,9 +37,9 @@ import (
 	remotecommandconsts "k8s.io/apimachinery/pkg/util/remotecommand"
 	restclient "k8s.io/client-go/rest"
 	remoteclient "k8s.io/client-go/tools/remotecommand"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/api/testapi"
-	"gitlab.com/sankish/magudi/pkg/kubelet/server/remotecommand"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api/testapi"
+	"gitlab.com/rioos/magudi/pkg/kubelet/server/remotecommand"
 )
 
 type fakeExecutor struct {

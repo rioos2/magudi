@@ -16,4 +16,4 @@ limitations under the License.
 
 // +k8s:deepcopy-gen=package,register
 
-package autoscaling // import "gitlab.com/sankish/magudi/pkg/apis/autoscaling"
+package autoscaling // import "gitlab.com/rioos/magudi/pkg/apis/autoscaling"

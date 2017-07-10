@@ -23,7 +23,7 @@ import (
 	"github.com/golang/glog"
 
 	"k8s.io/api/core/v1"
-	bootstrapapi "gitlab.com/sankish/magudi/pkg/bootstrap/api"
+	bootstrapapi "gitlab.com/rioos/magudi/pkg/bootstrap/api"
 )
 
 var namePattern = `^` + regexp.QuoteMeta(bootstrapapi.BootstrapTokenSecretPrefix) + `([a-z0-9]{6})$`

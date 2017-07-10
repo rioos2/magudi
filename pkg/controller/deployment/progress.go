@@ -26,7 +26,7 @@ import (
 	"k8s.io/api/core/v1"
 	extensions "k8s.io/api/extensions/v1beta1"
 	"k8s.io/apimachinery/pkg/types"
-	"gitlab.com/sankish/magudi/pkg/controller/deployment/util"
+	"gitlab.com/rioos/magudi/pkg/controller/deployment/util"
 )
 
 // hasFailed determines if a deployment has failed or not by estimating its progress.

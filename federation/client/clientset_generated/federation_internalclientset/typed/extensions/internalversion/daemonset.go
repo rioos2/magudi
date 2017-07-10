@@ -21,8 +21,8 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	scheme "gitlab.com/sankish/magudi/federation/client/clientset_generated/federation_internalclientset/scheme"
-	extensions "gitlab.com/sankish/magudi/pkg/apis/extensions"
+	scheme "gitlab.com/rioos/magudi/federation/client/clientset_generated/federation_internalclientset/scheme"
+	extensions "gitlab.com/rioos/magudi/pkg/apis/extensions"
 )
 
 // DaemonSetsGetter has a method to return a DaemonSetInterface.

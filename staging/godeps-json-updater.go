@@ -48,7 +48,7 @@ type Godeps struct {
 	Deps         []Dependency
 }
 
-// rewrites the Godeps.ImportPath, removes the Deps whose ImportPath contains "gitlab.com/sankish/magudi" or "k8s.io/apimachinery".
+// rewrites the Godeps.ImportPath, removes the Deps whose ImportPath contains "gitlab.com/rioos/magudi" or "k8s.io/apimachinery".
 // entries for k8s.io/apimahinery will be written by the publishing robot before publishing to the repository.
 func main() {
 	flag.Parse()
@@ -68,7 +68,7 @@ func main() {
 	if len(*overrideImportPath) != 0 {
 		g.ImportPath = *overrideImportPath
 	}
-	// removes the Deps whose ImportPath contains "gitlab.com/sankish/magudi"
+	// removes the Deps whose ImportPath contains "gitlab.com/rioos/magudi"
 	i := 0
 	for _, dep := range g.Deps {
 		ignored := false

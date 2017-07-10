@@ -20,7 +20,7 @@ import (
 	metav1alpha1 "k8s.io/apimachinery/pkg/apis/meta/v1alpha1"
 	"k8s.io/apimachinery/pkg/runtime"
 	genericapirequest "k8s.io/apiserver/pkg/endpoints/request"
-	"gitlab.com/sankish/magudi/pkg/printers"
+	"gitlab.com/rioos/magudi/pkg/printers"
 )
 
 type TableConvertor struct {

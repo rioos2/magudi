@@ -22,4 +22,4 @@ limitations under the License.
 // when available.
 // Best-Effort containers, which don’t specify a request, can use resources only if not being used
 // by other pods.
-package qos // import "gitlab.com/sankish/magudi/pkg/kubelet/qos"
+package qos // import "gitlab.com/rioos/magudi/pkg/kubelet/qos"

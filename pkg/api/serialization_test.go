@@ -42,12 +42,12 @@ import (
 	"k8s.io/apimachinery/pkg/util/diff"
 	"k8s.io/apimachinery/pkg/util/sets"
 	"k8s.io/apimachinery/pkg/watch"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/api/testapi"
-	kapitesting "gitlab.com/sankish/magudi/pkg/api/testing"
-	k8s_api_v1 "gitlab.com/sankish/magudi/pkg/api/v1"
-	"gitlab.com/sankish/magudi/pkg/apis/extensions"
-	k8s_v1beta1 "gitlab.com/sankish/magudi/pkg/apis/extensions/v1beta1"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api/testapi"
+	kapitesting "gitlab.com/rioos/magudi/pkg/api/testing"
+	k8s_api_v1 "gitlab.com/rioos/magudi/pkg/api/v1"
+	"gitlab.com/rioos/magudi/pkg/apis/extensions"
+	k8s_v1beta1 "gitlab.com/rioos/magudi/pkg/apis/extensions/v1beta1"
 )
 
 // fuzzInternalObject fuzzes an arbitrary runtime object using the appropriate

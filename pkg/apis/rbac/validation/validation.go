@@ -19,8 +19,8 @@ package validation
 import (
 	"k8s.io/apimachinery/pkg/api/validation/path"
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	"gitlab.com/sankish/magudi/pkg/api/validation"
-	"gitlab.com/sankish/magudi/pkg/apis/rbac"
+	"gitlab.com/rioos/magudi/pkg/api/validation"
+	"gitlab.com/rioos/magudi/pkg/apis/rbac"
 )
 
 // Minimal validation of names for roles and bindings. Identical to the validation for Openshift. See:

@@ -3,7 +3,7 @@ package expansion
 import (
 	"testing"
 
-	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api"
 )
 
 func TestMapReference(t *testing.T) {

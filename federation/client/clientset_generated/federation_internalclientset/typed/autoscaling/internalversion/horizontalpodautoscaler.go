@@ -21,8 +21,8 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	scheme "gitlab.com/sankish/magudi/federation/client/clientset_generated/federation_internalclientset/scheme"
-	autoscaling "gitlab.com/sankish/magudi/pkg/apis/autoscaling"
+	scheme "gitlab.com/rioos/magudi/federation/client/clientset_generated/federation_internalclientset/scheme"
+	autoscaling "gitlab.com/rioos/magudi/pkg/apis/autoscaling"
 )
 
 // HorizontalPodAutoscalersGetter has a method to return a HorizontalPodAutoscalerInterface.

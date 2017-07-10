@@ -25,7 +25,7 @@ import (
 
 	flag "github.com/spf13/pflag"
 
-	"gitlab.com/sankish/magudi/pkg/version"
+	"gitlab.com/rioos/magudi/pkg/version"
 )
 
 type versionValue int

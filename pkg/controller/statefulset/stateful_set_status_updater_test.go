@@ -27,8 +27,8 @@ import (
 	"k8s.io/client-go/tools/cache"
 
 	apps "k8s.io/api/apps/v1beta1"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/fake"
-	appslisters "gitlab.com/sankish/magudi/pkg/client/listers/apps/v1beta1"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/fake"
+	appslisters "gitlab.com/rioos/magudi/pkg/client/listers/apps/v1beta1"
 )
 
 func TestStatefulSetUpdaterUpdatesSetStatus(t *testing.T) {

@@ -23,7 +23,7 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	testing "k8s.io/client-go/testing"
-	settings "gitlab.com/sankish/magudi/pkg/apis/settings"
+	settings "gitlab.com/rioos/magudi/pkg/apis/settings"
 )
 
 // FakePodPresets implements PodPresetInterface

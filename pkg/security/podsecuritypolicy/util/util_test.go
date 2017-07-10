@@ -20,8 +20,8 @@ import (
 	"reflect"
 	"testing"
 
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/apis/extensions"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/apis/extensions"
 )
 
 // TestVolumeSourceFSTypeDrift ensures that for every known type of volume source (by the fields on

@@ -24,9 +24,9 @@ import (
 	unversionedvalidation "k8s.io/apimachinery/pkg/apis/meta/v1/validation"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	"gitlab.com/sankish/magudi/pkg/api"
-	apivalidation "gitlab.com/sankish/magudi/pkg/api/validation"
-	"gitlab.com/sankish/magudi/pkg/apis/apps"
+	"gitlab.com/rioos/magudi/pkg/api"
+	apivalidation "gitlab.com/rioos/magudi/pkg/api/validation"
+	"gitlab.com/rioos/magudi/pkg/apis/apps"
 )
 
 // ValidateStatefulSetName can be used to check whether the given StatefulSet name is valid.

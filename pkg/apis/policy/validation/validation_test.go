@@ -21,7 +21,7 @@ import (
 
 	"k8s.io/apimachinery/pkg/util/intstr"
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	"gitlab.com/sankish/magudi/pkg/apis/policy"
+	"gitlab.com/rioos/magudi/pkg/apis/policy"
 )
 
 func TestValidatePodDisruptionBudgetSpec(t *testing.T) {

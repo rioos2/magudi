@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // Package authorizer contains implementations for pkg/auth/authorizer interfaces
-package authorizer // import "gitlab.com/sankish/magudi/plugin/pkg/auth/authorizer"
+package authorizer // import "gitlab.com/rioos/magudi/plugin/pkg/auth/authorizer"

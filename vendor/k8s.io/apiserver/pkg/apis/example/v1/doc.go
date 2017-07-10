@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 // +k8s:deepcopy-gen=package,register
-// +k8s:conversion-gen=gitlab.com/sankish/magudi/vendor/k8s.io/apiserver/pkg/apis/example
+// +k8s:conversion-gen=gitlab.com/rioos/magudi/vendor/k8s.io/apiserver/pkg/apis/example
 // +k8s:openapi-gen=false
 // +k8s:defaulter-gen=TypeMeta
 

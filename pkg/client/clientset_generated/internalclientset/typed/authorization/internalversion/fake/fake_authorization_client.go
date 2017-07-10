@@ -19,7 +19,7 @@ package fake
 import (
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"
-	internalversion "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/typed/authorization/internalversion"
+	internalversion "gitlab.com/rioos/magudi/pkg/client/clientset_generated/internalclientset/typed/authorization/internalversion"
 )
 
 type FakeAuthorization struct {

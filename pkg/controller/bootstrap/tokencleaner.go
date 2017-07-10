@@ -30,9 +30,9 @@ import (
 	"k8s.io/apimachinery/pkg/watch"
 	clientset "k8s.io/client-go/kubernetes"
 	"k8s.io/client-go/tools/cache"
-	"gitlab.com/sankish/magudi/pkg/api"
-	bootstrapapi "gitlab.com/sankish/magudi/pkg/bootstrap/api"
-	"gitlab.com/sankish/magudi/pkg/util/metrics"
+	"gitlab.com/rioos/magudi/pkg/api"
+	bootstrapapi "gitlab.com/rioos/magudi/pkg/bootstrap/api"
+	"gitlab.com/rioos/magudi/pkg/util/metrics"
 )
 
 // TokenCleanerOptions contains options for the TokenCleaner

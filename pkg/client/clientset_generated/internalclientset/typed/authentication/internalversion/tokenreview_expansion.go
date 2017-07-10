@@ -17,7 +17,7 @@ limitations under the License.
 package internalversion
 
 import (
-	authenticationapi "gitlab.com/sankish/magudi/pkg/apis/authentication"
+	authenticationapi "gitlab.com/rioos/magudi/pkg/apis/authentication"
 )
 
 type TokenReviewExpansion interface {

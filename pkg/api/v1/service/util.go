@@ -22,7 +22,7 @@ import (
 	"strings"
 
 	"k8s.io/api/core/v1"
-	netsets "gitlab.com/sankish/magudi/pkg/util/net/sets"
+	netsets "gitlab.com/rioos/magudi/pkg/util/net/sets"
 
 	"github.com/golang/glog"
 )

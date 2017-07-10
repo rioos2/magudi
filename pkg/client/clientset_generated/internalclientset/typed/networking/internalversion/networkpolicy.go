@@ -21,8 +21,8 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	networking "gitlab.com/sankish/magudi/pkg/apis/networking"
-	scheme "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/scheme"
+	networking "gitlab.com/rioos/magudi/pkg/apis/networking"
+	scheme "gitlab.com/rioos/magudi/pkg/client/clientset_generated/internalclientset/scheme"
 )
 
 // NetworkPoliciesGetter has a method to return a NetworkPolicyInterface.

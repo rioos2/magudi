@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"strings"
 
-	"gitlab.com/sankish/magudi/pkg/util/iptables"
+	"gitlab.com/rioos/magudi/pkg/util/iptables"
 )
 
 const (

@@ -22,7 +22,7 @@ import (
 	"github.com/golang/glog"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	rbac "gitlab.com/sankish/magudi/pkg/apis/rbac"
+	rbac "gitlab.com/rioos/magudi/pkg/apis/rbac"
 )
 
 const saRolePrefix = "system:controller:"

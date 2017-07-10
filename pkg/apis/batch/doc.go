@@ -16,4 +16,4 @@ limitations under the License.
 
 // +k8s:deepcopy-gen=package,register
 
-package batch // import "gitlab.com/sankish/magudi/pkg/apis/batch"
+package batch // import "gitlab.com/rioos/magudi/pkg/apis/batch"

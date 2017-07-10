@@ -16,7 +16,7 @@ limitations under the License.
 
 package remotecommand
 
-// TerminalSize and TerminalSizeQueue was a part of gitlab.com/sankish/magudi/pkg/util/term
+// TerminalSize and TerminalSizeQueue was a part of gitlab.com/rioos/magudi/pkg/util/term
 // and were moved in order to decouple client from other term dependencies
 
 // TerminalSize represents the width and height of a terminal.

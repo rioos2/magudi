@@ -24,8 +24,8 @@ import (
 	"github.com/golang/glog"
 
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"gitlab.com/sankish/magudi/pkg/controller/certificates/approver"
-	"gitlab.com/sankish/magudi/pkg/controller/certificates/signer"
+	"gitlab.com/rioos/magudi/pkg/controller/certificates/approver"
+	"gitlab.com/rioos/magudi/pkg/controller/certificates/signer"
 )
 
 func startCSRSigningController(ctx ControllerContext) (bool, error) {

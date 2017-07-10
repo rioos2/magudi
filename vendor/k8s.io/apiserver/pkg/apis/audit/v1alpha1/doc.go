@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 // +k8s:deepcopy-gen=package,register
-// +k8s:conversion-gen=gitlab.com/sankish/magudi/vendor/k8s.io/apiserver/pkg/apis/audit
+// +k8s:conversion-gen=gitlab.com/rioos/magudi/vendor/k8s.io/apiserver/pkg/apis/audit
 // +k8s:openapi-gen=true
 // +k8s:defaulter-gen=TypeMeta
 

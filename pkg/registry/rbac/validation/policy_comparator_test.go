@@ -20,7 +20,7 @@ import (
 	"reflect"
 	"testing"
 
-	"gitlab.com/sankish/magudi/pkg/apis/rbac"
+	"gitlab.com/rioos/magudi/pkg/apis/rbac"
 )
 
 type escalationTest struct {

@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // Package auth contains implementations for interfaces in the pkg/auth package
-package auth // import "gitlab.com/sankish/magudi/plugin/pkg/auth"
+package auth // import "gitlab.com/rioos/magudi/plugin/pkg/auth"

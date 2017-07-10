@@ -22,7 +22,7 @@ import (
 	"k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"
-	api "gitlab.com/sankish/magudi/pkg/api"
+	api "gitlab.com/rioos/magudi/pkg/api"
 )
 
 // EventLister helps list Events.

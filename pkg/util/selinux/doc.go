@@ -16,4 +16,4 @@ limitations under the License.
 
 // Package selinux contains wrapper functions for the libcontainer SELinux
 // package.  A NOP implementation is provided for non-linux platforms.
-package selinux // import "gitlab.com/sankish/magudi/pkg/util/selinux"
+package selinux // import "gitlab.com/rioos/magudi/pkg/util/selinux"

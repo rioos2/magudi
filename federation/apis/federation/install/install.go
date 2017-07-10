@@ -21,10 +21,10 @@ import (
 	"k8s.io/apimachinery/pkg/apimachinery/registered"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api"
 
-	"gitlab.com/sankish/magudi/federation/apis/federation"
-	"gitlab.com/sankish/magudi/federation/apis/federation/v1beta1"
+	"gitlab.com/rioos/magudi/federation/apis/federation"
+	"gitlab.com/rioos/magudi/federation/apis/federation/v1beta1"
 )
 
 func init() {
@@ -37,7 +37,7 @@ func Install(groupFactoryRegistry announced.APIGroupFactoryRegistry, registry *r
 		&announced.GroupMetaFactoryArgs{
 			GroupName:                  federation.GroupName,
 			VersionPreferenceOrder:     []string{v1beta1.SchemeGroupVersion.Version},
-			ImportPrefix:               "gitlab.com/sankish/magudi/federation/apis/federation",
+			ImportPrefix:               "gitlab.com/rioos/magudi/federation/apis/federation",
 			AddInternalObjectsToScheme: federation.AddToScheme,
 			RootScopedKinds: sets.NewString(
 				"Cluster",

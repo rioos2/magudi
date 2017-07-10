@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // Package mount defines an interface to mounting filesystems.
-package mount // import "gitlab.com/sankish/magudi/pkg/util/mount"
+package mount // import "gitlab.com/rioos/magudi/pkg/util/mount"

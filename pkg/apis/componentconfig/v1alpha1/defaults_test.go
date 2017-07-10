@@ -21,7 +21,7 @@ import (
 	"reflect"
 	"testing"
 
-	componentconfig "gitlab.com/sankish/magudi/pkg/apis/componentconfig"
+	componentconfig "gitlab.com/rioos/magudi/pkg/apis/componentconfig"
 )
 
 func TestSchedulerDefaults(t *testing.T) {

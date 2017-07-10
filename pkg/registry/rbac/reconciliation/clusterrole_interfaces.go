@@ -18,8 +18,8 @@ package reconciliation
 
 import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"gitlab.com/sankish/magudi/pkg/apis/rbac"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/typed/rbac/internalversion"
+	"gitlab.com/rioos/magudi/pkg/apis/rbac"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/internalclientset/typed/rbac/internalversion"
 )
 
 type ClusterRoleRuleOwner struct {

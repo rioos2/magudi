@@ -25,8 +25,8 @@ import (
 	"time"
 
 	"k8s.io/apimachinery/pkg/util/sets"
-	"gitlab.com/sankish/magudi/pkg/util/dbus"
-	"gitlab.com/sankish/magudi/pkg/util/exec"
+	"gitlab.com/rioos/magudi/pkg/util/dbus"
+	"gitlab.com/rioos/magudi/pkg/util/exec"
 )
 
 const TestLockfilePath = "xtables.lock"

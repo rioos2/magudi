@@ -29,10 +29,10 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 	utilerrors "k8s.io/apimachinery/pkg/util/errors"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/controller"
-	deploymentutil "gitlab.com/sankish/magudi/pkg/controller/deployment/util"
-	labelsutil "gitlab.com/sankish/magudi/pkg/util/labels"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/controller"
+	deploymentutil "gitlab.com/rioos/magudi/pkg/controller/deployment/util"
+	labelsutil "gitlab.com/rioos/magudi/pkg/util/labels"
 )
 
 // syncStatusOnly only updates Deployments Status and doesn't take any mutating actions.

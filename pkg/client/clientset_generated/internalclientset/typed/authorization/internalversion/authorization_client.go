@@ -18,7 +18,7 @@ package internalversion
 
 import (
 	rest "k8s.io/client-go/rest"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/scheme"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/internalclientset/scheme"
 )
 
 type AuthorizationInterface interface {

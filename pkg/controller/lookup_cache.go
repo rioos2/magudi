@@ -22,7 +22,7 @@ import (
 
 	"github.com/golang/groupcache/lru"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	hashutil "gitlab.com/sankish/magudi/pkg/util/hash"
+	hashutil "gitlab.com/rioos/magudi/pkg/util/hash"
 )
 
 type objectWithMeta interface {

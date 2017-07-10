@@ -23,8 +23,8 @@ import (
 
 	"k8s.io/apimachinery/pkg/conversion"
 	"k8s.io/apimachinery/pkg/runtime"
-	k8s_api_v1 "gitlab.com/sankish/magudi/pkg/api/v1"
-	"gitlab.com/sankish/magudi/pkg/apis/batch"
+	k8s_api_v1 "gitlab.com/rioos/magudi/pkg/api/v1"
+	"gitlab.com/rioos/magudi/pkg/apis/batch"
 )
 
 func addConversionFuncs(scheme *runtime.Scheme) error {

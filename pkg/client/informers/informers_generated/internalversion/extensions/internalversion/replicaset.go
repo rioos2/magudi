@@ -23,10 +23,10 @@ import (
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	watch "k8s.io/apimachinery/pkg/watch"
 	cache "k8s.io/client-go/tools/cache"
-	extensions "gitlab.com/sankish/magudi/pkg/apis/extensions"
-	internalclientset "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset"
-	internalinterfaces "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/internalversion/internalinterfaces"
-	internalversion "gitlab.com/sankish/magudi/pkg/client/listers/extensions/internalversion"
+	extensions "gitlab.com/rioos/magudi/pkg/apis/extensions"
+	internalclientset "gitlab.com/rioos/magudi/pkg/client/clientset_generated/internalclientset"
+	internalinterfaces "gitlab.com/rioos/magudi/pkg/client/informers/informers_generated/internalversion/internalinterfaces"
+	internalversion "gitlab.com/rioos/magudi/pkg/client/listers/extensions/internalversion"
 	time "time"
 )
 

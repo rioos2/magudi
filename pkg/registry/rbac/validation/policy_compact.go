@@ -21,8 +21,8 @@ import (
 	"reflect"
 
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/apis/rbac"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/apis/rbac"
 )
 
 // CompactRules combines rules that contain a single APIGroup/Resource, differ only by verb, and contain no other attributes.

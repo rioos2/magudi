@@ -19,9 +19,9 @@ limitations under the License.
 package batch
 
 import (
-	v1 "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/batch/v1"
-	v2alpha1 "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/batch/v2alpha1"
-	internalinterfaces "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/internalinterfaces"
+	v1 "gitlab.com/rioos/magudi/pkg/client/informers/informers_generated/externalversions/batch/v1"
+	v2alpha1 "gitlab.com/rioos/magudi/pkg/client/informers/informers_generated/externalversions/batch/v2alpha1"
+	internalinterfaces "gitlab.com/rioos/magudi/pkg/client/informers/informers_generated/externalversions/internalinterfaces"
 )
 
 // Interface provides access to each of this group's versions.

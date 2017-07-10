@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // Package cloudprovider supplies interfaces and implementations for cloud service providers.
-package cloudprovider // import "gitlab.com/sankish/magudi/pkg/cloudprovider"
+package cloudprovider // import "gitlab.com/rioos/magudi/pkg/cloudprovider"

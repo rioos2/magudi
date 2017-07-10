@@ -22,7 +22,7 @@ import (
 	"os"
 	"syscall"
 
-	"gitlab.com/sankish/magudi/pkg/util/mount"
+	"gitlab.com/rioos/magudi/pkg/util/mount"
 )
 
 // RemoveAllOneFilesystem removes path and any children it contains.

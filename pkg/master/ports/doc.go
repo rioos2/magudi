@@ -16,4 +16,4 @@ limitations under the License.
 
 // Package ports defines ports used by various pieces of the kubernetes
 // infrastructure.
-package ports // import "gitlab.com/sankish/magudi/pkg/master/ports"
+package ports // import "gitlab.com/rioos/magudi/pkg/master/ports"

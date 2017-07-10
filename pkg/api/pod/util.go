@@ -18,7 +18,7 @@ package pod
 
 import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api"
 )
 
 // Visitor is called with each object name, and returns true if visiting should continue

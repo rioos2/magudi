@@ -15,7 +15,7 @@ limitations under the License.
 */
 
 // +k8s:deepcopy-gen=package,register
-// +k8s:conversion-gen=gitlab.com/sankish/magudi/vendor/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions
+// +k8s:conversion-gen=gitlab.com/rioos/magudi/vendor/k8s.io/apiextensions-apiserver/pkg/apis/apiextensions
 // +k8s:defaulter-gen=TypeMeta
 
 // Package v1beta1 is the v1beta1 version of the API.

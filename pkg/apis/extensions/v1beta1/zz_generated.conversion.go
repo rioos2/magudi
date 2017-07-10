@@ -27,9 +27,9 @@ import (
 	conversion "k8s.io/apimachinery/pkg/conversion"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	intstr "k8s.io/apimachinery/pkg/util/intstr"
-	api "gitlab.com/sankish/magudi/pkg/api"
-	api_v1 "gitlab.com/sankish/magudi/pkg/api/v1"
-	extensions "gitlab.com/sankish/magudi/pkg/apis/extensions"
+	api "gitlab.com/rioos/magudi/pkg/api"
+	api_v1 "gitlab.com/rioos/magudi/pkg/api/v1"
+	extensions "gitlab.com/rioos/magudi/pkg/apis/extensions"
 	unsafe "unsafe"
 )
 

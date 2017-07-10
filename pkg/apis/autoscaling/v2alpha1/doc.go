@@ -14,9 +14,9 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-// +k8s:conversion-gen=gitlab.com/sankish/magudi/pkg/apis/autoscaling
+// +k8s:conversion-gen=gitlab.com/rioos/magudi/pkg/apis/autoscaling
 // +k8s:conversion-gen-external-types=../../../../vendor/k8s.io/api/autoscaling/v2alpha1
 // +k8s:defaulter-gen=TypeMeta
 // +k8s:defaulter-gen-input=../../../../vendor/k8s.io/api/autoscaling/v2alpha1
 
-package v2alpha1 // import "gitlab.com/sankish/magudi/pkg/apis/autoscaling/v2alpha1"
+package v2alpha1 // import "gitlab.com/rioos/magudi/pkg/apis/autoscaling/v2alpha1"

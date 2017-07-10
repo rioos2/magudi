@@ -18,7 +18,7 @@ package fake
 
 import (
 	core "k8s.io/client-go/testing"
-	authorizationapi "gitlab.com/sankish/magudi/pkg/apis/authorization"
+	authorizationapi "gitlab.com/rioos/magudi/pkg/apis/authorization"
 )
 
 func (c *FakeSelfSubjectAccessReviews) Create(sar *authorizationapi.SelfSubjectAccessReview) (result *authorizationapi.SelfSubjectAccessReview, err error) {

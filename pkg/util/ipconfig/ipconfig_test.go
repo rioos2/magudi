@@ -19,7 +19,7 @@ package ipconfig
 import (
 	"testing"
 
-	"gitlab.com/sankish/magudi/pkg/util/exec"
+	"gitlab.com/rioos/magudi/pkg/util/exec"
 )
 
 func TestGetDnsSuffixSearchList(t *testing.T) {

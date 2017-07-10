@@ -28,7 +28,7 @@ import (
 
 	"github.com/golang/glog"
 	k8sRuntime "k8s.io/apimachinery/pkg/util/runtime"
-	"gitlab.com/sankish/magudi/pkg/util/goroutinemap/exponentialbackoff"
+	"gitlab.com/rioos/magudi/pkg/util/goroutinemap/exponentialbackoff"
 )
 
 const (

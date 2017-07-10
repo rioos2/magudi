@@ -22,7 +22,7 @@ import (
 	"net/url"
 	"time"
 
-	"gitlab.com/sankish/magudi/pkg/client/metrics"
+	"gitlab.com/rioos/magudi/pkg/client/metrics"
 
 	"github.com/prometheus/client_golang/prometheus"
 )

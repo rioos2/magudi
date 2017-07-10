@@ -19,7 +19,7 @@ package fake
 import (
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"
-	v1beta1 "gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/typed/apps/v1beta1"
+	v1beta1 "gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/typed/apps/v1beta1"
 )
 
 type FakeAppsV1beta1 struct {

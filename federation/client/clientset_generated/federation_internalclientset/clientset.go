@@ -21,11 +21,11 @@ import (
 	discovery "k8s.io/client-go/discovery"
 	rest "k8s.io/client-go/rest"
 	flowcontrol "k8s.io/client-go/util/flowcontrol"
-	autoscalinginternalversion "gitlab.com/sankish/magudi/federation/client/clientset_generated/federation_internalclientset/typed/autoscaling/internalversion"
-	batchinternalversion "gitlab.com/sankish/magudi/federation/client/clientset_generated/federation_internalclientset/typed/batch/internalversion"
-	coreinternalversion "gitlab.com/sankish/magudi/federation/client/clientset_generated/federation_internalclientset/typed/core/internalversion"
-	extensionsinternalversion "gitlab.com/sankish/magudi/federation/client/clientset_generated/federation_internalclientset/typed/extensions/internalversion"
-	federationinternalversion "gitlab.com/sankish/magudi/federation/client/clientset_generated/federation_internalclientset/typed/federation/internalversion"
+	autoscalinginternalversion "gitlab.com/rioos/magudi/federation/client/clientset_generated/federation_internalclientset/typed/autoscaling/internalversion"
+	batchinternalversion "gitlab.com/rioos/magudi/federation/client/clientset_generated/federation_internalclientset/typed/batch/internalversion"
+	coreinternalversion "gitlab.com/rioos/magudi/federation/client/clientset_generated/federation_internalclientset/typed/core/internalversion"
+	extensionsinternalversion "gitlab.com/rioos/magudi/federation/client/clientset_generated/federation_internalclientset/typed/extensions/internalversion"
+	federationinternalversion "gitlab.com/rioos/magudi/federation/client/clientset_generated/federation_internalclientset/typed/federation/internalversion"
 )
 
 type Interface interface {

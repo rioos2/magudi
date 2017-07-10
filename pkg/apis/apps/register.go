@@ -19,7 +19,7 @@ package apps
 import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"gitlab.com/sankish/magudi/pkg/apis/extensions"
+	"gitlab.com/rioos/magudi/pkg/apis/extensions"
 )
 
 var (

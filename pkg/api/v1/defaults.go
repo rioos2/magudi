@@ -20,8 +20,8 @@ import (
 	"k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/intstr"
-	"gitlab.com/sankish/magudi/pkg/util"
-	"gitlab.com/sankish/magudi/pkg/util/parsers"
+	"gitlab.com/rioos/magudi/pkg/util"
+	"gitlab.com/rioos/magudi/pkg/util/parsers"
 )
 
 func addDefaultingFuncs(scheme *runtime.Scheme) error {

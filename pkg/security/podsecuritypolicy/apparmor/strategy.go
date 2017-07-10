@@ -21,9 +21,9 @@ import (
 	"strings"
 
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/security/apparmor"
-	"gitlab.com/sankish/magudi/pkg/util/maps"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/security/apparmor"
+	"gitlab.com/rioos/magudi/pkg/util/maps"
 )
 
 // Strategy defines the interface for all AppArmor constraint strategies.

@@ -17,7 +17,7 @@ limitations under the License.
 package events
 
 import (
-	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api"
 )
 
 // SortableEvents implements sort.Interface for []api.Event based on the Timestamp field

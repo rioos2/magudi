@@ -19,8 +19,8 @@ package serviceaccount
 import (
 	"testing"
 
-	"gitlab.com/sankish/magudi/pkg/api"
-	apitesting "gitlab.com/sankish/magudi/pkg/api/testing"
+	"gitlab.com/rioos/magudi/pkg/api"
+	apitesting "gitlab.com/rioos/magudi/pkg/api/testing"
 )
 
 func TestSelectableFieldLabelConversions(t *testing.T) {

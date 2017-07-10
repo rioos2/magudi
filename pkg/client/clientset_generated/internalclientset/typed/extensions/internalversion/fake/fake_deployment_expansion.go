@@ -18,7 +18,7 @@ package fake
 
 import (
 	core "k8s.io/client-go/testing"
-	"gitlab.com/sankish/magudi/pkg/apis/extensions"
+	"gitlab.com/rioos/magudi/pkg/apis/extensions"
 )
 
 func (c *FakeDeployments) Rollback(deploymentRollback *extensions.DeploymentRollback) error {

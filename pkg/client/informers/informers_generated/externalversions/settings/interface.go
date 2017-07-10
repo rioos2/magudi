@@ -19,8 +19,8 @@ limitations under the License.
 package settings
 
 import (
-	internalinterfaces "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/internalinterfaces"
-	v1alpha1 "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/settings/v1alpha1"
+	internalinterfaces "gitlab.com/rioos/magudi/pkg/client/informers/informers_generated/externalversions/internalinterfaces"
+	v1alpha1 "gitlab.com/rioos/magudi/pkg/client/informers/informers_generated/externalversions/settings/v1alpha1"
 )
 
 // Interface provides access to each of this group's versions.

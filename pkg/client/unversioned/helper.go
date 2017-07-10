@@ -19,7 +19,7 @@ package unversioned
 import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	restclient "k8s.io/client-go/rest"
-	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api"
 	// Import solely to initialize client auth plugins.
 	_ "k8s.io/client-go/plugin/pkg/client/auth"
 )

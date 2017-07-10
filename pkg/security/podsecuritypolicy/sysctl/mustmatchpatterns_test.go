@@ -19,8 +19,8 @@ package sysctl
 import (
 	"testing"
 
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/api/helper"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api/helper"
 )
 
 func TestValidate(t *testing.T) {

@@ -24,7 +24,7 @@ package app
 // 	"fmt"
 //
 // 	// Cloud providers
-// 	"gitlab.com/sankish/magudi/pkg/apis/componentconfig"
+// 	"gitlab.com/rioos/magudi/pkg/apis/componentconfig"
 //
 //
 // 	// Volume plugins

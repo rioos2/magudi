@@ -28,12 +28,12 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/diff"
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	"gitlab.com/sankish/magudi/pkg/api"
-	k8s_api_v1 "gitlab.com/sankish/magudi/pkg/api/v1"
-	"gitlab.com/sankish/magudi/pkg/apis/extensions"
-	"gitlab.com/sankish/magudi/pkg/security/apparmor"
-	"gitlab.com/sankish/magudi/pkg/security/podsecuritypolicy/seccomp"
-	psputil "gitlab.com/sankish/magudi/pkg/security/podsecuritypolicy/util"
+	"gitlab.com/rioos/magudi/pkg/api"
+	k8s_api_v1 "gitlab.com/rioos/magudi/pkg/api/v1"
+	"gitlab.com/rioos/magudi/pkg/apis/extensions"
+	"gitlab.com/rioos/magudi/pkg/security/apparmor"
+	"gitlab.com/rioos/magudi/pkg/security/podsecuritypolicy/seccomp"
+	psputil "gitlab.com/rioos/magudi/pkg/security/podsecuritypolicy/util"
 )
 
 const defaultContainerName = "test-c"

@@ -21,8 +21,8 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	admissionregistration "gitlab.com/sankish/magudi/pkg/apis/admissionregistration"
-	scheme "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/scheme"
+	admissionregistration "gitlab.com/rioos/magudi/pkg/apis/admissionregistration"
+	scheme "gitlab.com/rioos/magudi/pkg/client/clientset_generated/internalclientset/scheme"
 )
 
 // InitializerConfigurationsGetter has a method to return a InitializerConfigurationInterface.

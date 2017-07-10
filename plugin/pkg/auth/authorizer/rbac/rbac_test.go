@@ -24,9 +24,9 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apiserver/pkg/authentication/user"
 	"k8s.io/apiserver/pkg/authorization/authorizer"
-	"gitlab.com/sankish/magudi/pkg/apis/rbac"
-	rbacregistryvalidation "gitlab.com/sankish/magudi/pkg/registry/rbac/validation"
-	"gitlab.com/sankish/magudi/plugin/pkg/auth/authorizer/rbac/bootstrappolicy"
+	"gitlab.com/rioos/magudi/pkg/apis/rbac"
+	rbacregistryvalidation "gitlab.com/rioos/magudi/pkg/registry/rbac/validation"
+	"gitlab.com/rioos/magudi/plugin/pkg/auth/authorizer/rbac/bootstrappolicy"
 )
 
 func newRule(verbs, apiGroups, resources, nonResourceURLs string) rbac.PolicyRule {

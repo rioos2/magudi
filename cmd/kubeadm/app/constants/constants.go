@@ -21,7 +21,7 @@ import (
 	"time"
 
 	"k8s.io/api/core/v1"
-	"gitlab.com/sankish/magudi/pkg/util/version"
+	"gitlab.com/rioos/magudi/pkg/util/version"
 )
 
 const (

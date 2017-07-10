@@ -16,4 +16,4 @@ limitations under the License.
 
 // Package service provides EndpointController implementation
 // to manage and sync service endpoints.
-package endpoint // import "gitlab.com/sankish/magudi/pkg/controller/endpoint"
+package endpoint // import "gitlab.com/rioos/magudi/pkg/controller/endpoint"

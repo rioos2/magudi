@@ -19,7 +19,7 @@ package testing
 import (
 	"net"
 
-	"gitlab.com/sankish/magudi/pkg/util/netsh"
+	"gitlab.com/rioos/magudi/pkg/util/netsh"
 )
 
 // no-op implementation of netsh Interface

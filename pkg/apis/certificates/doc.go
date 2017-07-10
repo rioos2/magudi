@@ -16,4 +16,4 @@ limitations under the License.
 
 // +k8s:deepcopy-gen=package,register
 // +groupName=certificates.k8s.io
-package certificates // import "gitlab.com/sankish/magudi/pkg/apis/certificates"
+package certificates // import "gitlab.com/rioos/magudi/pkg/apis/certificates"

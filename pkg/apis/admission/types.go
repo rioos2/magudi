@@ -20,7 +20,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apiserver/pkg/admission"
-	"gitlab.com/sankish/magudi/pkg/apis/authentication"
+	"gitlab.com/rioos/magudi/pkg/apis/authentication"
 )
 
 // AdmissionReview describes an admission request.

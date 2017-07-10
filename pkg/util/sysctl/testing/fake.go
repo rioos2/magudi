@@ -19,7 +19,7 @@ package testing
 import (
 	"os"
 
-	"gitlab.com/sankish/magudi/pkg/util/sysctl"
+	"gitlab.com/rioos/magudi/pkg/util/sysctl"
 )
 
 // fake is a map-backed implementation of sysctl.Interface, for testing/mocking

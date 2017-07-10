@@ -24,9 +24,9 @@ import (
 	"k8s.io/apimachinery/pkg/fields"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/types"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/api/ref"
-	k8s_api_v1 "gitlab.com/sankish/magudi/pkg/api/v1"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api/ref"
+	k8s_api_v1 "gitlab.com/rioos/magudi/pkg/api/v1"
 )
 
 // The EventExpansion interface allows manually adding extra methods to the EventInterface.

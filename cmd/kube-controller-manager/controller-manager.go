@@ -27,12 +27,12 @@ import (
 	"k8s.io/apiserver/pkg/server/healthz"
 	"k8s.io/apiserver/pkg/util/flag"
 	"k8s.io/apiserver/pkg/util/logs"
-	"gitlab.com/sankish/magudi/cmd/kube-controller-manager/app"
-	"gitlab.com/sankish/magudi/cmd/kube-controller-manager/app/options"
-	_ "gitlab.com/sankish/magudi/pkg/client/metrics/prometheus" // for client metric registration
-	_ "gitlab.com/sankish/magudi/pkg/util/workqueue/prometheus" // for workqueue metric registration
-	_ "gitlab.com/sankish/magudi/pkg/version/prometheus"        // for version metric registration
-	"gitlab.com/sankish/magudi/pkg/version/verflag"
+	"gitlab.com/rioos/magudi/cmd/kube-controller-manager/app"
+	"gitlab.com/rioos/magudi/cmd/kube-controller-manager/app/options"
+	_ "gitlab.com/rioos/magudi/pkg/client/metrics/prometheus" // for client metric registration
+	_ "gitlab.com/rioos/magudi/pkg/util/workqueue/prometheus" // for workqueue metric registration
+	_ "gitlab.com/rioos/magudi/pkg/version/prometheus"        // for version metric registration
+	"gitlab.com/rioos/magudi/pkg/version/verflag"
 
 	"github.com/spf13/pflag"
 )

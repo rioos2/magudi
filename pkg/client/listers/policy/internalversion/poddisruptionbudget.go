@@ -22,7 +22,7 @@ import (
 	"k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"
-	policy "gitlab.com/sankish/magudi/pkg/apis/policy"
+	policy "gitlab.com/rioos/magudi/pkg/apis/policy"
 )
 
 // PodDisruptionBudgetLister helps list PodDisruptionBudgets.

@@ -25,7 +25,7 @@ import (
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	conversion "k8s.io/apimachinery/pkg/conversion"
 	runtime "k8s.io/apimachinery/pkg/runtime"
-	api "gitlab.com/sankish/magudi/pkg/api"
+	api "gitlab.com/rioos/magudi/pkg/api"
 	reflect "reflect"
 )
 

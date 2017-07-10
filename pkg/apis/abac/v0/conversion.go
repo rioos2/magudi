@@ -19,7 +19,7 @@ package v0
 import (
 	"k8s.io/apimachinery/pkg/conversion"
 	"k8s.io/apimachinery/pkg/runtime"
-	api "gitlab.com/sankish/magudi/pkg/apis/abac"
+	api "gitlab.com/rioos/magudi/pkg/apis/abac"
 )
 
 // allAuthenticated matches k8s.io/apiserver/pkg/authentication/user.AllAuthenticated,

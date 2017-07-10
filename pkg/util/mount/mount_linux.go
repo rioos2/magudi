@@ -31,7 +31,7 @@ import (
 
 	"github.com/golang/glog"
 	"k8s.io/apimachinery/pkg/util/sets"
-	utilexec "gitlab.com/sankish/magudi/pkg/util/exec"
+	utilexec "gitlab.com/rioos/magudi/pkg/util/exec"
 )
 
 const (

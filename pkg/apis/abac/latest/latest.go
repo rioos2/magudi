@@ -17,9 +17,9 @@ limitations under the License.
 package latest
 
 import (
-	_ "gitlab.com/sankish/magudi/pkg/apis/abac"
-	_ "gitlab.com/sankish/magudi/pkg/apis/abac/v0"
-	_ "gitlab.com/sankish/magudi/pkg/apis/abac/v1beta1"
+	_ "gitlab.com/rioos/magudi/pkg/apis/abac"
+	_ "gitlab.com/rioos/magudi/pkg/apis/abac/v0"
+	_ "gitlab.com/rioos/magudi/pkg/apis/abac/v1beta1"
 )
 
 // TODO: this file is totally wrong, it should look like other latest files.

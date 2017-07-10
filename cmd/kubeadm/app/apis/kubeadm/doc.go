@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // +groupName=kubeadm.k8s.io
-package kubeadm // import "gitlab.com/sankish/magudi/cmd/kubeadm/app/apis/kubeadm"
+package kubeadm // import "gitlab.com/rioos/magudi/cmd/kubeadm/app/apis/kubeadm"

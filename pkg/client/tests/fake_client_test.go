@@ -20,10 +20,10 @@ import (
 	"testing"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"gitlab.com/sankish/magudi/pkg/api"
-	clientsetfake "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/fake"
+	"gitlab.com/rioos/magudi/pkg/api"
+	clientsetfake "gitlab.com/rioos/magudi/pkg/client/clientset_generated/internalclientset/fake"
 
-	_ "gitlab.com/sankish/magudi/pkg/api/install"
+	_ "gitlab.com/rioos/magudi/pkg/api/install"
 )
 
 func TestFakeClientSetFiltering(t *testing.T) {

@@ -1,7 +1,7 @@
 package simple
 
 import (
-	"gitlab.com/sankish/magudi/third_party/forked/gonum/graph"
+	"gitlab.com/rioos/magudi/third_party/forked/gonum/graph"
 )
 
 // DirectedAcyclicGraph implements graph.Directed using UndirectedGraph,

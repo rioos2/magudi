@@ -26,10 +26,10 @@ import (
 	"k8s.io/apimachinery/pkg/conversion"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/intstr"
-	"gitlab.com/sankish/magudi/pkg/api"
-	k8s_api_v1 "gitlab.com/sankish/magudi/pkg/api/v1"
-	"gitlab.com/sankish/magudi/pkg/apis/apps"
-	"gitlab.com/sankish/magudi/pkg/apis/extensions"
+	"gitlab.com/rioos/magudi/pkg/api"
+	k8s_api_v1 "gitlab.com/rioos/magudi/pkg/api/v1"
+	"gitlab.com/rioos/magudi/pkg/apis/apps"
+	"gitlab.com/rioos/magudi/pkg/apis/extensions"
 )
 
 func addConversionFuncs(scheme *runtime.Scheme) error {

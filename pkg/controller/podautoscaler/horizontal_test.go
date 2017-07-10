@@ -36,12 +36,12 @@ import (
 	"k8s.io/apimachinery/pkg/watch"
 	clientfake "k8s.io/client-go/kubernetes/fake"
 	core "k8s.io/client-go/testing"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/apis/autoscaling"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/fake"
-	informers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions"
-	"gitlab.com/sankish/magudi/pkg/controller"
-	"gitlab.com/sankish/magudi/pkg/controller/podautoscaler/metrics"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/apis/autoscaling"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/fake"
+	informers "gitlab.com/rioos/magudi/pkg/client/informers/informers_generated/externalversions"
+	"gitlab.com/rioos/magudi/pkg/controller"
+	"gitlab.com/rioos/magudi/pkg/controller/podautoscaler/metrics"
 	metricsfake "k8s.io/metrics/pkg/client/clientset_generated/clientset/fake"
 	cmfake "k8s.io/metrics/pkg/client/custom_metrics/fake"
 
@@ -50,8 +50,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	_ "gitlab.com/sankish/magudi/pkg/apis/autoscaling/install"
-	_ "gitlab.com/sankish/magudi/pkg/apis/extensions/install"
+	_ "gitlab.com/rioos/magudi/pkg/apis/autoscaling/install"
+	_ "gitlab.com/rioos/magudi/pkg/apis/extensions/install"
 )
 
 var statusOk = []autoscalingv2.HorizontalPodAutoscalerCondition{

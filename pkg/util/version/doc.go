@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // Package version provides utilities for version number comparisons
-package version // import "gitlab.com/sankish/magudi/pkg/util/version"
+package version // import "gitlab.com/rioos/magudi/pkg/util/version"

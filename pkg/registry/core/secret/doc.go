@@ -16,4 +16,4 @@ limitations under the License.
 
 // Package secrets provides Registry interface and its REST
 // implementation for storing Secret api objects.
-package secret // import "gitlab.com/sankish/magudi/pkg/registry/core/secret"
+package secret // import "gitlab.com/rioos/magudi/pkg/registry/core/secret"

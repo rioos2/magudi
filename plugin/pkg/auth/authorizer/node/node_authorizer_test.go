@@ -27,9 +27,9 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apiserver/pkg/authentication/user"
 	"k8s.io/apiserver/pkg/authorization/authorizer"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/auth/nodeidentifier"
-	"gitlab.com/sankish/magudi/plugin/pkg/auth/authorizer/rbac/bootstrappolicy"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/auth/nodeidentifier"
+	"gitlab.com/rioos/magudi/plugin/pkg/auth/authorizer/rbac/bootstrappolicy"
 )
 
 func TestAuthorizer(t *testing.T) {

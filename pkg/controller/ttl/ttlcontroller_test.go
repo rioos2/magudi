@@ -24,8 +24,8 @@ import (
 	core "k8s.io/client-go/testing"
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/util/workqueue"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/fake"
-	listers "gitlab.com/sankish/magudi/pkg/client/listers/core/v1"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/fake"
+	listers "gitlab.com/rioos/magudi/pkg/client/listers/core/v1"
 
 	"github.com/stretchr/testify/assert"
 )

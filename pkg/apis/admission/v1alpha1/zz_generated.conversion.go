@@ -25,7 +25,7 @@ import (
 	conversion "k8s.io/apimachinery/pkg/conversion"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	pkg_admission "k8s.io/apiserver/pkg/admission"
-	admission "gitlab.com/sankish/magudi/pkg/apis/admission"
+	admission "gitlab.com/rioos/magudi/pkg/apis/admission"
 	unsafe "unsafe"
 )
 

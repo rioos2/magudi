@@ -17,7 +17,7 @@ limitations under the License.
 package fake
 
 import (
-	authorizationapi "gitlab.com/sankish/magudi/pkg/apis/authorization"
+	authorizationapi "gitlab.com/rioos/magudi/pkg/apis/authorization"
 
 	core "k8s.io/client-go/testing"
 )

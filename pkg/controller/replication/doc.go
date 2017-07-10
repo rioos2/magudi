@@ -16,4 +16,4 @@ limitations under the License.
 
 // Package replication contains logic for watching and synchronizing
 // replication controllers.
-package replication // import "gitlab.com/sankish/magudi/pkg/controller/replication"
+package replication // import "gitlab.com/rioos/magudi/pkg/controller/replication"

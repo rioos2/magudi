@@ -19,8 +19,8 @@ limitations under the License.
 package autoscaling
 
 import (
-	internalversion "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/internalversion/autoscaling/internalversion"
-	internalinterfaces "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/internalversion/internalinterfaces"
+	internalversion "gitlab.com/rioos/magudi/pkg/client/informers/informers_generated/internalversion/autoscaling/internalversion"
+	internalinterfaces "gitlab.com/rioos/magudi/pkg/client/informers/informers_generated/internalversion/internalinterfaces"
 )
 
 // Interface provides access to each of this group's versions.

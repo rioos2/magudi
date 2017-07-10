@@ -23,7 +23,7 @@ import (
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"
-	api "gitlab.com/sankish/magudi/pkg/api"
+	api "gitlab.com/rioos/magudi/pkg/api"
 )
 
 // PersistentVolumeLister helps list PersistentVolumes.

@@ -20,7 +20,7 @@ import (
 	"reflect"
 	"testing"
 
-	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api"
 )
 
 func TestGenerateAdds(t *testing.T) {

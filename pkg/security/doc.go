@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // Package security contains security apis and implementations.
-package security // import "gitlab.com/sankish/magudi/pkg/security"
+package security // import "gitlab.com/rioos/magudi/pkg/security"

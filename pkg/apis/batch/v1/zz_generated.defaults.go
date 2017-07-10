@@ -23,7 +23,7 @@ package v1
 import (
 	v1 "k8s.io/api/batch/v1"
 	runtime "k8s.io/apimachinery/pkg/runtime"
-	api_v1 "gitlab.com/sankish/magudi/pkg/api/v1"
+	api_v1 "gitlab.com/rioos/magudi/pkg/api/v1"
 )
 
 // RegisterDefaults adds defaulters functions to the given scheme.

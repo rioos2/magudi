@@ -16,4 +16,4 @@ limitations under the License.
 
 // Package controller contains code for controllers (like the replication
 // controller).
-package controller // import "gitlab.com/sankish/magudi/pkg/controller"
+package controller // import "gitlab.com/rioos/magudi/pkg/controller"

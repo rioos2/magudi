@@ -23,8 +23,8 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	genericapirequest "k8s.io/apiserver/pkg/endpoints/request"
-	"gitlab.com/sankish/magudi/pkg/api"
-	apitesting "gitlab.com/sankish/magudi/pkg/api/testing"
+	"gitlab.com/rioos/magudi/pkg/api"
+	apitesting "gitlab.com/rioos/magudi/pkg/api/testing"
 )
 
 func TestExportSecret(t *testing.T) {

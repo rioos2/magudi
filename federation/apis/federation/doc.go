@@ -16,4 +16,4 @@ limitations under the License.
 
 // +k8s:deepcopy-gen=package,register
 
-package federation // import "gitlab.com/sankish/magudi/federation/apis/federation"
+package federation // import "gitlab.com/rioos/magudi/federation/apis/federation"

@@ -3,7 +3,7 @@
     {
       "SelectorRegexp": "k8s[.]io/kubernetes/pkg/client/unversioned",
       "AllowedPrefixes": [
-        "gitlab.com/sankish/magudi/pkg/client/unversioned/clientcmd/api"
+        "gitlab.com/rioos/magudi/pkg/client/unversioned/clientcmd/api"
       ]
     }
   ]

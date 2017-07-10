@@ -22,8 +22,8 @@ package app
 
 import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"gitlab.com/sankish/magudi/pkg/controller/deployment"
-	"gitlab.com/sankish/magudi/pkg/controller/replicaset"
+	"gitlab.com/rioos/magudi/pkg/controller/deployment"
+	"gitlab.com/rioos/magudi/pkg/controller/replicaset"
 )
 
 func startDeploymentController(ctx ControllerContext) (bool, error) {

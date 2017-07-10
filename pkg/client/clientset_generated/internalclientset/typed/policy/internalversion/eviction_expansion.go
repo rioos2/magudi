@@ -17,7 +17,7 @@ limitations under the License.
 package internalversion
 
 import (
-	policy "gitlab.com/sankish/magudi/pkg/apis/policy"
+	policy "gitlab.com/rioos/magudi/pkg/apis/policy"
 )
 
 // The EvictionExpansion interface allows manually adding extra methods to the ScaleInterface.

@@ -16,4 +16,4 @@ limitations under the License.
 
 // +k8s:deepcopy-gen=package,register
 // +groupName=authentication.k8s.io
-package authentication // import "gitlab.com/sankish/magudi/pkg/apis/authentication"
+package authentication // import "gitlab.com/rioos/magudi/pkg/apis/authentication"

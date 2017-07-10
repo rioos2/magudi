@@ -22,7 +22,7 @@ package app
 
 import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"gitlab.com/sankish/magudi/pkg/controller/disruption"
+	"gitlab.com/rioos/magudi/pkg/controller/disruption"
 
 	"github.com/golang/glog"
 )

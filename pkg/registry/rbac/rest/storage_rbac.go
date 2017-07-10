@@ -34,26 +34,26 @@ import (
 	"k8s.io/apiserver/pkg/registry/rest"
 	genericapiserver "k8s.io/apiserver/pkg/server"
 	serverstorage "k8s.io/apiserver/pkg/server/storage"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/apis/rbac"
-	coreclient "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/typed/core/internalversion"
-	rbacclient "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/typed/rbac/internalversion"
-	"gitlab.com/sankish/magudi/pkg/client/retry"
-	"gitlab.com/sankish/magudi/pkg/registry/rbac/clusterrole"
-	clusterrolepolicybased "gitlab.com/sankish/magudi/pkg/registry/rbac/clusterrole/policybased"
-	clusterrolestore "gitlab.com/sankish/magudi/pkg/registry/rbac/clusterrole/storage"
-	"gitlab.com/sankish/magudi/pkg/registry/rbac/clusterrolebinding"
-	clusterrolebindingpolicybased "gitlab.com/sankish/magudi/pkg/registry/rbac/clusterrolebinding/policybased"
-	clusterrolebindingstore "gitlab.com/sankish/magudi/pkg/registry/rbac/clusterrolebinding/storage"
-	"gitlab.com/sankish/magudi/pkg/registry/rbac/reconciliation"
-	"gitlab.com/sankish/magudi/pkg/registry/rbac/role"
-	rolepolicybased "gitlab.com/sankish/magudi/pkg/registry/rbac/role/policybased"
-	rolestore "gitlab.com/sankish/magudi/pkg/registry/rbac/role/storage"
-	"gitlab.com/sankish/magudi/pkg/registry/rbac/rolebinding"
-	rolebindingpolicybased "gitlab.com/sankish/magudi/pkg/registry/rbac/rolebinding/policybased"
-	rolebindingstore "gitlab.com/sankish/magudi/pkg/registry/rbac/rolebinding/storage"
-	rbacregistryvalidation "gitlab.com/sankish/magudi/pkg/registry/rbac/validation"
-	"gitlab.com/sankish/magudi/plugin/pkg/auth/authorizer/rbac/bootstrappolicy"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/apis/rbac"
+	coreclient "gitlab.com/rioos/magudi/pkg/client/clientset_generated/internalclientset/typed/core/internalversion"
+	rbacclient "gitlab.com/rioos/magudi/pkg/client/clientset_generated/internalclientset/typed/rbac/internalversion"
+	"gitlab.com/rioos/magudi/pkg/client/retry"
+	"gitlab.com/rioos/magudi/pkg/registry/rbac/clusterrole"
+	clusterrolepolicybased "gitlab.com/rioos/magudi/pkg/registry/rbac/clusterrole/policybased"
+	clusterrolestore "gitlab.com/rioos/magudi/pkg/registry/rbac/clusterrole/storage"
+	"gitlab.com/rioos/magudi/pkg/registry/rbac/clusterrolebinding"
+	clusterrolebindingpolicybased "gitlab.com/rioos/magudi/pkg/registry/rbac/clusterrolebinding/policybased"
+	clusterrolebindingstore "gitlab.com/rioos/magudi/pkg/registry/rbac/clusterrolebinding/storage"
+	"gitlab.com/rioos/magudi/pkg/registry/rbac/reconciliation"
+	"gitlab.com/rioos/magudi/pkg/registry/rbac/role"
+	rolepolicybased "gitlab.com/rioos/magudi/pkg/registry/rbac/role/policybased"
+	rolestore "gitlab.com/rioos/magudi/pkg/registry/rbac/role/storage"
+	"gitlab.com/rioos/magudi/pkg/registry/rbac/rolebinding"
+	rolebindingpolicybased "gitlab.com/rioos/magudi/pkg/registry/rbac/rolebinding/policybased"
+	rolebindingstore "gitlab.com/rioos/magudi/pkg/registry/rbac/rolebinding/storage"
+	rbacregistryvalidation "gitlab.com/rioos/magudi/pkg/registry/rbac/validation"
+	"gitlab.com/rioos/magudi/plugin/pkg/auth/authorizer/rbac/bootstrappolicy"
 )
 
 const PostStartHookName = "rbac/bootstrap-roles"
@@ -66,7 +66,7 @@ var _ genericapiserver.PostStartHookProvider = RESTStorageProvider{}
 
 func (p RESTStorageProvider) NewRESTStorage(apiResourceConfigSource serverstorage.APIResourceConfigSource, restOptionsGetter generic.RESTOptionsGetter) (genericapiserver.APIGroupInfo, bool) {
 	apiGroupInfo := genericapiserver.NewDefaultAPIGroupInfo(rbac.GroupName, api.Registry, api.Scheme, api.ParameterCodec, api.Codecs)
-	// If you add a version here, be sure to add an entry in `gitlab.com/sankish/magudi/cmd/kube-apiserver/app/aggregator.go with specific priorities.
+	// If you add a version here, be sure to add an entry in `gitlab.com/rioos/magudi/cmd/kube-apiserver/app/aggregator.go with specific priorities.
 	// TODO refactor the plumbing to provide the information in the APIGroupInfo
 
 	if apiResourceConfigSource.AnyResourcesForVersionEnabled(rbacapiv1alpha1.SchemeGroupVersion) {

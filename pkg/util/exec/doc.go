@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // Package exec provides an injectable interface and implementations for running commands.
-package exec // import "gitlab.com/sankish/magudi/pkg/util/exec"
+package exec // import "gitlab.com/rioos/magudi/pkg/util/exec"

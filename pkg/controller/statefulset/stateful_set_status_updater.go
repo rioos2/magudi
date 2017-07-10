@@ -23,10 +23,10 @@ import (
 	"k8s.io/client-go/kubernetes/scheme"
 
 	apps "k8s.io/api/apps/v1beta1"
-	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
-	appslisters "gitlab.com/sankish/magudi/pkg/client/listers/apps/v1beta1"
+	"gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset"
+	appslisters "gitlab.com/rioos/magudi/pkg/client/listers/apps/v1beta1"
 
-	"gitlab.com/sankish/magudi/pkg/client/retry"
+	"gitlab.com/rioos/magudi/pkg/client/retry"
 )
 
 // StatefulSetStatusUpdaterInterface is an interface used to update the StatefulSetStatus associated with a StatefulSet.

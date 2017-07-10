@@ -33,7 +33,7 @@ import (
 	"k8s.io/apimachinery/pkg/util/sets"
 	"k8s.io/client-go/discovery"
 	"k8s.io/client-go/dynamic"
-	v1clientset "gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/typed/core/v1"
+	v1clientset "gitlab.com/rioos/magudi/pkg/client/clientset_generated/clientset/typed/core/v1"
 )
 
 // Interface to delete a namespace with all resources in it.

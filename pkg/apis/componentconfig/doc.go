@@ -16,4 +16,4 @@ limitations under the License.
 
 // +k8s:deepcopy-gen=package,register
 
-package componentconfig // import "gitlab.com/sankish/magudi/pkg/apis/componentconfig"
+package componentconfig // import "gitlab.com/rioos/magudi/pkg/apis/componentconfig"

@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // Common types in the Kubelet.
-package types // import "gitlab.com/sankish/magudi/pkg/kubelet/types"
+package types // import "gitlab.com/rioos/magudi/pkg/kubelet/types"

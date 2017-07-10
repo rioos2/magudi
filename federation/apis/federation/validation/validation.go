@@ -18,8 +18,8 @@ package validation
 
 import (
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	"gitlab.com/sankish/magudi/federation/apis/federation"
-	"gitlab.com/sankish/magudi/pkg/api/validation"
+	"gitlab.com/rioos/magudi/federation/apis/federation"
+	"gitlab.com/rioos/magudi/pkg/api/validation"
 )
 
 func ValidateClusterSpec(spec *federation.ClusterSpec, fieldPath *field.Path) field.ErrorList {

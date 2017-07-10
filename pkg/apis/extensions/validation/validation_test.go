@@ -26,11 +26,11 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/intstr"
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	"gitlab.com/sankish/magudi/pkg/api"
-	"gitlab.com/sankish/magudi/pkg/apis/extensions"
-	"gitlab.com/sankish/magudi/pkg/security/apparmor"
-	"gitlab.com/sankish/magudi/pkg/security/podsecuritypolicy/seccomp"
-	psputil "gitlab.com/sankish/magudi/pkg/security/podsecuritypolicy/util"
+	"gitlab.com/rioos/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/apis/extensions"
+	"gitlab.com/rioos/magudi/pkg/security/apparmor"
+	"gitlab.com/rioos/magudi/pkg/security/podsecuritypolicy/seccomp"
+	psputil "gitlab.com/rioos/magudi/pkg/security/podsecuritypolicy/util"
 )
 
 func TestValidateDaemonSetStatusUpdate(t *testing.T) {

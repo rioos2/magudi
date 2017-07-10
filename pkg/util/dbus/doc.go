@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // Package dbus provides an injectable interface and implementations for D-Bus communication
-package dbus // import "gitlab.com/sankish/magudi/pkg/util/dbus"
+package dbus // import "gitlab.com/rioos/magudi/pkg/util/dbus"

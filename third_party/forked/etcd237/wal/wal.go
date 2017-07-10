@@ -25,7 +25,7 @@ import (
 	"sync"
 	"time"
 
-	"gitlab.com/sankish/magudi/third_party/forked/etcd237/pkg/fileutil"
+	"gitlab.com/rioos/magudi/third_party/forked/etcd237/pkg/fileutil"
 
 	"github.com/coreos/etcd/pkg/pbutil"
 	"github.com/coreos/etcd/raft/raftpb"

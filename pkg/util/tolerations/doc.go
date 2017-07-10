@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // Package tolerations provides utilities to work with pod spec tolerations.
-package tolerations // import "gitlab.com/sankish/magudi/pkg/util/tolerations"
+package tolerations // import "gitlab.com/rioos/magudi/pkg/util/tolerations"

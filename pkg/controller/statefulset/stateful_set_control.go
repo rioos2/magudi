@@ -24,7 +24,7 @@ import (
 	"k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/client-go/kubernetes/scheme"
-	"gitlab.com/sankish/magudi/pkg/controller/history"
+	"gitlab.com/rioos/magudi/pkg/controller/history"
 
 	"github.com/golang/glog"
 )

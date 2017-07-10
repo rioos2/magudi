@@ -19,4 +19,4 @@ limitations under the License.
 // Package policy is for any kind of policy object.  Suitable examples, even if
 // they aren't all here, are PodDisruptionBudget, PodSecurityPolicy,
 // NetworkPolicy, etc.
-package v1alpha1 // import "gitlab.com/sankish/magudi/pkg/apis/policy/v1alpha1"
+package v1alpha1 // import "gitlab.com/rioos/magudi/pkg/apis/policy/v1alpha1"

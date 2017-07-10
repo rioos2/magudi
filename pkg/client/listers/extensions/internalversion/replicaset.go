@@ -22,7 +22,7 @@ import (
 	"k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"
-	extensions "gitlab.com/sankish/magudi/pkg/apis/extensions"
+	extensions "gitlab.com/rioos/magudi/pkg/apis/extensions"
 )
 
 // ReplicaSetLister helps list ReplicaSets.

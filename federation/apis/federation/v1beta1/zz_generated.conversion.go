@@ -24,8 +24,8 @@ import (
 	v1 "k8s.io/api/core/v1"
 	conversion "k8s.io/apimachinery/pkg/conversion"
 	runtime "k8s.io/apimachinery/pkg/runtime"
-	federation "gitlab.com/sankish/magudi/federation/apis/federation"
-	api "gitlab.com/sankish/magudi/pkg/api"
+	federation "gitlab.com/rioos/magudi/federation/apis/federation"
+	api "gitlab.com/rioos/magudi/pkg/api"
 	unsafe "unsafe"
 )
 

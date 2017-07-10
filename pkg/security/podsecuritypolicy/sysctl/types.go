@@ -18,7 +18,7 @@ package sysctl
 
 import (
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/rioos/magudi/pkg/api"
 )
 
 // SysctlsStrategy defines the interface for all sysctl strategies.
