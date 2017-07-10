@@ -32,9 +32,9 @@ import (
 	"k8s.io/apimachinery/pkg/util/uuid"
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/util/workqueue"
-	"k8s.io/kubernetes/pkg/api"
-	informers "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions"
-	"k8s.io/kubernetes/pkg/controller"
+	"gitlab.com/sankish/magudi/pkg/api"
+	informers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions"
+	"gitlab.com/sankish/magudi/pkg/controller"
 
 	"github.com/Azure/go-autorest/autorest/to"
 )

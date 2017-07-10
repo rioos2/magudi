@@ -20,7 +20,7 @@ import (
 	"strings"
 	"testing"
 
-	"k8s.io/kubernetes/pkg/util/exec"
+	"gitlab.com/sankish/magudi/pkg/util/exec"
 )
 
 func TestEnsureChain(t *testing.T) {

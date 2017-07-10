@@ -33,11 +33,11 @@ import (
 	restclient "k8s.io/client-go/rest"
 	core "k8s.io/client-go/testing"
 	"k8s.io/client-go/tools/cache"
-	"k8s.io/kubernetes/pkg/api"
-	"k8s.io/kubernetes/pkg/client/clientset_generated/clientset"
-	"k8s.io/kubernetes/pkg/client/clientset_generated/clientset/fake"
-	informers "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions"
-	"k8s.io/kubernetes/pkg/controller"
+	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
+	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/fake"
+	informers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions"
+	"gitlab.com/sankish/magudi/pkg/controller"
 )
 
 var alwaysReady = func() bool { return true }

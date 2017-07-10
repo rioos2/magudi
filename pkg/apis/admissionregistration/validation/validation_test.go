@@ -21,7 +21,7 @@ import (
 	"testing"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/kubernetes/pkg/apis/admissionregistration"
+	"gitlab.com/sankish/magudi/pkg/apis/admissionregistration"
 )
 
 func getInitializerConfiguration(initializers []admissionregistration.Initializer) *admissionregistration.InitializerConfiguration {

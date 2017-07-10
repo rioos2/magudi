@@ -16,4 +16,4 @@ limitations under the License.
 
 // +k8s:deepcopy-gen=package,register
 // +groupName=admission.k8s.io
-package admission // import "k8s.io/kubernetes/pkg/apis/admission"
+package admission // import "gitlab.com/sankish/magudi/pkg/apis/admission"

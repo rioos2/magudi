@@ -24,10 +24,10 @@ import (
 
 	apps "k8s.io/api/apps/v1beta1"
 	"k8s.io/api/core/v1"
-	"k8s.io/kubernetes/pkg/api"
-	podutil "k8s.io/kubernetes/pkg/api/v1/pod"
-	"k8s.io/kubernetes/pkg/controller"
-	"k8s.io/kubernetes/pkg/controller/history"
+	"gitlab.com/sankish/magudi/pkg/api"
+	podutil "gitlab.com/sankish/magudi/pkg/api/v1/pod"
+	"gitlab.com/sankish/magudi/pkg/controller"
+	"gitlab.com/sankish/magudi/pkg/controller/history"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"

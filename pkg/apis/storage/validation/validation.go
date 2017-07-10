@@ -22,8 +22,8 @@ import (
 
 	"k8s.io/apimachinery/pkg/util/validation"
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	apivalidation "k8s.io/kubernetes/pkg/api/validation"
-	"k8s.io/kubernetes/pkg/apis/storage"
+	apivalidation "gitlab.com/sankish/magudi/pkg/api/validation"
+	"gitlab.com/sankish/magudi/pkg/apis/storage"
 )
 
 // ValidateStorageClass validates a StorageClass.

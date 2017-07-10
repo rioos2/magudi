@@ -25,12 +25,12 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 	core "k8s.io/client-go/testing"
-	nodeutil "k8s.io/kubernetes/pkg/api/v1/node"
-	"k8s.io/kubernetes/pkg/client/clientset_generated/clientset/fake"
-	informers "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions"
-	"k8s.io/kubernetes/pkg/cloudprovider"
-	fakecloud "k8s.io/kubernetes/pkg/cloudprovider/providers/fake"
-	"k8s.io/kubernetes/pkg/controller"
+	nodeutil "gitlab.com/sankish/magudi/pkg/api/v1/node"
+	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/fake"
+	informers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions"
+	"gitlab.com/sankish/magudi/pkg/cloudprovider"
+	fakecloud "gitlab.com/sankish/magudi/pkg/cloudprovider/providers/fake"
+	"gitlab.com/sankish/magudi/pkg/controller"
 )
 
 func alwaysReady() bool { return true }

@@ -21,8 +21,8 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	storage "k8s.io/kubernetes/pkg/apis/storage"
-	scheme "k8s.io/kubernetes/pkg/client/clientset_generated/internalclientset/scheme"
+	storage "gitlab.com/sankish/magudi/pkg/apis/storage"
+	scheme "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/scheme"
 )
 
 // StorageClassesGetter has a method to return a StorageClassInterface.

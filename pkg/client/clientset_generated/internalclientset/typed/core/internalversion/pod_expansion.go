@@ -18,7 +18,7 @@ package internalversion
 
 import (
 	restclient "k8s.io/client-go/rest"
-	"k8s.io/kubernetes/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/api"
 )
 
 // The PodExpansion interface allows manually adding extra methods to the PodInterface.

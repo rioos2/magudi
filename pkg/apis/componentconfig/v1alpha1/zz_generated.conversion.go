@@ -25,8 +25,8 @@ import (
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	conversion "k8s.io/apimachinery/pkg/conversion"
 	runtime "k8s.io/apimachinery/pkg/runtime"
-	api "k8s.io/kubernetes/pkg/api"
-	componentconfig "k8s.io/kubernetes/pkg/apis/componentconfig"
+	api "gitlab.com/sankish/magudi/pkg/api"
+	componentconfig "gitlab.com/sankish/magudi/pkg/apis/componentconfig"
 	unsafe "unsafe"
 )
 

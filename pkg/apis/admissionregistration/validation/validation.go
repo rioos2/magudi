@@ -24,7 +24,7 @@ import (
 	"k8s.io/apimachinery/pkg/util/sets"
 	validationutil "k8s.io/apimachinery/pkg/util/validation"
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	"k8s.io/kubernetes/pkg/apis/admissionregistration"
+	"gitlab.com/sankish/magudi/pkg/apis/admissionregistration"
 )
 
 func ValidateInitializerConfiguration(ic *admissionregistration.InitializerConfiguration) field.ErrorList {

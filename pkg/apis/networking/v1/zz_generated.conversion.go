@@ -27,8 +27,8 @@ import (
 	conversion "k8s.io/apimachinery/pkg/conversion"
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	intstr "k8s.io/apimachinery/pkg/util/intstr"
-	api "k8s.io/kubernetes/pkg/api"
-	networking "k8s.io/kubernetes/pkg/apis/networking"
+	api "gitlab.com/sankish/magudi/pkg/api"
+	networking "gitlab.com/sankish/magudi/pkg/apis/networking"
 	unsafe "unsafe"
 )
 

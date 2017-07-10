@@ -32,14 +32,14 @@ import (
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/util/workqueue"
-	"k8s.io/kubernetes/pkg/client/clientset_generated/clientset"
-	informers "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions/core/v1"
-	listersv1 "k8s.io/kubernetes/pkg/client/listers/core/v1"
-	clientretry "k8s.io/kubernetes/pkg/client/retry"
-	"k8s.io/kubernetes/pkg/controller"
-	"k8s.io/kubernetes/pkg/registry/core/secret"
-	"k8s.io/kubernetes/pkg/serviceaccount"
-	"k8s.io/kubernetes/pkg/util/metrics"
+	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
+	informers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/core/v1"
+	listersv1 "gitlab.com/sankish/magudi/pkg/client/listers/core/v1"
+	clientretry "gitlab.com/sankish/magudi/pkg/client/retry"
+	"gitlab.com/sankish/magudi/pkg/controller"
+	"gitlab.com/sankish/magudi/pkg/registry/core/secret"
+	"gitlab.com/sankish/magudi/pkg/serviceaccount"
+	"gitlab.com/sankish/magudi/pkg/util/metrics"
 )
 
 // RemoveTokenBackoff is the recommended (empirical) retry interval for removing

@@ -18,7 +18,7 @@ package fake
 
 import (
 	core "k8s.io/client-go/testing"
-	authenticationapi "k8s.io/kubernetes/pkg/apis/authentication"
+	authenticationapi "gitlab.com/sankish/magudi/pkg/apis/authentication"
 )
 
 func (c *FakeTokenReviews) Create(tokenReview *authenticationapi.TokenReview) (result *authenticationapi.TokenReview, err error) {

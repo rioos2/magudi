@@ -21,7 +21,7 @@ package qos
 import (
 	"k8s.io/apimachinery/pkg/api/resource"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"k8s.io/kubernetes/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/api"
 )
 
 // supportedComputeResources is the list of compute resources for with QoS is supported.

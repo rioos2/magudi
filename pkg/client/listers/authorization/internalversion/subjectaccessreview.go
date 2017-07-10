@@ -23,7 +23,7 @@ import (
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"
-	authorization "k8s.io/kubernetes/pkg/apis/authorization"
+	authorization "gitlab.com/sankish/magudi/pkg/apis/authorization"
 )
 
 // SubjectAccessReviewLister helps list SubjectAccessReviews.

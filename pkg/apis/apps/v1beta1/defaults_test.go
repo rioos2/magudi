@@ -26,10 +26,10 @@ import (
 	apiequality "k8s.io/apimachinery/pkg/api/equality"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/intstr"
-	"k8s.io/kubernetes/pkg/api"
-	_ "k8s.io/kubernetes/pkg/api/install"
-	_ "k8s.io/kubernetes/pkg/apis/apps/install"
-	. "k8s.io/kubernetes/pkg/apis/apps/v1beta1"
+	"gitlab.com/sankish/magudi/pkg/api"
+	_ "gitlab.com/sankish/magudi/pkg/api/install"
+	_ "gitlab.com/sankish/magudi/pkg/apis/apps/install"
+	. "gitlab.com/sankish/magudi/pkg/apis/apps/v1beta1"
 )
 
 func TestSetDefaultDeployment(t *testing.T) {

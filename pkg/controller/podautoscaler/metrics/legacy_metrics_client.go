@@ -31,8 +31,8 @@ import (
 	clientgov1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
-	"k8s.io/kubernetes/pkg/client/clientset_generated/clientset"
-	v1core "k8s.io/kubernetes/pkg/client/clientset_generated/clientset/typed/core/v1"
+	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
+	v1core "gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/typed/core/v1"
 )
 
 const (

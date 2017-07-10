@@ -16,7 +16,7 @@ limitations under the License.
 
 package app
 
-import "k8s.io/kubernetes/pkg/controller/bootstrap"
+import "gitlab.com/sankish/magudi/pkg/controller/bootstrap"
 
 func startBootstrapSignerController(ctx ControllerContext) (bool, error) {
 	go bootstrap.NewBootstrapSigner(

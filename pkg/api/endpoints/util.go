@@ -24,8 +24,8 @@ import (
 	"sort"
 
 	"k8s.io/apimachinery/pkg/types"
-	"k8s.io/kubernetes/pkg/api"
-	hashutil "k8s.io/kubernetes/pkg/util/hash"
+	"gitlab.com/sankish/magudi/pkg/api"
+	hashutil "gitlab.com/sankish/magudi/pkg/util/hash"
 )
 
 // RepackSubsets takes a slice of EndpointSubset objects, expands it to the full

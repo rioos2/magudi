@@ -22,7 +22,7 @@ import (
 	"k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"
-	autoscaling "k8s.io/kubernetes/pkg/apis/autoscaling"
+	autoscaling "gitlab.com/sankish/magudi/pkg/apis/autoscaling"
 )
 
 // HorizontalPodAutoscalerLister helps list HorizontalPodAutoscalers.

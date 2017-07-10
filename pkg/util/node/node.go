@@ -29,9 +29,9 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/apimachinery/pkg/util/strategicpatch"
-	"k8s.io/kubernetes/pkg/api"
-	"k8s.io/kubernetes/pkg/client/clientset_generated/clientset"
-	kubeletapis "k8s.io/kubernetes/pkg/kubelet/apis"
+	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
+	kubeletapis "gitlab.com/sankish/magudi/pkg/kubelet/apis"
 )
 
 const (

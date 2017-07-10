@@ -34,7 +34,7 @@ import (
 	"k8s.io/client-go/dynamic"
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/util/workqueue"
-	informers "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions"
+	informers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions"
 )
 
 type eventType int

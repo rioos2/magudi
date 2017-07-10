@@ -23,7 +23,7 @@ import (
 
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/dynamic"
-	"k8s.io/kubernetes/pkg/util/metrics"
+	"gitlab.com/sankish/magudi/pkg/util/metrics"
 )
 
 // RegisteredRateLimiter records the registered RateLimters to avoid

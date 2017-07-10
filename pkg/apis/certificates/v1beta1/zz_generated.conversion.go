@@ -24,7 +24,7 @@ import (
 	v1beta1 "k8s.io/api/certificates/v1beta1"
 	conversion "k8s.io/apimachinery/pkg/conversion"
 	runtime "k8s.io/apimachinery/pkg/runtime"
-	certificates "k8s.io/kubernetes/pkg/apis/certificates"
+	certificates "gitlab.com/sankish/magudi/pkg/apis/certificates"
 	unsafe "unsafe"
 )
 

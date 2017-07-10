@@ -21,8 +21,8 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	api "k8s.io/kubernetes/pkg/api"
-	scheme "k8s.io/kubernetes/pkg/client/clientset_generated/internalclientset/scheme"
+	api "gitlab.com/sankish/magudi/pkg/api"
+	scheme "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/scheme"
 )
 
 // ResourceQuotasGetter has a method to return a ResourceQuotaInterface.

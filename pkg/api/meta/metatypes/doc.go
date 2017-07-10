@@ -15,4 +15,4 @@ limitations under the License.
 */
 
 // Package metatypes has been deprecated and removed.
-package meta // import "k8s.io/kubernetes/pkg/api/meta/metatypes"
+package meta // import "gitlab.com/sankish/magudi/pkg/api/meta/metatypes"

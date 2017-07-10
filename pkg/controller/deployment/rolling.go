@@ -25,8 +25,8 @@ import (
 	extensions "k8s.io/api/extensions/v1beta1"
 	"k8s.io/apimachinery/pkg/types"
 	"k8s.io/client-go/util/integer"
-	"k8s.io/kubernetes/pkg/controller"
-	deploymentutil "k8s.io/kubernetes/pkg/controller/deployment/util"
+	"gitlab.com/sankish/magudi/pkg/controller"
+	deploymentutil "gitlab.com/sankish/magudi/pkg/controller/deployment/util"
 )
 
 // rolloutRolling implements the logic for rolling a new replica set.

@@ -18,7 +18,7 @@ package internalversion
 
 import (
 	"k8s.io/apimachinery/pkg/labels"
-	"k8s.io/kubernetes/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/api"
 )
 
 // ServiceListerExpansion allows custom methods to be added to

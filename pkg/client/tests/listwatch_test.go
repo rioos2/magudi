@@ -30,9 +30,9 @@ import (
 	restclient "k8s.io/client-go/rest"
 	. "k8s.io/client-go/tools/cache"
 	utiltesting "k8s.io/client-go/util/testing"
-	"k8s.io/kubernetes/pkg/api"
-	"k8s.io/kubernetes/pkg/api/testapi"
-	clientset "k8s.io/kubernetes/pkg/client/clientset_generated/internalclientset"
+	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/api/testapi"
+	clientset "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset"
 )
 
 func parseSelectorOrDie(s string) fields.Selector {

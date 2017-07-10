@@ -19,8 +19,8 @@ limitations under the License.
 package extensions
 
 import (
-	v1beta1 "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions/extensions/v1beta1"
-	internalinterfaces "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions/internalinterfaces"
+	v1beta1 "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/extensions/v1beta1"
+	internalinterfaces "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/internalinterfaces"
 )
 
 // Interface provides access to each of this group's versions.

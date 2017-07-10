@@ -26,7 +26,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/diff"
 	"k8s.io/apiserver/pkg/authentication/user"
-	"k8s.io/kubernetes/pkg/apis/rbac"
+	"gitlab.com/sankish/magudi/pkg/apis/rbac"
 )
 
 // compute a hash of a policy rule so we can sort in a deterministic order

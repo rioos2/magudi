@@ -22,9 +22,9 @@ import (
 	"k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/kubernetes/pkg/api"
-	"k8s.io/kubernetes/pkg/api/helper/qos"
-	k8sv1 "k8s.io/kubernetes/pkg/api/v1"
+	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/api/helper/qos"
+	k8sv1 "gitlab.com/sankish/magudi/pkg/api/v1"
 )
 
 func TestGetPodQOS(t *testing.T) {

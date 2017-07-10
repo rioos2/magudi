@@ -22,8 +22,8 @@ import (
 
 	"k8s.io/apiserver/pkg/authentication/user"
 	"k8s.io/apiserver/pkg/authorization/authorizer"
-	"k8s.io/kubernetes/pkg/apis/rbac"
-	rbacregistryvalidation "k8s.io/kubernetes/pkg/registry/rbac/validation"
+	"gitlab.com/sankish/magudi/pkg/apis/rbac"
+	rbacregistryvalidation "gitlab.com/sankish/magudi/pkg/registry/rbac/validation"
 )
 
 func TestSubjectLocator(t *testing.T) {

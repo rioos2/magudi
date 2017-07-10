@@ -24,8 +24,8 @@ import (
 	"testing"
 
 	"k8s.io/api/core/v1"
-	"k8s.io/kubernetes/pkg/controller"
-	hashutil "k8s.io/kubernetes/pkg/util/hash"
+	"gitlab.com/sankish/magudi/pkg/controller"
+	hashutil "gitlab.com/sankish/magudi/pkg/util/hash"
 )
 
 var podSpec string = `

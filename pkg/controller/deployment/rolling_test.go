@@ -23,7 +23,7 @@ import (
 	"k8s.io/apimachinery/pkg/util/intstr"
 	core "k8s.io/client-go/testing"
 	"k8s.io/client-go/tools/record"
-	"k8s.io/kubernetes/pkg/client/clientset_generated/clientset/fake"
+	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/fake"
 )
 
 func TestDeploymentController_reconcileNewReplicaSet(t *testing.T) {

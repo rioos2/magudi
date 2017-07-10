@@ -34,25 +34,26 @@ import (
 	"k8s.io/apiserver/pkg/registry/rest"
 	genericapiserver "k8s.io/apiserver/pkg/server"
 	serverstorage "k8s.io/apiserver/pkg/server/storage"
-	"k8s.io/kubernetes/pkg/api"
-	"k8s.io/kubernetes/pkg/apis/rbac"
-	rbacclient "k8s.io/kubernetes/pkg/client/clientset_generated/internalclientset/typed/rbac/internalversion"
-	"k8s.io/kubernetes/pkg/client/retry"
-	"k8s.io/kubernetes/pkg/registry/rbac/clusterrole"
-	clusterrolepolicybased "k8s.io/kubernetes/pkg/registry/rbac/clusterrole/policybased"
-	clusterrolestore "k8s.io/kubernetes/pkg/registry/rbac/clusterrole/storage"
-	"k8s.io/kubernetes/pkg/registry/rbac/clusterrolebinding"
-	clusterrolebindingpolicybased "k8s.io/kubernetes/pkg/registry/rbac/clusterrolebinding/policybased"
-	clusterrolebindingstore "k8s.io/kubernetes/pkg/registry/rbac/clusterrolebinding/storage"
-	"k8s.io/kubernetes/pkg/registry/rbac/reconciliation"
-	"k8s.io/kubernetes/pkg/registry/rbac/role"
-	rolepolicybased "k8s.io/kubernetes/pkg/registry/rbac/role/policybased"
-	rolestore "k8s.io/kubernetes/pkg/registry/rbac/role/storage"
-	"k8s.io/kubernetes/pkg/registry/rbac/rolebinding"
-	rolebindingpolicybased "k8s.io/kubernetes/pkg/registry/rbac/rolebinding/policybased"
-	rolebindingstore "k8s.io/kubernetes/pkg/registry/rbac/rolebinding/storage"
-	rbacregistryvalidation "k8s.io/kubernetes/pkg/registry/rbac/validation"
-	"k8s.io/kubernetes/plugin/pkg/auth/authorizer/rbac/bootstrappolicy"
+	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/apis/rbac"
+	coreclient "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/typed/core/internalversion"
+	rbacclient "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/typed/rbac/internalversion"
+	"gitlab.com/sankish/magudi/pkg/client/retry"
+	"gitlab.com/sankish/magudi/pkg/registry/rbac/clusterrole"
+	clusterrolepolicybased "gitlab.com/sankish/magudi/pkg/registry/rbac/clusterrole/policybased"
+	clusterrolestore "gitlab.com/sankish/magudi/pkg/registry/rbac/clusterrole/storage"
+	"gitlab.com/sankish/magudi/pkg/registry/rbac/clusterrolebinding"
+	clusterrolebindingpolicybased "gitlab.com/sankish/magudi/pkg/registry/rbac/clusterrolebinding/policybased"
+	clusterrolebindingstore "gitlab.com/sankish/magudi/pkg/registry/rbac/clusterrolebinding/storage"
+	"gitlab.com/sankish/magudi/pkg/registry/rbac/reconciliation"
+	"gitlab.com/sankish/magudi/pkg/registry/rbac/role"
+	rolepolicybased "gitlab.com/sankish/magudi/pkg/registry/rbac/role/policybased"
+	rolestore "gitlab.com/sankish/magudi/pkg/registry/rbac/role/storage"
+	"gitlab.com/sankish/magudi/pkg/registry/rbac/rolebinding"
+	rolebindingpolicybased "gitlab.com/sankish/magudi/pkg/registry/rbac/rolebinding/policybased"
+	rolebindingstore "gitlab.com/sankish/magudi/pkg/registry/rbac/rolebinding/storage"
+	rbacregistryvalidation "gitlab.com/sankish/magudi/pkg/registry/rbac/validation"
+	"gitlab.com/sankish/magudi/plugin/pkg/auth/authorizer/rbac/bootstrappolicy"
 )
 
 const PostStartHookName = "rbac/bootstrap-roles"
@@ -65,7 +66,7 @@ var _ genericapiserver.PostStartHookProvider = RESTStorageProvider{}
 
 func (p RESTStorageProvider) NewRESTStorage(apiResourceConfigSource serverstorage.APIResourceConfigSource, restOptionsGetter generic.RESTOptionsGetter) (genericapiserver.APIGroupInfo, bool) {
 	apiGroupInfo := genericapiserver.NewDefaultAPIGroupInfo(rbac.GroupName, api.Registry, api.Scheme, api.ParameterCodec, api.Codecs)
-	// If you add a version here, be sure to add an entry in `k8s.io/kubernetes/cmd/kube-apiserver/app/aggregator.go with specific priorities.
+	// If you add a version here, be sure to add an entry in `gitlab.com/sankish/magudi/cmd/kube-apiserver/app/aggregator.go with specific priorities.
 	// TODO refactor the plumbing to provide the information in the APIGroupInfo
 
 	if apiResourceConfigSource.AnyResourcesForVersionEnabled(rbacapiv1alpha1.SchemeGroupVersion) {
@@ -134,6 +135,13 @@ func PostStartHook(hookContext genericapiserver.PostStartHookContext) error {
 	// intializing roles is really important.  On some e2e runs, we've seen cases where etcd is down when the server
 	// starts, the roles don't initialize, and nothing works.
 	err := wait.Poll(1*time.Second, 30*time.Second, func() (done bool, err error) {
+
+		coreclientset, err := coreclient.NewForConfig(hookContext.LoopbackClientConfig)
+		if err != nil {
+			utilruntime.HandleError(fmt.Errorf("unable to initialize client: %v", err))
+			return false, nil
+		}
+
 		clientset, err := rbacclient.NewForConfig(hookContext.LoopbackClientConfig)
 		if err != nil {
 			utilruntime.HandleError(fmt.Errorf("unable to initialize client: %v", err))
@@ -212,7 +220,7 @@ func PostStartHook(hookContext genericapiserver.PostStartHookContext) error {
 			for _, role := range roles {
 				opts := reconciliation.ReconcileRoleOptions{
 					Role:    reconciliation.RoleRuleOwner{Role: &role},
-					Client:  reconciliation.RoleModifier{Client: clientset},
+					Client:  reconciliation.RoleModifier{Client: clientset, NamespaceClient: coreclientset.Namespaces()},
 					Confirm: true,
 				}
 				err := retry.RetryOnConflict(retry.DefaultBackoff, func() error {
@@ -242,7 +250,7 @@ func PostStartHook(hookContext genericapiserver.PostStartHookContext) error {
 			for _, roleBinding := range roleBindings {
 				opts := reconciliation.ReconcileRoleBindingOptions{
 					RoleBinding: reconciliation.RoleBindingAdapter{RoleBinding: &roleBinding},
-					Client:      reconciliation.RoleBindingClientAdapter{Client: clientset},
+					Client:      reconciliation.RoleBindingClientAdapter{Client: clientset, NamespaceClient: coreclientset.Namespaces()},
 					Confirm:     true,
 				}
 				err := retry.RetryOnConflict(retry.DefaultBackoff, func() error {

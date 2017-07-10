@@ -20,8 +20,8 @@ import (
 	"github.com/golang/glog"
 
 	"k8s.io/client-go/tools/cache"
-	"k8s.io/kubernetes/pkg/api"
-	coreinformers "k8s.io/kubernetes/pkg/client/informers/informers_generated/internalversion/core/internalversion"
+	"gitlab.com/sankish/magudi/pkg/api"
+	coreinformers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/internalversion/core/internalversion"
 )
 
 type graphPopulator struct {

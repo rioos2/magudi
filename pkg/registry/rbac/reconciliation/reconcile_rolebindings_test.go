@@ -19,8 +19,8 @@ package reconciliation
 import (
 	"testing"
 
-	"k8s.io/kubernetes/pkg/api/helper"
-	"k8s.io/kubernetes/pkg/apis/rbac"
+	"gitlab.com/sankish/magudi/pkg/api/helper"
+	"gitlab.com/sankish/magudi/pkg/apis/rbac"
 )
 
 func binding(roleRef rbac.RoleRef, subjects []rbac.Subject) *rbac.ClusterRoleBinding {

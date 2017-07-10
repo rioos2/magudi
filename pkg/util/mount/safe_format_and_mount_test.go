@@ -21,7 +21,7 @@ import (
 	"runtime"
 	"testing"
 
-	"k8s.io/kubernetes/pkg/util/exec"
+	"gitlab.com/sankish/magudi/pkg/util/exec"
 )
 
 type ErrorMounter struct {

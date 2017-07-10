@@ -21,8 +21,8 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	admissionregistration "k8s.io/kubernetes/pkg/apis/admissionregistration"
-	scheme "k8s.io/kubernetes/pkg/client/clientset_generated/internalclientset/scheme"
+	admissionregistration "gitlab.com/sankish/magudi/pkg/apis/admissionregistration"
+	scheme "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/scheme"
 )
 
 // ExternalAdmissionHookConfigurationsGetter has a method to return a ExternalAdmissionHookConfigurationInterface.

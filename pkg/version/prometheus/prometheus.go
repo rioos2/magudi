@@ -20,7 +20,7 @@ package prometheus
 
 import (
 	"github.com/prometheus/client_golang/prometheus"
-	"k8s.io/kubernetes/pkg/version"
+	"gitlab.com/sankish/magudi/pkg/version"
 )
 
 func init() {

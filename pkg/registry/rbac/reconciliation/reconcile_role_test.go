@@ -20,8 +20,8 @@ import (
 	"testing"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/kubernetes/pkg/api/helper"
-	"k8s.io/kubernetes/pkg/apis/rbac"
+	"gitlab.com/sankish/magudi/pkg/api/helper"
+	"gitlab.com/sankish/magudi/pkg/apis/rbac"
 )
 
 func role(rules []rbac.PolicyRule, labels map[string]string, annotations map[string]string) *rbac.ClusterRole {

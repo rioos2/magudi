@@ -19,7 +19,7 @@ package tolerations
 import (
 	"testing"
 
-	"k8s.io/kubernetes/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/api"
 )
 
 func TestVerifyAgainstWhitelist(t *testing.T) {

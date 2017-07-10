@@ -23,10 +23,10 @@ import (
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	watch "k8s.io/apimachinery/pkg/watch"
 	cache "k8s.io/client-go/tools/cache"
-	policy "k8s.io/kubernetes/pkg/apis/policy"
-	internalclientset "k8s.io/kubernetes/pkg/client/clientset_generated/internalclientset"
-	internalinterfaces "k8s.io/kubernetes/pkg/client/informers/informers_generated/internalversion/internalinterfaces"
-	internalversion "k8s.io/kubernetes/pkg/client/listers/policy/internalversion"
+	policy "gitlab.com/sankish/magudi/pkg/apis/policy"
+	internalclientset "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset"
+	internalinterfaces "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/internalversion/internalinterfaces"
+	internalversion "gitlab.com/sankish/magudi/pkg/client/listers/policy/internalversion"
 	time "time"
 )
 

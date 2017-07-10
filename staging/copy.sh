@@ -55,7 +55,7 @@ kube::util::ensure-temp-dir
 TMP_GOPATH="${KUBE_TEMP}/go"
 mkdir -p "${TMP_GOPATH}/src/k8s.io"
 CLIENTSET="clientset"
-MAIN_REPO_FROM_SRC="k8s.io/kubernetes"
+MAIN_REPO_FROM_SRC="gitlab.com/sankish/magudi"
 MAIN_REPO="$(cd "${KUBE_ROOT}"; pwd)" # absolute path
 CLIENT_REPO_FROM_SRC="k8s.io/client-go"
 CLIENT_REPO="${MAIN_REPO}/staging/src/${CLIENT_REPO_FROM_SRC}"

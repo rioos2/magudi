@@ -23,7 +23,7 @@ import (
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"
-	admissionregistration "k8s.io/kubernetes/pkg/apis/admissionregistration"
+	admissionregistration "gitlab.com/sankish/magudi/pkg/apis/admissionregistration"
 )
 
 // InitializerConfigurationLister helps list InitializerConfigurations.

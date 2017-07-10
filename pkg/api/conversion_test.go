@@ -25,9 +25,9 @@ import (
 	apitesting "k8s.io/apimachinery/pkg/api/testing"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/diff"
-	"k8s.io/kubernetes/pkg/api"
-	"k8s.io/kubernetes/pkg/api/testapi"
-	kapitesting "k8s.io/kubernetes/pkg/api/testing"
+	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/api/testapi"
+	kapitesting "gitlab.com/sankish/magudi/pkg/api/testing"
 )
 
 func BenchmarkPodConversion(b *testing.B) {

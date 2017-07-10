@@ -22,9 +22,9 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	genericapirequest "k8s.io/apiserver/pkg/endpoints/request"
 	"k8s.io/apiserver/pkg/registry/rest"
-	"k8s.io/kubernetes/pkg/apis/rbac"
-	rbacregistry "k8s.io/kubernetes/pkg/registry/rbac"
-	rbacregistryvalidation "k8s.io/kubernetes/pkg/registry/rbac/validation"
+	"gitlab.com/sankish/magudi/pkg/apis/rbac"
+	rbacregistry "gitlab.com/sankish/magudi/pkg/registry/rbac"
+	rbacregistryvalidation "gitlab.com/sankish/magudi/pkg/registry/rbac/validation"
 )
 
 var groupResource = rbac.Resource("roles")

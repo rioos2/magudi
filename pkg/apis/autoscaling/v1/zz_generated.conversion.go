@@ -27,8 +27,8 @@ import (
 	meta_v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	conversion "k8s.io/apimachinery/pkg/conversion"
 	runtime "k8s.io/apimachinery/pkg/runtime"
-	api "k8s.io/kubernetes/pkg/api"
-	autoscaling "k8s.io/kubernetes/pkg/apis/autoscaling"
+	api "gitlab.com/sankish/magudi/pkg/api"
+	autoscaling "gitlab.com/sankish/magudi/pkg/apis/autoscaling"
 	unsafe "unsafe"
 )
 

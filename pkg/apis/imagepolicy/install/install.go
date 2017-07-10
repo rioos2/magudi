@@ -23,9 +23,9 @@ import (
 	"k8s.io/apimachinery/pkg/apimachinery/registered"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"k8s.io/kubernetes/pkg/api"
-	"k8s.io/kubernetes/pkg/apis/imagepolicy"
-	"k8s.io/kubernetes/pkg/apis/imagepolicy/v1alpha1"
+	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/apis/imagepolicy"
+	"gitlab.com/sankish/magudi/pkg/apis/imagepolicy/v1alpha1"
 )
 
 func init() {

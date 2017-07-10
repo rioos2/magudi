@@ -27,7 +27,7 @@ import (
 	"k8s.io/apiserver/pkg/authentication/serviceaccount"
 	"k8s.io/apiserver/pkg/authentication/user"
 	genericapirequest "k8s.io/apiserver/pkg/endpoints/request"
-	"k8s.io/kubernetes/pkg/apis/rbac"
+	"gitlab.com/sankish/magudi/pkg/apis/rbac"
 )
 
 type AuthorizationRuleResolver interface {

@@ -17,7 +17,7 @@ limitations under the License.
 package events
 
 import (
-	"k8s.io/kubernetes/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/api"
 )
 
 // SortableEvents implements sort.Interface for []api.Event based on the Timestamp field

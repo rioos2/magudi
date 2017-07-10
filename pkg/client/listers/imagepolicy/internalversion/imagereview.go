@@ -23,7 +23,7 @@ import (
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"
-	imagepolicy "k8s.io/kubernetes/pkg/apis/imagepolicy"
+	imagepolicy "gitlab.com/sankish/magudi/pkg/apis/imagepolicy"
 )
 
 // ImageReviewLister helps list ImageReviews.

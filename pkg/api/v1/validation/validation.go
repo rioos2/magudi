@@ -25,7 +25,7 @@ import (
 	"k8s.io/apimachinery/pkg/util/sets"
 	"k8s.io/apimachinery/pkg/util/validation"
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	"k8s.io/kubernetes/pkg/api/helper"
+	"gitlab.com/sankish/magudi/pkg/api/helper"
 )
 
 const isNegativeErrorMsg string = `must be greater than or equal to 0`

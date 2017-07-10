@@ -19,9 +19,9 @@ limitations under the License.
 package storage
 
 import (
-	internalinterfaces "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions/internalinterfaces"
-	v1 "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions/storage/v1"
-	v1beta1 "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions/storage/v1beta1"
+	internalinterfaces "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/internalinterfaces"
+	v1 "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/storage/v1"
+	v1beta1 "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/storage/v1beta1"
 )
 
 // Interface provides access to each of this group's versions.

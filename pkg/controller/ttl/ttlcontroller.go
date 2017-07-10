@@ -42,11 +42,11 @@ import (
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/util/workqueue"
-	"k8s.io/kubernetes/pkg/api"
-	"k8s.io/kubernetes/pkg/client/clientset_generated/clientset"
-	informers "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions/core/v1"
-	listers "k8s.io/kubernetes/pkg/client/listers/core/v1"
-	"k8s.io/kubernetes/pkg/controller"
+	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
+	informers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/core/v1"
+	listers "gitlab.com/sankish/magudi/pkg/client/listers/core/v1"
+	"gitlab.com/sankish/magudi/pkg/controller"
 
 	"github.com/golang/glog"
 )

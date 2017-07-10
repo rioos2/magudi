@@ -24,7 +24,7 @@ import (
 	v1beta1 "k8s.io/api/rbac/v1beta1"
 	conversion "k8s.io/apimachinery/pkg/conversion"
 	runtime "k8s.io/apimachinery/pkg/runtime"
-	rbac "k8s.io/kubernetes/pkg/apis/rbac"
+	rbac "gitlab.com/sankish/magudi/pkg/apis/rbac"
 	unsafe "unsafe"
 )
 

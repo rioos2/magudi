@@ -19,9 +19,9 @@ limitations under the License.
 package autoscaling
 
 import (
-	v1 "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions/autoscaling/v1"
-	v2alpha1 "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions/autoscaling/v2alpha1"
-	internalinterfaces "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions/internalinterfaces"
+	v1 "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/autoscaling/v1"
+	v2alpha1 "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/autoscaling/v2alpha1"
+	internalinterfaces "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/internalinterfaces"
 )
 
 // Interface provides access to each of this group's versions.

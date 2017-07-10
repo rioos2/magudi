@@ -21,7 +21,7 @@ package internalinterfaces
 import (
 	runtime "k8s.io/apimachinery/pkg/runtime"
 	cache "k8s.io/client-go/tools/cache"
-	clientset "k8s.io/kubernetes/pkg/client/clientset_generated/clientset"
+	clientset "gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
 	time "time"
 )
 

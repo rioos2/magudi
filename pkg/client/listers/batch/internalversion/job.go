@@ -22,7 +22,7 @@ import (
 	"k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"
-	batch "k8s.io/kubernetes/pkg/apis/batch"
+	batch "gitlab.com/sankish/magudi/pkg/apis/batch"
 )
 
 // JobLister helps list Jobs.

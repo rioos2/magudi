@@ -28,8 +28,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	core "k8s.io/client-go/testing"
 	"k8s.io/client-go/tools/record"
-	fakecorev1 "k8s.io/kubernetes/pkg/client/clientset_generated/clientset/typed/core/v1/fake"
-	rl "k8s.io/kubernetes/pkg/client/leaderelection/resourcelock"
+	fakecorev1 "gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/typed/core/v1/fake"
+	rl "gitlab.com/sankish/magudi/pkg/client/leaderelection/resourcelock"
 )
 
 func createLockObject(objectType string, objectMeta metav1.ObjectMeta) (obj runtime.Object) {

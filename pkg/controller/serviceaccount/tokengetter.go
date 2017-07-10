@@ -22,13 +22,13 @@ import (
 	genericapirequest "k8s.io/apiserver/pkg/endpoints/request"
 	"k8s.io/apiserver/pkg/registry/generic"
 	"k8s.io/apiserver/pkg/storage/storagebackend"
-	k8s_api_v1 "k8s.io/kubernetes/pkg/api/v1"
-	"k8s.io/kubernetes/pkg/client/clientset_generated/clientset"
-	"k8s.io/kubernetes/pkg/registry/core/secret"
-	secretstore "k8s.io/kubernetes/pkg/registry/core/secret/storage"
-	serviceaccountregistry "k8s.io/kubernetes/pkg/registry/core/serviceaccount"
-	serviceaccountstore "k8s.io/kubernetes/pkg/registry/core/serviceaccount/storage"
-	"k8s.io/kubernetes/pkg/serviceaccount"
+	k8s_api_v1 "gitlab.com/sankish/magudi/pkg/api/v1"
+	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
+	"gitlab.com/sankish/magudi/pkg/registry/core/secret"
+	secretstore "gitlab.com/sankish/magudi/pkg/registry/core/secret/storage"
+	serviceaccountregistry "gitlab.com/sankish/magudi/pkg/registry/core/serviceaccount"
+	serviceaccountstore "gitlab.com/sankish/magudi/pkg/registry/core/serviceaccount/storage"
+	"gitlab.com/sankish/magudi/pkg/serviceaccount"
 )
 
 // clientGetter implements ServiceAccountTokenGetter using a clientset.Interface

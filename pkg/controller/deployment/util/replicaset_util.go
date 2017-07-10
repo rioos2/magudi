@@ -24,12 +24,12 @@ import (
 	"k8s.io/api/core/v1"
 	extensions "k8s.io/api/extensions/v1beta1"
 	errorsutil "k8s.io/apimachinery/pkg/util/errors"
-	"k8s.io/kubernetes/pkg/api"
-	unversionedextensions "k8s.io/kubernetes/pkg/client/clientset_generated/clientset/typed/extensions/v1beta1"
-	extensionslisters "k8s.io/kubernetes/pkg/client/listers/extensions/v1beta1"
-	"k8s.io/kubernetes/pkg/client/retry"
-	"k8s.io/kubernetes/pkg/controller"
-	labelsutil "k8s.io/kubernetes/pkg/util/labels"
+	"gitlab.com/sankish/magudi/pkg/api"
+	unversionedextensions "gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/typed/extensions/v1beta1"
+	extensionslisters "gitlab.com/sankish/magudi/pkg/client/listers/extensions/v1beta1"
+	"gitlab.com/sankish/magudi/pkg/client/retry"
+	"gitlab.com/sankish/magudi/pkg/controller"
+	labelsutil "gitlab.com/sankish/magudi/pkg/util/labels"
 )
 
 // TODO: use client library instead when it starts to support update retries

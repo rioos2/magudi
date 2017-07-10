@@ -25,7 +25,7 @@ import (
 
 	flag "github.com/spf13/pflag"
 
-	"k8s.io/kubernetes/pkg/version"
+	"gitlab.com/sankish/magudi/pkg/version"
 )
 
 type versionValue int

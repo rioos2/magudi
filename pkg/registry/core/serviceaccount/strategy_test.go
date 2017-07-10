@@ -19,8 +19,8 @@ package serviceaccount
 import (
 	"testing"
 
-	"k8s.io/kubernetes/pkg/api"
-	apitesting "k8s.io/kubernetes/pkg/api/testing"
+	"gitlab.com/sankish/magudi/pkg/api"
+	apitesting "gitlab.com/sankish/magudi/pkg/api/testing"
 )
 
 func TestSelectableFieldLabelConversions(t *testing.T) {

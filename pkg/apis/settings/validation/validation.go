@@ -19,8 +19,8 @@ package validation
 import (
 	unversionedvalidation "k8s.io/apimachinery/pkg/apis/meta/v1/validation"
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	apivalidation "k8s.io/kubernetes/pkg/api/validation"
-	"k8s.io/kubernetes/pkg/apis/settings"
+	apivalidation "gitlab.com/sankish/magudi/pkg/api/validation"
+	"gitlab.com/sankish/magudi/pkg/apis/settings"
 )
 
 // ValidatePodPresetName can be used to check whether the given PodPreset name is valid.

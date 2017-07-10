@@ -22,7 +22,7 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	scheme "k8s.io/kubernetes/pkg/client/clientset_generated/clientset/scheme"
+	scheme "gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/scheme"
 )
 
 // PodPresetsGetter has a method to return a PodPresetInterface.

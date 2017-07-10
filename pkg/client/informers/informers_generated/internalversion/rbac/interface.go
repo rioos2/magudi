@@ -19,8 +19,8 @@ limitations under the License.
 package rbac
 
 import (
-	internalinterfaces "k8s.io/kubernetes/pkg/client/informers/informers_generated/internalversion/internalinterfaces"
-	internalversion "k8s.io/kubernetes/pkg/client/informers/informers_generated/internalversion/rbac/internalversion"
+	internalinterfaces "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/internalversion/internalinterfaces"
+	internalversion "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/internalversion/rbac/internalversion"
 )
 
 // Interface provides access to each of this group's versions.

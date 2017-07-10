@@ -21,8 +21,8 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	autoscaling "k8s.io/kubernetes/pkg/apis/autoscaling"
-	scheme "k8s.io/kubernetes/pkg/client/clientset_generated/internalclientset/scheme"
+	autoscaling "gitlab.com/sankish/magudi/pkg/apis/autoscaling"
+	scheme "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/scheme"
 )
 
 // HorizontalPodAutoscalersGetter has a method to return a HorizontalPodAutoscalerInterface.

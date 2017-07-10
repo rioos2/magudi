@@ -28,8 +28,8 @@ import (
 	extensions "k8s.io/api/extensions/v1beta1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
-	podutil "k8s.io/kubernetes/pkg/api/v1/pod"
-	unversionedextensions "k8s.io/kubernetes/pkg/client/clientset_generated/clientset/typed/extensions/v1beta1"
+	podutil "gitlab.com/sankish/magudi/pkg/api/v1/pod"
+	unversionedextensions "gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/typed/extensions/v1beta1"
 )
 
 // updateReplicaSetStatus attempts to update the Status.Replicas of the given ReplicaSet, with a single GET/PUT retry.

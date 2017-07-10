@@ -16,4 +16,4 @@ limitations under the License.
 
 // +k8s:deepcopy-gen=package,register
 // +groupName=imagepolicy.k8s.io
-package imagepolicy // import "k8s.io/kubernetes/pkg/apis/imagepolicy"
+package imagepolicy // import "gitlab.com/sankish/magudi/pkg/apis/imagepolicy"

@@ -22,10 +22,10 @@ package app
 
 import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	"k8s.io/kubernetes/pkg/apis/batch"
-	"k8s.io/kubernetes/pkg/client/clientset_generated/clientset"
-	"k8s.io/kubernetes/pkg/controller/cronjob"
-	"k8s.io/kubernetes/pkg/controller/job"
+	"gitlab.com/sankish/magudi/pkg/apis/batch"
+	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
+	"gitlab.com/sankish/magudi/pkg/controller/cronjob"
+	"gitlab.com/sankish/magudi/pkg/controller/job"
 )
 
 func startJobController(ctx ControllerContext) (bool, error) {

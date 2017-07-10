@@ -46,18 +46,18 @@ import (
 	"k8s.io/client-go/tools/record"
 	certutil "k8s.io/client-go/util/cert"
 
-	"k8s.io/kubernetes/cmd/kube-controller-manager/app/options"
-	"k8s.io/kubernetes/pkg/api"
-	"k8s.io/kubernetes/pkg/client/clientset_generated/clientset"
-	informers "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions"
-	"k8s.io/kubernetes/pkg/client/leaderelection"
-	"k8s.io/kubernetes/pkg/client/leaderelection/resourcelock"
-	"k8s.io/kubernetes/pkg/cloudprovider"
-	"k8s.io/kubernetes/pkg/controller"
-	serviceaccountcontroller "k8s.io/kubernetes/pkg/controller/serviceaccount"
-	"k8s.io/kubernetes/pkg/serviceaccount"
-	"k8s.io/kubernetes/pkg/util/configz"
-	"k8s.io/kubernetes/pkg/version"
+	"gitlab.com/sankish/magudi/cmd/kube-controller-manager/app/options"
+	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
+	informers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions"
+	"gitlab.com/sankish/magudi/pkg/client/leaderelection"
+	"gitlab.com/sankish/magudi/pkg/client/leaderelection/resourcelock"
+	"gitlab.com/sankish/magudi/pkg/cloudprovider"
+	"gitlab.com/sankish/magudi/pkg/controller"
+	serviceaccountcontroller "gitlab.com/sankish/magudi/pkg/controller/serviceaccount"
+	"gitlab.com/sankish/magudi/pkg/serviceaccount"
+	"gitlab.com/sankish/magudi/pkg/util/configz"
+	"gitlab.com/sankish/magudi/pkg/version"
 
 	"github.com/golang/glog"
 	"github.com/prometheus/client_golang/prometheus"
@@ -308,11 +308,9 @@ func NewControllerInitializers() map[string]InitFunc {
 	controllers["endpoint"] = startEndpointController
 	controllers["replicationcontroller"] = startReplicationController
 	controllers["podgc"] = startPodGCController
-	controllers["resourcequota"] = startResourceQuotaController
 	controllers["namespace"] = startNamespaceController
 	controllers["serviceaccount"] = startServiceAccountController
 	controllers["garbagecollector"] = startGarbageCollectorController
-	controllers["daemonset"] = startDaemonSetController
 	controllers["job"] = startJobController
 	controllers["deployment"] = startDeploymentController
 	controllers["replicaset"] = startReplicaSetController
@@ -326,10 +324,6 @@ func NewControllerInitializers() map[string]InitFunc {
 	controllers["bootstrapsigner"] = startBootstrapSignerController
 	controllers["tokencleaner"] = startTokenCleanerController
 	controllers["service"] = startServiceController
-	controllers["node"] = startNodeController
-	controllers["route"] = startRouteController
-	controllers["persistentvolume-binder"] = startPersistentVolumeBinderController
-	controllers["attachdetach"] = startAttachDetachController
 
 	return controllers
 }

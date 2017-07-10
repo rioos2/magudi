@@ -20,7 +20,7 @@ import (
 	"k8s.io/apimachinery/pkg/apimachinery/announced"
 	"k8s.io/apimachinery/pkg/apimachinery/registered"
 	"k8s.io/apimachinery/pkg/runtime"
-	componentconfig "k8s.io/kubernetes/pkg/apis/componentconfig/install"
+	componentconfig "gitlab.com/sankish/magudi/pkg/apis/componentconfig/install"
 )
 
 func ExtraInstall(groupFactoryRegistry announced.APIGroupFactoryRegistry, registry *registered.APIRegistrationManager, scheme *runtime.Scheme) {

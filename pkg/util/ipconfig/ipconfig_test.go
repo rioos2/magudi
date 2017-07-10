@@ -19,7 +19,7 @@ package ipconfig
 import (
 	"testing"
 
-	"k8s.io/kubernetes/pkg/util/exec"
+	"gitlab.com/sankish/magudi/pkg/util/exec"
 )
 
 func TestGetDnsSuffixSearchList(t *testing.T) {

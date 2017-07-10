@@ -22,9 +22,9 @@ import (
 	"k8s.io/apimachinery/pkg/apimachinery/announced"
 	"k8s.io/apimachinery/pkg/apimachinery/registered"
 	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/kubernetes/pkg/api"
-	"k8s.io/kubernetes/pkg/apis/componentconfig"
-	"k8s.io/kubernetes/pkg/apis/componentconfig/v1alpha1"
+	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/apis/componentconfig"
+	"gitlab.com/sankish/magudi/pkg/apis/componentconfig/v1alpha1"
 )
 
 func init() {
@@ -37,7 +37,7 @@ func Install(groupFactoryRegistry announced.APIGroupFactoryRegistry, registry *r
 		&announced.GroupMetaFactoryArgs{
 			GroupName:                  componentconfig.GroupName,
 			VersionPreferenceOrder:     []string{v1alpha1.SchemeGroupVersion.Version},
-			ImportPrefix:               "k8s.io/kubernetes/pkg/apis/componentconfig",
+			ImportPrefix:               "gitlab.com/sankish/magudi/pkg/apis/componentconfig",
 			AddInternalObjectsToScheme: componentconfig.AddToScheme,
 		},
 		announced.VersionToSchemeFunc{

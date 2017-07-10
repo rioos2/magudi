@@ -32,12 +32,12 @@ import (
 	"k8s.io/apimachinery/pkg/util/sets"
 	"k8s.io/apimachinery/pkg/util/validation"
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	"k8s.io/kubernetes/pkg/api"
-	apivalidation "k8s.io/kubernetes/pkg/api/validation"
-	"k8s.io/kubernetes/pkg/apis/extensions"
-	"k8s.io/kubernetes/pkg/security/apparmor"
-	"k8s.io/kubernetes/pkg/security/podsecuritypolicy/seccomp"
-	psputil "k8s.io/kubernetes/pkg/security/podsecuritypolicy/util"
+	"gitlab.com/sankish/magudi/pkg/api"
+	apivalidation "gitlab.com/sankish/magudi/pkg/api/validation"
+	"gitlab.com/sankish/magudi/pkg/apis/extensions"
+	"gitlab.com/sankish/magudi/pkg/security/apparmor"
+	"gitlab.com/sankish/magudi/pkg/security/podsecuritypolicy/seccomp"
+	psputil "gitlab.com/sankish/magudi/pkg/security/podsecuritypolicy/util"
 )
 
 func ValidateThirdPartyResourceUpdate(update, old *extensions.ThirdPartyResource) field.ErrorList {
@@ -401,7 +401,7 @@ func ValidateDeploymentStatusUpdate(update, old *extensions.Deployment) field.Er
 	return allErrs
 }
 
-// TODO: Move in "k8s.io/kubernetes/pkg/api/validation"
+// TODO: Move in "gitlab.com/sankish/magudi/pkg/api/validation"
 func isDecremented(update, old *int64) bool {
 	if update == nil && old != nil {
 		return true

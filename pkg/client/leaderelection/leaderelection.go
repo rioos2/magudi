@@ -57,8 +57,8 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/util/runtime"
 	"k8s.io/apimachinery/pkg/util/wait"
-	"k8s.io/kubernetes/pkg/apis/componentconfig"
-	rl "k8s.io/kubernetes/pkg/client/leaderelection/resourcelock"
+	"gitlab.com/sankish/magudi/pkg/apis/componentconfig"
+	rl "gitlab.com/sankish/magudi/pkg/client/leaderelection/resourcelock"
 
 	"github.com/golang/glog"
 	"github.com/spf13/pflag"

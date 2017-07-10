@@ -23,7 +23,7 @@ import (
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
-	"k8s.io/kubernetes/pkg/controller/garbagecollector/metaonly"
+	"gitlab.com/sankish/magudi/pkg/controller/garbagecollector/metaonly"
 )
 
 func deleteOwnerRefPatch(dependentUID types.UID, ownerUIDs ...types.UID) []byte {

@@ -26,18 +26,18 @@ kube::golang::setup_env
 dir=$(mktemp -d "${TMPDIR:-/tmp/}$(basename 0).XXXXXXXXXXXX")
 echo ${dir}
 
-echo k8s.io/kubernetes/pkg/apimachinery/registered > ${dir}/packages.txt
-echo k8s.io/kubernetes/pkg/runtime/serializer >> ${dir}/packages.txt
-echo k8s.io/kubernetes/pkg/runtime/serializer/yaml >> ${dir}/packages.txt
-echo k8s.io/kubernetes/pkg/runtime/serializer/streaming >> ${dir}/packages.txt
-echo k8s.io/kubernetes/pkg/runtime/serializer/recognizer/testing >> ${dir}/packages.txt
-go list -f {{.Deps}} k8s.io/kubernetes/pkg/apimachinery/registered | sed -e 's/ /\n/g' - | grep k8s.io | grep -v vendor >> ${dir}/packages.txt
-go list -f {{.Deps}} k8s.io/kubernetes/pkg/runtime/serializer | sed -e 's/ /\n/g' - | grep k8s.io | grep -v vendor >> ${dir}/packages.txt
-go list -f {{.Deps}} k8s.io/kubernetes/pkg/runtime/serializer/yaml | sed -e 's/ /\n/g' - | grep k8s.io | grep -v vendor >> ${dir}/packages.txt
-go list -f {{.Deps}} k8s.io/kubernetes/pkg/runtime/serializer/streaming | sed -e 's/ /\n/g' - | grep k8s.io | grep -v vendor >> ${dir}/packages.txt
+echo gitlab.com/sankish/magudi/pkg/apimachinery/registered > ${dir}/packages.txt
+echo gitlab.com/sankish/magudi/pkg/runtime/serializer >> ${dir}/packages.txt
+echo gitlab.com/sankish/magudi/pkg/runtime/serializer/yaml >> ${dir}/packages.txt
+echo gitlab.com/sankish/magudi/pkg/runtime/serializer/streaming >> ${dir}/packages.txt
+echo gitlab.com/sankish/magudi/pkg/runtime/serializer/recognizer/testing >> ${dir}/packages.txt
+go list -f {{.Deps}} gitlab.com/sankish/magudi/pkg/apimachinery/registered | sed -e 's/ /\n/g' - | grep k8s.io | grep -v vendor >> ${dir}/packages.txt
+go list -f {{.Deps}} gitlab.com/sankish/magudi/pkg/runtime/serializer | sed -e 's/ /\n/g' - | grep k8s.io | grep -v vendor >> ${dir}/packages.txt
+go list -f {{.Deps}} gitlab.com/sankish/magudi/pkg/runtime/serializer/yaml | sed -e 's/ /\n/g' - | grep k8s.io | grep -v vendor >> ${dir}/packages.txt
+go list -f {{.Deps}} gitlab.com/sankish/magudi/pkg/runtime/serializer/streaming | sed -e 's/ /\n/g' - | grep k8s.io | grep -v vendor >> ${dir}/packages.txt
 # used by tests
-echo k8s.io/kubernetes/pkg/util/diff >> ${dir}/packages.txt
-go list -f {{.Deps}} k8s.io/kubernetes/pkg/util/diff | sed -e 's/ /\n/g' - | grep k8s.io | grep -v vendor >> ${dir}/packages.txt
+echo gitlab.com/sankish/magudi/pkg/util/diff >> ${dir}/packages.txt
+go list -f {{.Deps}} gitlab.com/sankish/magudi/pkg/util/diff | sed -e 's/ /\n/g' - | grep k8s.io | grep -v vendor >> ${dir}/packages.txt
 LC_ALL=C sort -u -o ${dir}/packages.txt ${dir}/packages.txt
 
 echo "moving these packages"
@@ -45,7 +45,7 @@ cat ${dir}/packages.txt
 
 # copy all the packages over
 while read package; do
-	unprefix_package=$(echo ${package} | sed 's|k8s.io/kubernetes/||g')
+	unprefix_package=$(echo ${package} | sed 's|gitlab.com/sankish/magudi/||g')
 	mkdir -p ${KUBE_ROOT}/staging/src/k8s.io/apimachinery/${unprefix_package}
 	cp ${KUBE_ROOT}/${unprefix_package}/* ${KUBE_ROOT}/staging/src/k8s.io/apimachinery/${unprefix_package} || true
 done <${dir}/packages.txt
@@ -54,19 +54,19 @@ done <${dir}/packages.txt
 find ${KUBE_ROOT}/staging/src/k8s.io/apimachinery -name BUILD | xargs rm
 
 # need to rewrite all the package imports for k8s.io/kuberentes to k8s.io/apimachinery
-find ${KUBE_ROOT}/staging/src/k8s.io/apimachinery -name "*.go" | xargs sed -i 's|k8s.io/kubernetes|k8s.io/apimachinery|g'
+find ${KUBE_ROOT}/staging/src/k8s.io/apimachinery -name "*.go" | xargs sed -i 's|gitlab.com/sankish/magudi|k8s.io/apimachinery|g'
 
 # need to rewrite all the package imports for these packages in the main repo to use the vendored copy
 while read package; do
 	echo "rewriting import for ${package}"
-	new_package=$(echo ${package} | sed 's|k8s.io/kubernetes|k8s.io/apimachinery|g')
+	new_package=$(echo ${package} | sed 's|gitlab.com/sankish/magudi|k8s.io/apimachinery|g')
 	find ${KUBE_ROOT}/cmd ${KUBE_ROOT}/examples ${KUBE_ROOT}/federation ${KUBE_ROOT}/pkg ${KUBE_ROOT}/plugin ${KUBE_ROOT}/test -name "*.go" | xargs sed -i "s|${package}\"|${new_package}\"|g"
 done <${dir}/packages.txt
 
 # we don't want to rewrite imports for the packages we're modifying.  So check those back out, but only the files directly in that directory, not subdirs
 # also, add .readonly files to each folder we moved
 while read package; do
-	unprefix_package=$(echo ${package} | sed 's|k8s.io/kubernetes/||g')
+	unprefix_package=$(echo ${package} | sed 's|gitlab.com/sankish/magudi/||g')
 	find ${unprefix_package} -type f -maxdepth 1 | xargs git checkout
 	touch ${unprefix_package}/.readonly
 done <${dir}/packages.txt

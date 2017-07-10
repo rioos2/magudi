@@ -21,8 +21,8 @@ import (
 	"strconv"
 	"strings"
 
-	"k8s.io/kubernetes/pkg/api"
-	netsets "k8s.io/kubernetes/pkg/util/net/sets"
+	"gitlab.com/sankish/magudi/pkg/api"
+	netsets "gitlab.com/sankish/magudi/pkg/util/net/sets"
 
 	"github.com/golang/glog"
 )

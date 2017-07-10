@@ -33,11 +33,11 @@ import (
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/dynamic"
 	"k8s.io/client-go/util/workqueue"
-	informers "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions"
-	"k8s.io/kubernetes/pkg/controller"
-	"k8s.io/kubernetes/pkg/controller/garbagecollector/metaonly"
+	informers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions"
+	"gitlab.com/sankish/magudi/pkg/controller"
+	"gitlab.com/sankish/magudi/pkg/controller/garbagecollector/metaonly"
 	// install the prometheus plugin
-	_ "k8s.io/kubernetes/pkg/util/workqueue/prometheus"
+	_ "gitlab.com/sankish/magudi/pkg/util/workqueue/prometheus"
 	// import known versions
 	_ "k8s.io/client-go/kubernetes"
 )

@@ -24,11 +24,11 @@ import (
 	"strconv"
 
 	apps "k8s.io/api/apps/v1beta1"
-	"k8s.io/kubernetes/pkg/client/clientset_generated/clientset"
-	appsinformers "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions/apps/v1beta1"
-	appslisters "k8s.io/kubernetes/pkg/client/listers/apps/v1beta1"
-	"k8s.io/kubernetes/pkg/controller"
-	hashutil "k8s.io/kubernetes/pkg/util/hash"
+	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
+	appsinformers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/apps/v1beta1"
+	appslisters "gitlab.com/sankish/magudi/pkg/client/listers/apps/v1beta1"
+	"gitlab.com/sankish/magudi/pkg/controller"
+	hashutil "gitlab.com/sankish/magudi/pkg/util/hash"
 
 	apiequality "k8s.io/apimachinery/pkg/api/equality"
 	"k8s.io/apimachinery/pkg/api/errors"
@@ -40,7 +40,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/client-go/kubernetes/scheme"
 	"k8s.io/client-go/tools/cache"
-	"k8s.io/kubernetes/pkg/client/retry"
+	"gitlab.com/sankish/magudi/pkg/client/retry"
 )
 
 // ControllerRevisionHashLabel is the label used to indicate the hash value of a ControllerRevision's Data.

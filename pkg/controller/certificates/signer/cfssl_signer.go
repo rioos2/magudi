@@ -26,9 +26,9 @@ import (
 	"time"
 
 	capi "k8s.io/api/certificates/v1beta1"
-	"k8s.io/kubernetes/pkg/client/clientset_generated/clientset"
-	certificatesinformers "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions/certificates/v1beta1"
-	"k8s.io/kubernetes/pkg/controller/certificates"
+	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
+	certificatesinformers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/certificates/v1beta1"
+	"gitlab.com/sankish/magudi/pkg/controller/certificates"
 
 	"github.com/cloudflare/cfssl/config"
 	"github.com/cloudflare/cfssl/helpers"

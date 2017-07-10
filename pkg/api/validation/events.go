@@ -24,8 +24,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/util/validation"
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	"k8s.io/kubernetes/pkg/api"
-	apiutil "k8s.io/kubernetes/pkg/api/util"
+	"gitlab.com/sankish/magudi/pkg/api"
+	apiutil "gitlab.com/sankish/magudi/pkg/api/util"
 )
 
 // ValidateEvent makes sure that the event makes sense.

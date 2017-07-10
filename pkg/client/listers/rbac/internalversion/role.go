@@ -22,7 +22,7 @@ import (
 	"k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"
-	rbac "k8s.io/kubernetes/pkg/apis/rbac"
+	rbac "gitlab.com/sankish/magudi/pkg/apis/rbac"
 )
 
 // RoleLister helps list Roles.

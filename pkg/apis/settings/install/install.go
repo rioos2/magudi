@@ -22,9 +22,9 @@ import (
 	"k8s.io/apimachinery/pkg/apimachinery/announced"
 	"k8s.io/apimachinery/pkg/apimachinery/registered"
 	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/kubernetes/pkg/api"
-	"k8s.io/kubernetes/pkg/apis/settings"
-	"k8s.io/kubernetes/pkg/apis/settings/v1alpha1"
+	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/apis/settings"
+	"gitlab.com/sankish/magudi/pkg/apis/settings/v1alpha1"
 )
 
 func init() {

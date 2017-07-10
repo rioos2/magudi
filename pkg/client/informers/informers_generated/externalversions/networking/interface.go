@@ -19,8 +19,8 @@ limitations under the License.
 package networking
 
 import (
-	internalinterfaces "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions/internalinterfaces"
-	v1 "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions/networking/v1"
+	internalinterfaces "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/internalinterfaces"
+	v1 "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/networking/v1"
 )
 
 // Interface provides access to each of this group's versions.

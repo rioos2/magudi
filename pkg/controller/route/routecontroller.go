@@ -31,14 +31,14 @@ import (
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/tools/cache"
-	v1node "k8s.io/kubernetes/pkg/api/v1/node"
-	"k8s.io/kubernetes/pkg/client/clientset_generated/clientset"
-	coreinformers "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions/core/v1"
-	corelisters "k8s.io/kubernetes/pkg/client/listers/core/v1"
-	"k8s.io/kubernetes/pkg/cloudprovider"
-	"k8s.io/kubernetes/pkg/controller"
-	"k8s.io/kubernetes/pkg/util/metrics"
-	nodeutil "k8s.io/kubernetes/pkg/util/node"
+	v1node "gitlab.com/sankish/magudi/pkg/api/v1/node"
+	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
+	coreinformers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/core/v1"
+	corelisters "gitlab.com/sankish/magudi/pkg/client/listers/core/v1"
+	"gitlab.com/sankish/magudi/pkg/cloudprovider"
+	"gitlab.com/sankish/magudi/pkg/controller"
+	"gitlab.com/sankish/magudi/pkg/util/metrics"
+	nodeutil "gitlab.com/sankish/magudi/pkg/util/node"
 )
 
 const (

@@ -31,12 +31,12 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/util/diff"
 	"k8s.io/apimachinery/pkg/util/sets"
-	"k8s.io/kubernetes/pkg/api"
-	_ "k8s.io/kubernetes/pkg/api/install"
-	"k8s.io/kubernetes/pkg/apis/rbac"
-	_ "k8s.io/kubernetes/pkg/apis/rbac/install"
-	rbacregistryvalidation "k8s.io/kubernetes/pkg/registry/rbac/validation"
-	"k8s.io/kubernetes/plugin/pkg/auth/authorizer/rbac/bootstrappolicy"
+	"gitlab.com/sankish/magudi/pkg/api"
+	_ "gitlab.com/sankish/magudi/pkg/api/install"
+	"gitlab.com/sankish/magudi/pkg/apis/rbac"
+	_ "gitlab.com/sankish/magudi/pkg/apis/rbac/install"
+	rbacregistryvalidation "gitlab.com/sankish/magudi/pkg/registry/rbac/validation"
+	"gitlab.com/sankish/magudi/plugin/pkg/auth/authorizer/rbac/bootstrappolicy"
 )
 
 // semanticRoles is a few enumerated roles for which the relationships are well established

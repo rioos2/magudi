@@ -18,7 +18,7 @@ package fake
 
 import (
 	core "k8s.io/client-go/testing"
-	"k8s.io/kubernetes/pkg/apis/certificates"
+	"gitlab.com/sankish/magudi/pkg/apis/certificates"
 )
 
 func (c *FakeCertificateSigningRequests) UpdateApproval(certificateSigningRequest *certificates.CertificateSigningRequest) (result *certificates.CertificateSigningRequest, err error) {

@@ -17,7 +17,7 @@ limitations under the License.
 package tolerations
 
 import (
-	"k8s.io/kubernetes/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/api"
 )
 
 type key struct {

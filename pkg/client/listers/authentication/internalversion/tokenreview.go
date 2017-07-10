@@ -23,7 +23,7 @@ import (
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"
-	authentication "k8s.io/kubernetes/pkg/apis/authentication"
+	authentication "gitlab.com/sankish/magudi/pkg/apis/authentication"
 )
 
 // TokenReviewLister helps list TokenReviews.

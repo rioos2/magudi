@@ -20,7 +20,7 @@ import (
 	v1beta1 "k8s.io/api/apps/v1beta1"
 	serializer "k8s.io/apimachinery/pkg/runtime/serializer"
 	rest "k8s.io/client-go/rest"
-	"k8s.io/kubernetes/pkg/client/clientset_generated/clientset/scheme"
+	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/scheme"
 )
 
 type AppsV1beta1Interface interface {

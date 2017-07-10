@@ -20,7 +20,7 @@ import (
 	autoscalingv2alpha1 "k8s.io/api/autoscaling/v2alpha1"
 	"k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/kubernetes/pkg/apis/autoscaling"
+	"gitlab.com/sankish/magudi/pkg/apis/autoscaling"
 )
 
 func addDefaultingFuncs(scheme *runtime.Scheme) error {

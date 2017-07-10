@@ -29,9 +29,9 @@ import (
 	apitesting "k8s.io/apimachinery/pkg/api/testing"
 	"k8s.io/apimachinery/pkg/runtime"
 	k8syaml "k8s.io/apimachinery/pkg/util/yaml"
-	"k8s.io/kubernetes/pkg/api"
-	"k8s.io/kubernetes/pkg/api/testapi"
-	kapitesting "k8s.io/kubernetes/pkg/api/testing"
+	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/api/testapi"
+	kapitesting "gitlab.com/sankish/magudi/pkg/api/testing"
 
 	"github.com/ghodss/yaml"
 )

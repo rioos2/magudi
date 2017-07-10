@@ -40,12 +40,12 @@ import (
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/tools/record"
 	"k8s.io/client-go/util/workqueue"
-	"k8s.io/kubernetes/pkg/api"
-	autoscalingclient "k8s.io/kubernetes/pkg/client/clientset_generated/clientset/typed/autoscaling/v1"
-	extensionsclient "k8s.io/kubernetes/pkg/client/clientset_generated/clientset/typed/extensions/v1beta1"
-	autoscalinginformers "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions/autoscaling/v1"
-	autoscalinglisters "k8s.io/kubernetes/pkg/client/listers/autoscaling/v1"
-	"k8s.io/kubernetes/pkg/controller"
+	"gitlab.com/sankish/magudi/pkg/api"
+	autoscalingclient "gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/typed/autoscaling/v1"
+	extensionsclient "gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/typed/extensions/v1beta1"
+	autoscalinginformers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/autoscaling/v1"
+	autoscalinglisters "gitlab.com/sankish/magudi/pkg/client/listers/autoscaling/v1"
+	"gitlab.com/sankish/magudi/pkg/controller"
 )
 
 var (

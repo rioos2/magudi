@@ -19,7 +19,7 @@ package fake
 import (
 	rest "k8s.io/client-go/rest"
 	testing "k8s.io/client-go/testing"
-	v2alpha1 "k8s.io/kubernetes/pkg/client/clientset_generated/clientset/typed/batch/v2alpha1"
+	v2alpha1 "gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/typed/batch/v2alpha1"
 )
 
 type FakeBatchV2alpha1 struct {

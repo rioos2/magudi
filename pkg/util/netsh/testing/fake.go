@@ -19,7 +19,7 @@ package testing
 import (
 	"net"
 
-	"k8s.io/kubernetes/pkg/util/netsh"
+	"gitlab.com/sankish/magudi/pkg/util/netsh"
 )
 
 // no-op implementation of netsh Interface

@@ -21,7 +21,7 @@ import (
 	"fmt"
 	"strings"
 
-	"k8s.io/kubernetes/pkg/util/iptables"
+	"gitlab.com/sankish/magudi/pkg/util/iptables"
 )
 
 const (

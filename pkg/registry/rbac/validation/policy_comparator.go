@@ -19,7 +19,7 @@ package validation
 import (
 	"strings"
 
-	"k8s.io/kubernetes/pkg/apis/rbac"
+	"gitlab.com/sankish/magudi/pkg/apis/rbac"
 )
 
 // Covers determines whether or not the ownerRules cover the servantRules in terms of allowed actions.

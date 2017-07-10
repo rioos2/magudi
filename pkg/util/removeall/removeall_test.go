@@ -24,7 +24,7 @@ import (
 	"testing"
 
 	utiltesting "k8s.io/client-go/util/testing"
-	"k8s.io/kubernetes/pkg/util/mount"
+	"gitlab.com/sankish/magudi/pkg/util/mount"
 )
 
 type fakeMounter struct{}

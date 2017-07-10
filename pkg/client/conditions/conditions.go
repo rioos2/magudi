@@ -23,7 +23,7 @@ import (
 	"k8s.io/apimachinery/pkg/api/errors"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/watch"
-	podutil "k8s.io/kubernetes/pkg/api/v1/pod"
+	podutil "gitlab.com/sankish/magudi/pkg/api/v1/pod"
 )
 
 // ErrPodCompleted is returned by PodRunning or PodContainerRunning to indicate that

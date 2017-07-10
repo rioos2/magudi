@@ -21,7 +21,7 @@ import (
 	"reflect"
 	"testing"
 
-	componentconfig "k8s.io/kubernetes/pkg/apis/componentconfig"
+	componentconfig "gitlab.com/sankish/magudi/pkg/apis/componentconfig"
 )
 
 func TestSchedulerDefaults(t *testing.T) {

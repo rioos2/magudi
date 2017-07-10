@@ -32,8 +32,8 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/util/diff"
-	"k8s.io/kubernetes/pkg/api"
-	k8s_batchv2alpha1 "k8s.io/kubernetes/pkg/apis/batch/v2alpha1"
+	"gitlab.com/sankish/magudi/pkg/api"
+	k8s_batchv2alpha1 "gitlab.com/sankish/magudi/pkg/apis/batch/v2alpha1"
 )
 
 type orderedGroupVersionKinds []schema.GroupVersionKind

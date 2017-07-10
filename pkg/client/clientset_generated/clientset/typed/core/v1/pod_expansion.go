@@ -20,7 +20,7 @@ import (
 	"k8s.io/api/core/v1"
 	policy "k8s.io/api/policy/v1beta1"
 	restclient "k8s.io/client-go/rest"
-	"k8s.io/kubernetes/pkg/client/clientset_generated/clientset/scheme"
+	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/scheme"
 )
 
 // The PodExpansion interface allows manually adding extra methods to the PodInterface.

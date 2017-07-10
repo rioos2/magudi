@@ -21,8 +21,8 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	rest "k8s.io/client-go/rest"
-	rbac "k8s.io/kubernetes/pkg/apis/rbac"
-	scheme "k8s.io/kubernetes/pkg/client/clientset_generated/internalclientset/scheme"
+	rbac "gitlab.com/sankish/magudi/pkg/apis/rbac"
+	scheme "gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/scheme"
 )
 
 // RoleBindingsGetter has a method to return a RoleBindingInterface.

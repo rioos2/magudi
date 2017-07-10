@@ -16,4 +16,4 @@ limitations under the License.
 
 // Package service provides EndpointController implementation
 // to manage and sync service endpoints.
-package endpoint // import "k8s.io/kubernetes/pkg/controller/endpoint"
+package endpoint // import "gitlab.com/sankish/magudi/pkg/controller/endpoint"

@@ -18,7 +18,7 @@ package internalversion
 
 import (
 	"k8s.io/apimachinery/pkg/types"
-	"k8s.io/kubernetes/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/api"
 )
 
 // The NodeExpansion interface allows manually adding extra methods to the NodeInterface.

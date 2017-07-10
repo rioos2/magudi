@@ -19,11 +19,11 @@ package node
 import (
 	"sync"
 
-	"k8s.io/kubernetes/pkg/api"
-	pvutil "k8s.io/kubernetes/pkg/api/persistentvolume"
-	podutil "k8s.io/kubernetes/pkg/api/pod"
-	"k8s.io/kubernetes/third_party/forked/gonum/graph"
-	"k8s.io/kubernetes/third_party/forked/gonum/graph/simple"
+	"gitlab.com/sankish/magudi/pkg/api"
+	pvutil "gitlab.com/sankish/magudi/pkg/api/persistentvolume"
+	podutil "gitlab.com/sankish/magudi/pkg/api/pod"
+	"gitlab.com/sankish/magudi/third_party/forked/gonum/graph"
+	"gitlab.com/sankish/magudi/third_party/forked/gonum/graph/simple"
 )
 
 // namedVertex implements graph.Node and remembers the type, namespace, and name of its related API object

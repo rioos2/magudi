@@ -25,12 +25,12 @@ import (
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	kruntime "k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/kubernetes/pkg/api"
-	kubeletapis "k8s.io/kubernetes/pkg/kubelet/apis"
-	"k8s.io/kubernetes/pkg/kubelet/qos"
-	kubetypes "k8s.io/kubernetes/pkg/kubelet/types"
-	"k8s.io/kubernetes/pkg/master/ports"
-	"k8s.io/kubernetes/pkg/util"
+	"gitlab.com/sankish/magudi/pkg/api"
+	kubeletapis "gitlab.com/sankish/magudi/pkg/kubelet/apis"
+	"gitlab.com/sankish/magudi/pkg/kubelet/qos"
+	kubetypes "gitlab.com/sankish/magudi/pkg/kubelet/types"
+	"gitlab.com/sankish/magudi/pkg/master/ports"
+	"gitlab.com/sankish/magudi/pkg/util"
 )
 
 const (

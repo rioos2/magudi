@@ -23,12 +23,12 @@ import (
 
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apiserver/pkg/authorization/authorizer"
-	"k8s.io/kubernetes/pkg/api"
-	rbacapi "k8s.io/kubernetes/pkg/apis/rbac"
-	"k8s.io/kubernetes/pkg/auth/nodeidentifier"
-	"k8s.io/kubernetes/plugin/pkg/auth/authorizer/rbac"
-	"k8s.io/kubernetes/third_party/forked/gonum/graph"
-	"k8s.io/kubernetes/third_party/forked/gonum/graph/traverse"
+	"gitlab.com/sankish/magudi/pkg/api"
+	rbacapi "gitlab.com/sankish/magudi/pkg/apis/rbac"
+	"gitlab.com/sankish/magudi/pkg/auth/nodeidentifier"
+	"gitlab.com/sankish/magudi/plugin/pkg/auth/authorizer/rbac"
+	"gitlab.com/sankish/magudi/third_party/forked/gonum/graph"
+	"gitlab.com/sankish/magudi/third_party/forked/gonum/graph/traverse"
 )
 
 // NodeAuthorizer authorizes requests from kubelets, with the following logic:

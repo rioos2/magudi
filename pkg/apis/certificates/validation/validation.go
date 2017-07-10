@@ -20,8 +20,8 @@ import (
 	"fmt"
 
 	"k8s.io/apimachinery/pkg/util/validation/field"
-	apivalidation "k8s.io/kubernetes/pkg/api/validation"
-	"k8s.io/kubernetes/pkg/apis/certificates"
+	apivalidation "gitlab.com/sankish/magudi/pkg/api/validation"
+	"gitlab.com/sankish/magudi/pkg/apis/certificates"
 )
 
 // validateCSR validates the signature and formatting of a base64-wrapped,

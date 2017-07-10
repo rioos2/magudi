@@ -36,13 +36,13 @@ import (
 	intstrutil "k8s.io/apimachinery/pkg/util/intstr"
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/util/integer"
-	"k8s.io/kubernetes/pkg/api"
-	internalextensions "k8s.io/kubernetes/pkg/apis/extensions"
-	"k8s.io/kubernetes/pkg/client/clientset_generated/clientset"
-	corelisters "k8s.io/kubernetes/pkg/client/listers/core/v1"
-	extensionslisters "k8s.io/kubernetes/pkg/client/listers/extensions/v1beta1"
-	"k8s.io/kubernetes/pkg/controller"
-	labelsutil "k8s.io/kubernetes/pkg/util/labels"
+	"gitlab.com/sankish/magudi/pkg/api"
+	internalextensions "gitlab.com/sankish/magudi/pkg/apis/extensions"
+	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
+	corelisters "gitlab.com/sankish/magudi/pkg/client/listers/core/v1"
+	extensionslisters "gitlab.com/sankish/magudi/pkg/client/listers/extensions/v1beta1"
+	"gitlab.com/sankish/magudi/pkg/controller"
+	labelsutil "gitlab.com/sankish/magudi/pkg/util/labels"
 )
 
 const (

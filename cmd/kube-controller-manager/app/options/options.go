@@ -27,13 +27,13 @@ import (
 	utilerrors "k8s.io/apimachinery/pkg/util/errors"
 	"k8s.io/apimachinery/pkg/util/sets"
 	utilfeature "k8s.io/apiserver/pkg/util/feature"
-	"k8s.io/kubernetes/pkg/apis/componentconfig"
-	"k8s.io/kubernetes/pkg/client/leaderelection"
-	"k8s.io/kubernetes/pkg/controller/garbagecollector"
-	"k8s.io/kubernetes/pkg/master/ports"
+	"gitlab.com/sankish/magudi/pkg/apis/componentconfig"
+	"gitlab.com/sankish/magudi/pkg/client/leaderelection"
+	"gitlab.com/sankish/magudi/pkg/controller/garbagecollector"
+	"gitlab.com/sankish/magudi/pkg/master/ports"
 
 	// add the kubernetes feature gates
-	_ "k8s.io/kubernetes/pkg/features"
+	_ "gitlab.com/sankish/magudi/pkg/features"
 
 	"github.com/cloudflare/cfssl/helpers"
 	"github.com/spf13/pflag"

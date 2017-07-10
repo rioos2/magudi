@@ -19,8 +19,8 @@ limitations under the License.
 package admissionregistration
 
 import (
-	v1alpha1 "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions/admissionregistration/v1alpha1"
-	internalinterfaces "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions/internalinterfaces"
+	v1alpha1 "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/admissionregistration/v1alpha1"
+	internalinterfaces "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/internalinterfaces"
 )
 
 // Interface provides access to each of this group's versions.

@@ -34,7 +34,7 @@ import (
 	restclient "k8s.io/client-go/rest"
 	. "k8s.io/client-go/tools/portforward"
 	"k8s.io/client-go/tools/remotecommand"
-	"k8s.io/kubernetes/pkg/kubelet/server/portforward"
+	"gitlab.com/sankish/magudi/pkg/kubelet/server/portforward"
 )
 
 // fakePortForwarder simulates port forwarding for testing. It implements

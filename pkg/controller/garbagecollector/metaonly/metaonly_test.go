@@ -27,7 +27,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/runtime/serializer"
-	_ "k8s.io/kubernetes/pkg/api/install"
+	_ "gitlab.com/sankish/magudi/pkg/api/install"
 )
 
 func getPod() *v1.Pod {

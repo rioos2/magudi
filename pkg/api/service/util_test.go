@@ -23,8 +23,8 @@ import (
 	"strings"
 
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	"k8s.io/kubernetes/pkg/api"
-	netsets "k8s.io/kubernetes/pkg/util/net/sets"
+	"gitlab.com/sankish/magudi/pkg/api"
+	netsets "gitlab.com/sankish/magudi/pkg/util/net/sets"
 
 	"github.com/davecgh/go-spew/spew"
 )

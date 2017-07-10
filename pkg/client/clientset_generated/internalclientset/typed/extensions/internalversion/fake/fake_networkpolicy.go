@@ -23,7 +23,7 @@ import (
 	types "k8s.io/apimachinery/pkg/types"
 	watch "k8s.io/apimachinery/pkg/watch"
 	testing "k8s.io/client-go/testing"
-	extensions "k8s.io/kubernetes/pkg/apis/extensions"
+	extensions "gitlab.com/sankish/magudi/pkg/apis/extensions"
 )
 
 // FakeNetworkPolicies implements NetworkPolicyInterface

@@ -24,7 +24,7 @@ import (
 	v1beta1 "k8s.io/api/authentication/v1beta1"
 	conversion "k8s.io/apimachinery/pkg/conversion"
 	runtime "k8s.io/apimachinery/pkg/runtime"
-	authentication "k8s.io/kubernetes/pkg/apis/authentication"
+	authentication "gitlab.com/sankish/magudi/pkg/apis/authentication"
 	unsafe "unsafe"
 )
 

@@ -17,7 +17,7 @@ limitations under the License.
 package internalversion
 
 import (
-	authorizationapi "k8s.io/kubernetes/pkg/apis/authorization"
+	authorizationapi "gitlab.com/sankish/magudi/pkg/apis/authorization"
 )
 
 type SubjectAccessReviewExpansion interface {

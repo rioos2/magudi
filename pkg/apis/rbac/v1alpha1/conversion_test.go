@@ -21,9 +21,9 @@ import (
 	"testing"
 
 	"k8s.io/api/rbac/v1alpha1"
-	"k8s.io/kubernetes/pkg/api"
-	rbacapi "k8s.io/kubernetes/pkg/apis/rbac"
-	_ "k8s.io/kubernetes/pkg/apis/rbac/install"
+	"gitlab.com/sankish/magudi/pkg/api"
+	rbacapi "gitlab.com/sankish/magudi/pkg/apis/rbac"
+	_ "gitlab.com/sankish/magudi/pkg/apis/rbac/install"
 )
 
 func TestConversion(t *testing.T) {

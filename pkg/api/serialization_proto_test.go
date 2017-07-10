@@ -33,10 +33,10 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apimachinery/pkg/runtime/serializer/protobuf"
 	"k8s.io/apimachinery/pkg/util/diff"
-	"k8s.io/kubernetes/pkg/api"
-	kapitesting "k8s.io/kubernetes/pkg/api/testing"
-	_ "k8s.io/kubernetes/pkg/apis/extensions"
-	_ "k8s.io/kubernetes/pkg/apis/extensions/v1beta1"
+	"gitlab.com/sankish/magudi/pkg/api"
+	kapitesting "gitlab.com/sankish/magudi/pkg/api/testing"
+	_ "gitlab.com/sankish/magudi/pkg/apis/extensions"
+	_ "gitlab.com/sankish/magudi/pkg/apis/extensions/v1beta1"
 )
 
 func TestUniversalDeserializer(t *testing.T) {

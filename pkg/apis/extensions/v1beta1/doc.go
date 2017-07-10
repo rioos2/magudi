@@ -14,12 +14,12 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-// +k8s:conversion-gen=k8s.io/kubernetes/pkg/apis/extensions
+// +k8s:conversion-gen=gitlab.com/sankish/magudi/pkg/apis/extensions
 // +k8s:conversion-gen-external-types=../../../../vendor/k8s.io/api/extensions/v1beta1
-// +k8s:conversion-gen=k8s.io/kubernetes/pkg/apis/autoscaling
-// +k8s:conversion-gen=k8s.io/kubernetes/pkg/apis/batch
-// +k8s:conversion-gen=k8s.io/kubernetes/pkg/apis/networking
+// +k8s:conversion-gen=gitlab.com/sankish/magudi/pkg/apis/autoscaling
+// +k8s:conversion-gen=gitlab.com/sankish/magudi/pkg/apis/batch
+// +k8s:conversion-gen=gitlab.com/sankish/magudi/pkg/apis/networking
 // +k8s:defaulter-gen=TypeMeta
 // +k8s:defaulter-gen-input=../../../../vendor/k8s.io/api/extensions/v1beta1
 
-package v1beta1 // import "k8s.io/kubernetes/pkg/apis/extensions/v1beta1"
+package v1beta1 // import "gitlab.com/sankish/magudi/pkg/apis/extensions/v1beta1"

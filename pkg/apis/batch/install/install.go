@@ -22,10 +22,10 @@ import (
 	"k8s.io/apimachinery/pkg/apimachinery/announced"
 	"k8s.io/apimachinery/pkg/apimachinery/registered"
 	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/kubernetes/pkg/api"
-	"k8s.io/kubernetes/pkg/apis/batch"
-	"k8s.io/kubernetes/pkg/apis/batch/v1"
-	"k8s.io/kubernetes/pkg/apis/batch/v2alpha1"
+	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/apis/batch"
+	"gitlab.com/sankish/magudi/pkg/apis/batch/v1"
+	"gitlab.com/sankish/magudi/pkg/apis/batch/v2alpha1"
 )
 
 func init() {

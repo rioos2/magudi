@@ -25,8 +25,8 @@ import (
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 	"k8s.io/apiserver/pkg/authentication/user"
-	"k8s.io/kubernetes/pkg/api"
-	bootstrapapi "k8s.io/kubernetes/pkg/bootstrap/api"
+	"gitlab.com/sankish/magudi/pkg/api"
+	bootstrapapi "gitlab.com/sankish/magudi/pkg/bootstrap/api"
 )
 
 type lister struct {

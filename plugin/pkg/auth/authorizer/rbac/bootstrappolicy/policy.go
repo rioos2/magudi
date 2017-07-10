@@ -21,7 +21,7 @@ import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apiserver/pkg/authentication/user"
-	rbac "k8s.io/kubernetes/pkg/apis/rbac"
+	rbac "gitlab.com/sankish/magudi/pkg/apis/rbac"
 )
 
 var (

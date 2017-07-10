@@ -19,7 +19,7 @@ package v0
 import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
-	api "k8s.io/kubernetes/pkg/apis/abac"
+	api "gitlab.com/sankish/magudi/pkg/apis/abac"
 )
 
 const GroupName = "abac.authorization.kubernetes.io"
@@ -41,7 +41,7 @@ func init() {
 
 var (
 	// TODO: move SchemeBuilder with zz_generated.deepcopy.go to k8s.io/api.
-	// localSchemeBuilder and AddToScheme will stay in k8s.io/kubernetes.
+	// localSchemeBuilder and AddToScheme will stay in gitlab.com/sankish/magudi.
 	SchemeBuilder      runtime.SchemeBuilder
 	localSchemeBuilder = &SchemeBuilder
 	AddToScheme        = localSchemeBuilder.AddToScheme

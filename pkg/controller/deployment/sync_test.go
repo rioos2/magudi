@@ -25,10 +25,10 @@ import (
 	"k8s.io/apimachinery/pkg/util/intstr"
 	testclient "k8s.io/client-go/testing"
 	"k8s.io/client-go/tools/record"
-	"k8s.io/kubernetes/pkg/client/clientset_generated/clientset/fake"
-	informers "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions"
-	"k8s.io/kubernetes/pkg/controller"
-	deploymentutil "k8s.io/kubernetes/pkg/controller/deployment/util"
+	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset/fake"
+	informers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions"
+	"gitlab.com/sankish/magudi/pkg/controller"
+	deploymentutil "gitlab.com/sankish/magudi/pkg/controller/deployment/util"
 )
 
 func intOrStrP(val int) *intstr.IntOrString {

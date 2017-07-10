@@ -31,15 +31,15 @@ import (
 	"k8s.io/apimachinery/pkg/util/wait"
 	"k8s.io/client-go/tools/cache"
 	"k8s.io/client-go/util/workqueue"
-	"k8s.io/kubernetes/pkg/api"
-	"k8s.io/kubernetes/pkg/api/v1/endpoints"
-	podutil "k8s.io/kubernetes/pkg/api/v1/pod"
-	"k8s.io/kubernetes/pkg/client/clientset_generated/clientset"
-	coreinformers "k8s.io/kubernetes/pkg/client/informers/informers_generated/externalversions/core/v1"
-	"k8s.io/kubernetes/pkg/client/leaderelection/resourcelock"
-	corelisters "k8s.io/kubernetes/pkg/client/listers/core/v1"
-	"k8s.io/kubernetes/pkg/controller"
-	"k8s.io/kubernetes/pkg/util/metrics"
+	"gitlab.com/sankish/magudi/pkg/api"
+	"gitlab.com/sankish/magudi/pkg/api/v1/endpoints"
+	podutil "gitlab.com/sankish/magudi/pkg/api/v1/pod"
+	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/clientset"
+	coreinformers "gitlab.com/sankish/magudi/pkg/client/informers/informers_generated/externalversions/core/v1"
+	"gitlab.com/sankish/magudi/pkg/client/leaderelection/resourcelock"
+	corelisters "gitlab.com/sankish/magudi/pkg/client/listers/core/v1"
+	"gitlab.com/sankish/magudi/pkg/controller"
+	"gitlab.com/sankish/magudi/pkg/util/metrics"
 
 	"github.com/golang/glog"
 )
@@ -515,7 +515,7 @@ func addEndpointSubset(subsets []v1.EndpointSubset, pod *v1.Pod, epa v1.Endpoint
 			Ports:     []v1.EndpointPort{epp},
 		})
 		readyEps++
-	} else {
+	} else if shouldPodBeInEndpoints(pod) {
 		glog.V(5).Infof("Pod is out of service: %v/%v", pod.Namespace, pod.Name)
 		subsets = append(subsets, v1.EndpointSubset{
 			NotReadyAddresses: []v1.EndpointAddress{epa},
@@ -524,4 +524,15 @@ func addEndpointSubset(subsets []v1.EndpointSubset, pod *v1.Pod, epa v1.Endpoint
 		notReadyEps++
 	}
 	return subsets, readyEps, notReadyEps
+}
+
+func shouldPodBeInEndpoints(pod *v1.Pod) bool {
+	switch pod.Spec.RestartPolicy {
+	case v1.RestartPolicyNever:
+		return pod.Status.Phase != v1.PodFailed && pod.Status.Phase != v1.PodSucceeded
+	case v1.RestartPolicyOnFailure:
+		return pod.Status.Phase != v1.PodSucceeded
+	default:
+		return true
+	}
 }

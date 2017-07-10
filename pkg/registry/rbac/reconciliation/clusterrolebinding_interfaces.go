@@ -19,8 +19,8 @@ package reconciliation
 import (
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	"k8s.io/apimachinery/pkg/types"
-	"k8s.io/kubernetes/pkg/apis/rbac"
-	"k8s.io/kubernetes/pkg/client/clientset_generated/internalclientset/typed/rbac/internalversion"
+	"gitlab.com/sankish/magudi/pkg/apis/rbac"
+	"gitlab.com/sankish/magudi/pkg/client/clientset_generated/internalclientset/typed/rbac/internalversion"
 )
 
 type ClusterRoleBindingAdapter struct {

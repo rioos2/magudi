@@ -22,7 +22,7 @@ import (
 	"strings"
 	"sync"
 
-	utilexec "k8s.io/kubernetes/pkg/util/exec"
+	utilexec "gitlab.com/sankish/magudi/pkg/util/exec"
 )
 
 const (

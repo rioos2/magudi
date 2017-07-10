@@ -21,8 +21,8 @@ import (
 	"testing"
 
 	"k8s.io/apiserver/pkg/authentication/user"
-	api "k8s.io/kubernetes/pkg/apis/abac"
-	"k8s.io/kubernetes/pkg/apis/abac/v1beta1"
+	api "gitlab.com/sankish/magudi/pkg/apis/abac"
+	"gitlab.com/sankish/magudi/pkg/apis/abac/v1beta1"
 )
 
 func TestV1Beta1Conversion(t *testing.T) {

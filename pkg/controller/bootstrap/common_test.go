@@ -24,8 +24,8 @@ import (
 	"k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 	core "k8s.io/client-go/testing"
-	"k8s.io/kubernetes/pkg/api/helper"
-	bootstrapapi "k8s.io/kubernetes/pkg/bootstrap/api"
+	"gitlab.com/sankish/magudi/pkg/api/helper"
+	bootstrapapi "gitlab.com/sankish/magudi/pkg/bootstrap/api"
 )
 
 func newTokenSecret(tokenID, tokenSecret string) *v1.Secret {

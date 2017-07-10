@@ -23,7 +23,7 @@ import (
 
 	"github.com/golang/glog"
 
-	utilexec "k8s.io/kubernetes/pkg/util/exec"
+	utilexec "gitlab.com/sankish/magudi/pkg/util/exec"
 )
 
 // Interface is an injectable interface for running ipconfig commands.  Implementations must be goroutine-safe.

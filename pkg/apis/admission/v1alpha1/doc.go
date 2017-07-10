@@ -15,9 +15,9 @@ limitations under the License.
 */
 
 // +k8s:deepcopy-gen=package,register
-// +k8s:conversion-gen=k8s.io/kubernetes/pkg/apis/admission
+// +k8s:conversion-gen=gitlab.com/sankish/magudi/pkg/apis/admission
 // +k8s:openapi-gen=false
 // +k8s:defaulter-gen=TypeMeta
 
 // +groupName=admission.k8s.io
-package v1alpha1 // import "k8s.io/kubernetes/pkg/apis/admission/v1alpha1"
+package v1alpha1 // import "gitlab.com/sankish/magudi/pkg/apis/admission/v1alpha1"

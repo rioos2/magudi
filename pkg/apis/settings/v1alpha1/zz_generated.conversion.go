@@ -25,8 +25,8 @@ import (
 	v1alpha1 "k8s.io/api/settings/v1alpha1"
 	conversion "k8s.io/apimachinery/pkg/conversion"
 	runtime "k8s.io/apimachinery/pkg/runtime"
-	api "k8s.io/kubernetes/pkg/api"
-	settings "k8s.io/kubernetes/pkg/apis/settings"
+	api "gitlab.com/sankish/magudi/pkg/api"
+	settings "gitlab.com/sankish/magudi/pkg/apis/settings"
 	unsafe "unsafe"
 )
 

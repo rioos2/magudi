@@ -23,10 +23,10 @@ import (
 	batchv2alpha1 "k8s.io/api/batch/v2alpha1"
 
 	"k8s.io/apimachinery/pkg/runtime"
-	"k8s.io/kubernetes/pkg/api"
-	_ "k8s.io/kubernetes/pkg/api/install"
-	_ "k8s.io/kubernetes/pkg/apis/batch/install"
-	. "k8s.io/kubernetes/pkg/apis/batch/v2alpha1"
+	"gitlab.com/sankish/magudi/pkg/api"
+	_ "gitlab.com/sankish/magudi/pkg/api/install"
+	_ "gitlab.com/sankish/magudi/pkg/apis/batch/install"
+	. "gitlab.com/sankish/magudi/pkg/apis/batch/v2alpha1"
 )
 
 func TestSetDefaultCronJob(t *testing.T) {

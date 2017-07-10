@@ -24,7 +24,7 @@ import (
 
 	"k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
-	bootstrapapi "k8s.io/kubernetes/pkg/bootstrap/api"
+	bootstrapapi "gitlab.com/sankish/magudi/pkg/bootstrap/api"
 )
 
 const (

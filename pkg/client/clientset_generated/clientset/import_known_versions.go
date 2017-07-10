@@ -20,19 +20,19 @@ package clientset
 import (
 	"fmt"
 
-	"k8s.io/kubernetes/pkg/api"
-	_ "k8s.io/kubernetes/pkg/api/install"
-	_ "k8s.io/kubernetes/pkg/apis/apps/install"
-	_ "k8s.io/kubernetes/pkg/apis/authentication/install"
-	_ "k8s.io/kubernetes/pkg/apis/authorization/install"
-	_ "k8s.io/kubernetes/pkg/apis/autoscaling/install"
-	_ "k8s.io/kubernetes/pkg/apis/batch/install"
-	_ "k8s.io/kubernetes/pkg/apis/certificates/install"
-	_ "k8s.io/kubernetes/pkg/apis/extensions/install"
-	_ "k8s.io/kubernetes/pkg/apis/policy/install"
-	_ "k8s.io/kubernetes/pkg/apis/rbac/install"
-	_ "k8s.io/kubernetes/pkg/apis/settings/install"
-	_ "k8s.io/kubernetes/pkg/apis/storage/install"
+	"gitlab.com/sankish/magudi/pkg/api"
+	_ "gitlab.com/sankish/magudi/pkg/api/install"
+	_ "gitlab.com/sankish/magudi/pkg/apis/apps/install"
+	_ "gitlab.com/sankish/magudi/pkg/apis/authentication/install"
+	_ "gitlab.com/sankish/magudi/pkg/apis/authorization/install"
+	_ "gitlab.com/sankish/magudi/pkg/apis/autoscaling/install"
+	_ "gitlab.com/sankish/magudi/pkg/apis/batch/install"
+	_ "gitlab.com/sankish/magudi/pkg/apis/certificates/install"
+	_ "gitlab.com/sankish/magudi/pkg/apis/extensions/install"
+	_ "gitlab.com/sankish/magudi/pkg/apis/policy/install"
+	_ "gitlab.com/sankish/magudi/pkg/apis/rbac/install"
+	_ "gitlab.com/sankish/magudi/pkg/apis/settings/install"
+	_ "gitlab.com/sankish/magudi/pkg/apis/storage/install"
 )
 
 func init() {
