@@ -1,0 +1,11 @@
+{
+  "Rules": [
+    {
+      "SelectorRegexp": "k8s[.]io/kubernetes/pkg/client/unversioned",
+      "AllowedPrefixes": [
+        "gitlab.com/rioos/magudi/pkg/client/unversioned/clientcmd/api"
+      ]
+    }
+  ]
+}
+
