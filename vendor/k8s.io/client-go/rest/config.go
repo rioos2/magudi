@@ -309,9 +309,6 @@ func DefaultKubernetesUserAgent() string {
 
 func InClusterConfig() (*Config, error) {
 	host, port := os.Getenv("KUBERNETES_SERVICE_HOST"), os.Getenv("KUBERNETES_SERVICE_PORT")
-	fmt.Println("hosthosthosthosthosthosthosthosthosthosthosthost")
-	fmt.Println(host)
-	fmt.Println("hosthosthosthosthosthosthosthosthosthosthosthost")
 
 	if len(host) == 0 || len(port) == 0 {
 		return nil, fmt.Errorf("unable to load in-cluster configuration, KUBERNETES_SERVICE_HOST and KUBERNETES_SERVICE_PORT must be defined")
@@ -321,7 +318,6 @@ func InClusterConfig() (*Config, error) {
 	if err != nil {
 		return nil, err
 	}
-	fmt.Println("hosthosthosthosthosthosthosthosthosthosthosthostend")
 
 	tlsClientConfig := TLSClientConfig{}
 	rootCAFile := "/var/run/secrets/kubernetes.io/serviceaccount/" + v1.ServiceAccountRootCAKey

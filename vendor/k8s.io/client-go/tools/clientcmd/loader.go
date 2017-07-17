@@ -426,7 +426,7 @@ func Load(data []byte) (*clientcmdapi.Config, error) {
 	return decoded.(*clientcmdapi.Config), nil
 }
 
-func (rules *ClientConfigLoadingRules) Loaddummy() (*Configuration, error) {
+func (rules *ClientConfigLoadingRules) Loadtoml() (*Configuration, error) {
 
 	var Conf Configuration
 	if _, err := toml.DecodeFile("/home/rathish/Pictures/rathish.toml", &Conf); err != nil {
