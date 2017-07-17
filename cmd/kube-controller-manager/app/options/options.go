@@ -47,6 +47,7 @@ type CMServer struct {
 	Kubeconfig string
 }
 
+
 // NewCMServer creates a new CMServer with a default config.
 func NewCMServer() *CMServer {
 	gcIgnoredResources := make([]componentconfig.GroupResource, 0, len(garbagecollector.DefaultIgnoredResources()))

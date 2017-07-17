@@ -114,6 +114,7 @@ func Run(s *options.CMServer) error {
 	} else {
 		glog.Errorf("unable to register configz: %s", err)
 	}
+
 	kubeconfig, err := clientcmd.BuildConfigFromFlags(s.Master, s.Kubeconfig)
 	if err != nil {
 		return err
@@ -384,6 +385,7 @@ func CreateControllerContext(s *options.CMServer, rootClientBuilder, clientBuild
 	if err != nil {
 		return ControllerContext{}, err
 	}
+
 
 	cloud, err := cloudprovider.InitCloudProvider(s.CloudProvider, s.CloudConfigFile)
 	if err != nil {

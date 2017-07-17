@@ -26,7 +26,7 @@ import (
 
 // ConfigOverrides holds values that should override whatever information is pulled from the actual Config object.  You can't
 // simply use an actual Config object, because Configs hold maps, but overrides are restricted to "at most one"
-type ConfigOverrides struct {
+type ConfigOverridess struct {
 	AuthInfo clientcmdapi.AuthInfo
 	// ClusterDefaults are applied before the configured cluster info is loaded.
 	ClusterDefaults clientcmdapi.Cluster
@@ -34,6 +34,16 @@ type ConfigOverrides struct {
 	Context         clientcmdapi.Context
 	CurrentContext  string
 	Timeout         string
+}
+
+type ConfigOverrides struct {
+	// AuthInfo clientcmdapi.AuthInfo
+	// ClusterDefaults are applied before the configured cluster info is loaded.
+	// ClusterDefaults clientcmdapi.Cluster
+	// ClusterInfo     clientcmdapi.Cluster
+	api          string
+	master_user  string
+	master_key   string
 }
 
 // ConfigOverrideFlags holds the flag names to be used for binding command line flags.  Notice that this structure tightly

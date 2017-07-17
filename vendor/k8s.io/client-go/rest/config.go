@@ -306,8 +306,10 @@ func DefaultKubernetesUserAgent() string {
 // kubernetes gives to pods. It's intended for clients that expect to be
 // running inside a pod running on kubernetes. It will return an error if
 // called from a process not running in a kubernetes environment.
+
 func InClusterConfig() (*Config, error) {
 	host, port := os.Getenv("KUBERNETES_SERVICE_HOST"), os.Getenv("KUBERNETES_SERVICE_PORT")
+
 	if len(host) == 0 || len(port) == 0 {
 		return nil, fmt.Errorf("unable to load in-cluster configuration, KUBERNETES_SERVICE_HOST and KUBERNETES_SERVICE_PORT must be defined")
 	}
@@ -316,6 +318,7 @@ func InClusterConfig() (*Config, error) {
 	if err != nil {
 		return nil, err
 	}
+
 	tlsClientConfig := TLSClientConfig{}
 	rootCAFile := "/var/run/secrets/kubernetes.io/serviceaccount/" + v1.ServiceAccountRootCAKey
 	if _, err := certutil.NewPool(rootCAFile); err != nil {

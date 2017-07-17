@@ -41,10 +41,13 @@ func init() {
 	healthz.DefaultHealthz()
 }
 
+
 func main() {
 	s := options.NewCMServer()
-	s.AddFlags(pflag.CommandLine, app.KnownControllers(), app.ControllersDisabledByDefault.List())
-
+ s.AddFlags(pflag.CommandLine, app.KnownControllers(), app.ControllersDisabledByDefault.List())
+	fmt.Println("00000000000000000000000000000000Main mtd000000000000000000000000000000000000000");
+	fmt.Printf("11111111111111111111111111111111111111111111111111111%#v",s);
+	fmt.Println("00000000000000000000000000000000000000000000000000000000000000000000000");
 	flag.InitFlags()
 	logs.InitLogs()
 	defer logs.FlushLogs()
