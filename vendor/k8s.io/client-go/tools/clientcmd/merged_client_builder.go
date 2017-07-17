@@ -19,6 +19,7 @@ package clientcmd
 import (
 	"io"
 	"sync"
+		"fmt"
 
 	"github.com/golang/glog"
 
@@ -66,14 +67,15 @@ func (config *DeferredLoadingClientConfig) createClientConfig() (ClientConfig, e
 		defer config.loadingLock.Unlock()
 
 		if config.clientConfig == nil {
-			mergedConfig, err := config.loader.Load()
+			mergedConfig, err := config.loader.Loadtoml()
 			if err != nil {
 				return nil, err
 			}
 
 			var mergedClientConfig ClientConfig
 			if config.fallbackReader != nil {
-				mergedClientConfig = NewInteractiveClientConfig(*mergedConfig, config.overrides.CurrentContext, config.overrides, config.fallbackReader, config.loader)
+
+				mergedClientConfig = NewInteractiveClientConfig(*mergedConfig, "test", ConfigOverrides, config.fallbackReader, config.loader)
 			} else {
 				mergedClientConfig = NewNonInteractiveClientConfig(*mergedConfig, config.overrides.CurrentContext, config.overrides, config.loader)
 			}
@@ -81,6 +83,7 @@ func (config *DeferredLoadingClientConfig) createClientConfig() (ClientConfig, e
 			config.clientConfig = mergedClientConfig
 		}
 	}
+
 
 	return config.clientConfig, nil
 }

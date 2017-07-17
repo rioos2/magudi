@@ -29,6 +29,7 @@ import (
 
 	"github.com/golang/glog"
 	"github.com/imdario/mergo"
+	"github.com/BurntSushi/toml"
 
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
@@ -53,6 +54,16 @@ var (
 	RecommendedSchemaFile = path.Join(RecommendedConfigDir, RecommendedSchemaName)
 )
 
+type Configuration struct {
+	Meta metaInfo
+}
+
+type metaInfo struct {
+	Api string
+	Master_user string
+	Master_key string
+}
+
 // currentMigrationRules returns a map that holds the history of recommended home directories used in previous versions.
 // Any future changes to RecommendedHomeFile and related are expected to add a migration rule here, in order to make
 // sure existing config files are migrated to their new locations properly.
@@ -74,9 +85,11 @@ type ClientConfigLoader interface {
 	IsDefaultConfig(*restclient.Config) bool
 	// Load returns the latest config
 	Load() (*clientcmdapi.Config, error)
+
+	Loadtoml() (*Configuration, error)
 }
 
-type KubeconfigGetter func() (*clientcmdapi.Config, error)
+type KubeconfigGetter func() (*Configuration, error)
 
 type ClientConfigGetter struct {
 	kubeconfigGetter KubeconfigGetter
@@ -85,7 +98,7 @@ type ClientConfigGetter struct {
 // ClientConfigGetter implements the ClientConfigLoader interface.
 var _ ClientConfigLoader = &ClientConfigGetter{}
 
-func (g *ClientConfigGetter) Load() (*clientcmdapi.Config, error) {
+func (g *ClientConfigGetter) Loadtoml() (*Configuration, error) {
 	return g.kubeconfigGetter()
 }
 
@@ -358,6 +371,9 @@ func LoadFromFile(filename string) (*clientcmdapi.Config, error) {
 
 	// set LocationOfOrigin on every Cluster, User, and Context
 	for key, obj := range config.AuthInfos {
+		fmt.Println("....................................................008")
+		fmt.Printf("%#v",config.AuthInfos)
+		fmt.Println("....................................................008")
 		obj.LocationOfOrigin = filename
 		config.AuthInfos[key] = obj
 	}
@@ -386,6 +402,15 @@ func LoadFromFile(filename string) (*clientcmdapi.Config, error) {
 // Load takes a byte slice and deserializes the contents into Config object.
 // Encapsulates deserialization without assuming the source is a file.
 func Load(data []byte) (*clientcmdapi.Config, error) {
+
+	var Conf Configuration
+	if _, err := toml.DecodeFile("/home/rathish/Pictures/rathish.toml", &Conf); err != nil {
+	fmt.Println(err)
+	// return
+}
+	fmt.Println("....................................................006")
+	fmt.Printf("%#v",Conf)
+	fmt.Println("....................................................006")
 	config := clientcmdapi.NewConfig()
 	// if there's no data in a file, return the default object instead of failing (DecodeInto reject empty input)
 	if len(data) == 0 {
@@ -395,7 +420,20 @@ func Load(data []byte) (*clientcmdapi.Config, error) {
 	if err != nil {
 		return nil, err
 	}
+	fmt.Println("....................................................007")
+	fmt.Printf("%#v",decoded)
+	fmt.Println("....................................................007")
 	return decoded.(*clientcmdapi.Config), nil
+}
+
+func (rules *ClientConfigLoadingRules) Loaddummy() (*Configuration, error) {
+
+	var Conf Configuration
+	if _, err := toml.DecodeFile("/home/rathish/Pictures/rathish.toml", &Conf); err != nil {
+	fmt.Println(err)
+	// return
+}
+	return *Conf, nil
 }
 
 // WriteToFile serializes the config to yaml and writes it out to a file.  If not present, it creates the file with the mode 0600.  If it is present
